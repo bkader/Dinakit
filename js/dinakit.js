@@ -27,4 +27,12 @@
         }
     });
 
+    /* adding icons to menu */
+    $(".menu > li").has("ul").each(function() {
+        $("> a:not(.no-fa)",this).append('<i class="fa fa-caret-down"></i>');
+        $("ul > li",this).has("ul").each(function() {
+            $("> a:not(.no-fa)",this).append('<i class="fa fa-caret-right"></i>');
+        });
+    });
+
 })(jQuery);

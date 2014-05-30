@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+body {
+    font-family: 'Exo 2', Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FEFEFE;
+}
+
+.container-fuild + .container-fluid,
+.container-fuild + .container,
+.container + .container-fluid,
+.container + .container {
+    margin-top: 100px;
+}
+
+a {
+    color: #da4f49;
+    text-decoration: none;
+}
+a:not(.button):hover,
+a:not(.button):active,
+a:not(.button):focus {
+    color: #E0E0E0;
+    text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+header {
+    background-color: #111;
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.1);
+       -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.1);
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.grid [class*="col-"] {
+    background: #EEEEEE;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.2);
+       -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.2);
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,.2);
+}
+
+footer {
+    background-color: #111;
+    border-top: 1px solid #000;
+    color: #989898;
+    -webkit-box-shadow: 0px -1px 2px 0px rgba(0,0,0,.1);
+       -moz-box-shadow: 0px -1px 2px 0px rgba(0,0,0,.1);
+            box-shadow: 0px -1px 2px 0px rgba(0,0,0,.1);
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+.menu > li > a {
+    color: #989898 !important;
+}
