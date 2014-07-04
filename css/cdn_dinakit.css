@@ -10,8 +10,11 @@
 ===================================================================
 */
 
-@import url(vendor/normalize/normalize.css);
-@import url(vendor/font-awesome/css/font-awesome.min.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+/*@import url(vendor/normalize/normalize.css);*/
+
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css);
+/*@import url(vendor/font-awesome/css/font-awesome.min.css);*/
 
 /*
 ===================================================================
