@@ -29,6 +29,13 @@ body {
     font            : 14px/1.5 Helvetica, Tahoma, Arial, sans-serif;
 }
 
+hr {
+    border    : 0;
+    border-top: 1px solid #eee;
+    height    : 0;
+    margin    : 20px auto;
+}
+
 /*
 ===================================================================
 !Alerts
@@ -278,25 +285,25 @@ body {
 }
 
 .browser.browser-android {
-    background-image: url(vendor/images/browsers/android.png);
+    background-image: url(images/browsers/android.png);
 }
 .browser.browser-chrome {
-    background-image: url(vendor/images/browsers/chrome.png);
+    background-image: url(images/browsers/chrome.png);
 }
 .browser.browser-firefox {
-    background-image: url(vendor/images/browsers/firefox.png);
+    background-image: url(images/browsers/firefox.png);
 }
 .browser.browser-ie {
-    background-image: url(vendor/images/browsers/ie.png);
+    background-image: url(images/browsers/ie.png);
 }
 .browser.browser-netscape {
-    background-image: url(vendor/images/browsers/netscape.png);
+    background-image: url(images/browsers/netscape.png);
 }
 .browser.browser-opera {
-    background-image: url(vendor/images/browsers/opera.png);
+    background-image: url(images/browsers/opera.png);
 }
 .browser.browser-safari {
-    background-image: url(vendor/images/browsers/safari.png);
+    background-image: url(images/browsers/safari.png);
 }
 
 /*
@@ -560,755 +567,755 @@ body {
     width              : 16px;
 }
 .flag.flag-ad {
-    background-image: url(vendor/images/flags/ad.png);
+    background-image: url(images/flags/ad.png);
 }
 .flag.flag-ae {
-    background-image: url(vendor/images/flags/ae.png);
+    background-image: url(images/flags/ae.png);
 }
 .flag.flag-af {
-    background-image: url(vendor/images/flags/af.png);
+    background-image: url(images/flags/af.png);
 }
 .flag.flag-ag {
-    background-image: url(vendor/images/flags/ag.png);
+    background-image: url(images/flags/ag.png);
 }
 .flag.flag-ai {
-    background-image: url(vendor/images/flags/ai.png);
+    background-image: url(images/flags/ai.png);
 }
 .flag.flag-al {
-    background-image: url(vendor/images/flags/al.png);
+    background-image: url(images/flags/al.png);
 }
 .flag.flag-am {
-    background-image: url(vendor/images/flags/am.png);
+    background-image: url(images/flags/am.png);
 }
 .flag.flag-an {
-    background-image: url(vendor/images/flags/an.png);
+    background-image: url(images/flags/an.png);
 }
 .flag.flag-ao {
-    background-image: url(vendor/images/flags/ao.png);
+    background-image: url(images/flags/ao.png);
 }
 .flag.flag-ar {
-    background-image: url(vendor/images/flags/ar.png);
+    background-image: url(images/flags/ar.png);
 }
 .flag.flag-as {
-    background-image: url(vendor/images/flags/as.png);
+    background-image: url(images/flags/as.png);
 }
 .flag.flag-at {
-    background-image: url(vendor/images/flags/at.png);
+    background-image: url(images/flags/at.png);
 }
 .flag.flag-au {
-    background-image: url(vendor/images/flags/au.png);
+    background-image: url(images/flags/au.png);
 }
 .flag.flag-aw {
-    background-image: url(vendor/images/flags/aw.png);
+    background-image: url(images/flags/aw.png);
 }
 .flag.flag-az {
-    background-image: url(vendor/images/flags/az.png);
+    background-image: url(images/flags/az.png);
 }
 .flag.flag-ba {
-    background-image: url(vendor/images/flags/ba.png);
+    background-image: url(images/flags/ba.png);
 }
 .flag.flag-bb {
-    background-image: url(vendor/images/flags/bb.png);
+    background-image: url(images/flags/bb.png);
 }
 .flag.flag-bd {
-    background-image: url(vendor/images/flags/bd.png);
+    background-image: url(images/flags/bd.png);
 }
 .flag.flag-be {
-    background-image: url(vendor/images/flags/be.png);
+    background-image: url(images/flags/be.png);
 }
 .flag.flag-bf {
-    background-image: url(vendor/images/flags/bf.png);
+    background-image: url(images/flags/bf.png);
 }
 .flag.flag-bg {
-    background-image: url(vendor/images/flags/bg.png);
+    background-image: url(images/flags/bg.png);
 }
 .flag.flag-bh {
-    background-image: url(vendor/images/flags/bh.png);
+    background-image: url(images/flags/bh.png);
 }
 .flag.flag-bi {
-    background-image: url(vendor/images/flags/bi.png);
+    background-image: url(images/flags/bi.png);
 }
 .flag.flag-bj {
-    background-image: url(vendor/images/flags/bj.png);
+    background-image: url(images/flags/bj.png);
 }
 .flag.flag-bm {
-    background-image: url(vendor/images/flags/bm.png);
+    background-image: url(images/flags/bm.png);
 }
 .flag.flag-bn {
-    background-image: url(vendor/images/flags/bn.png);
+    background-image: url(images/flags/bn.png);
 }
 .flag.flag-bo {
-    background-image: url(vendor/images/flags/bo.png);
+    background-image: url(images/flags/bo.png);
 }
 .flag.flag-br {
-    background-image: url(vendor/images/flags/br.png);
+    background-image: url(images/flags/br.png);
 }
 .flag.flag-bs {
-    background-image: url(vendor/images/flags/bs.png);
+    background-image: url(images/flags/bs.png);
 }
 .flag.flag-bt {
-    background-image: url(vendor/images/flags/bt.png);
+    background-image: url(images/flags/bt.png);
 }
 .flag.flag-bv {
-    background-image: url(vendor/images/flags/bv.png);
+    background-image: url(images/flags/bv.png);
 }
 .flag.flag-bw {
-    background-image: url(vendor/images/flags/bw.png);
+    background-image: url(images/flags/bw.png);
 }
 .flag.flag-by {
-    background-image: url(vendor/images/flags/by.png);
+    background-image: url(images/flags/by.png);
 }
 .flag.flag-bz {
-    background-image: url(vendor/images/flags/bz.png);
+    background-image: url(images/flags/bz.png);
 }
 .flag.flag-ca {
-    background-image: url(vendor/images/flags/ca.png);
+    background-image: url(images/flags/ca.png);
 }
 .flag.flag-catalonia {
-    background-image: url(vendor/images/flags/catalonia.png);
+    background-image: url(images/flags/catalonia.png);
 }
 .flag.flag-cd {
-    background-image: url(vendor/images/flags/cd.png);
+    background-image: url(images/flags/cd.png);
 }
 .flag.flag-cf {
-    background-image: url(vendor/images/flags/cf.png);
+    background-image: url(images/flags/cf.png);
 }
 .flag.flag-cg {
-    background-image: url(vendor/images/flags/cg.png);
+    background-image: url(images/flags/cg.png);
 }
 .flag.flag-ch {
-    background-image: url(vendor/images/flags/ch.png);
+    background-image: url(images/flags/ch.png);
 }
 .flag.flag-ci {
-    background-image: url(vendor/images/flags/ci.png);
+    background-image: url(images/flags/ci.png);
 }
 .flag.flag-ck {
-    background-image: url(vendor/images/flags/ck.png);
+    background-image: url(images/flags/ck.png);
 }
 .flag.flag-cl {
-    background-image: url(vendor/images/flags/cl.png);
+    background-image: url(images/flags/cl.png);
 }
 .flag.flag-cm {
-    background-image: url(vendor/images/flags/cm.png);
+    background-image: url(images/flags/cm.png);
 }
 .flag.flag-cn {
-    background-image: url(vendor/images/flags/cn.png);
+    background-image: url(images/flags/cn.png);
 }
 .flag.flag-co {
-    background-image: url(vendor/images/flags/co.png);
+    background-image: url(images/flags/co.png);
 }
 .flag.flag-cr {
-    background-image: url(vendor/images/flags/cr.png);
+    background-image: url(images/flags/cr.png);
 }
 .flag.flag-cu {
-    background-image: url(vendor/images/flags/cu.png);
+    background-image: url(images/flags/cu.png);
 }
 .flag.flag-cv {
-    background-image: url(vendor/images/flags/cv.png);
+    background-image: url(images/flags/cv.png);
 }
 .flag.flag-cw {
-    background-image: url(vendor/images/flags/cw.png);
+    background-image: url(images/flags/cw.png);
 }
 .flag.flag-cy {
-    background-image: url(vendor/images/flags/cy.png);
+    background-image: url(images/flags/cy.png);
 }
 .flag.flag-cz {
-    background-image: url(vendor/images/flags/cz.png);
+    background-image: url(images/flags/cz.png);
 }
 .flag.flag-de {
-    background-image: url(vendor/images/flags/de.png);
+    background-image: url(images/flags/de.png);
 }
 .flag.flag-dj {
-    background-image: url(vendor/images/flags/dj.png);
+    background-image: url(images/flags/dj.png);
 }
 .flag.flag-dk {
-    background-image: url(vendor/images/flags/dk.png);
+    background-image: url(images/flags/dk.png);
 }
 .flag.flag-dm {
-    background-image: url(vendor/images/flags/dm.png);
+    background-image: url(images/flags/dm.png);
 }
 .flag.flag-do {
-    background-image: url(vendor/images/flags/do.png);
+    background-image: url(images/flags/do.png);
 }
 .flag.flag-dz {
-    background-image: url(vendor/images/flags/dz.png);
+    background-image: url(images/flags/dz.png);
 }
 .flag.flag-ec {
-    background-image: url(vendor/images/flags/ec.png);
+    background-image: url(images/flags/ec.png);
 }
 .flag.flag-ee {
-    background-image: url(vendor/images/flags/ee.png);
+    background-image: url(images/flags/ee.png);
 }
 .flag.flag-eg {
-    background-image: url(vendor/images/flags/eg.png);
+    background-image: url(images/flags/eg.png);
 }
 .flag.flag-eh {
-    background-image: url(vendor/images/flags/eh.png);
+    background-image: url(images/flags/eh.png);
 }
 .flag.flag-england {
-    background-image: url(vendor/images/flags/england.png);
+    background-image: url(images/flags/england.png);
 }
 .flag.flag-er {
-    background-image: url(vendor/images/flags/er.png);
+    background-image: url(images/flags/er.png);
 }
 .flag.flag-es {
-    background-image: url(vendor/images/flags/es.png);
+    background-image: url(images/flags/es.png);
 }
 .flag.flag-et {
-    background-image: url(vendor/images/flags/et.png);
+    background-image: url(images/flags/et.png);
 }
 .flag.flag-eu {
-    background-image: url(vendor/images/flags/eu.png);
+    background-image: url(images/flags/eu.png);
 }
 .flag.flag-fi {
-    background-image: url(vendor/images/flags/fi.png);
+    background-image: url(images/flags/fi.png);
 }
 .flag.flag-fj {
-    background-image: url(vendor/images/flags/fj.png);
+    background-image: url(images/flags/fj.png);
 }
 .flag.flag-fk {
-    background-image: url(vendor/images/flags/fk.png);
+    background-image: url(images/flags/fk.png);
 }
 .flag.flag-fm {
-    background-image: url(vendor/images/flags/fm.png);
+    background-image: url(images/flags/fm.png);
 }
 .flag.flag-fo {
-    background-image: url(vendor/images/flags/fo.png);
+    background-image: url(images/flags/fo.png);
 }
 .flag.flag-fr {
-    background-image: url(vendor/images/flags/fr.png);
+    background-image: url(images/flags/fr.png);
 }
 .flag.flag-ga {
-    background-image: url(vendor/images/flags/ga.png);
+    background-image: url(images/flags/ga.png);
 }
 .flag.flag-gb {
-    background-image: url(vendor/images/flags/gb.png);
+    background-image: url(images/flags/gb.png);
 }
 .flag.flag-gd {
-    background-image: url(vendor/images/flags/gd.png);
+    background-image: url(images/flags/gd.png);
 }
 .flag.flag-ge {
-    background-image: url(vendor/images/flags/ge.png);
+    background-image: url(images/flags/ge.png);
 }
 .flag.flag-gf {
-    background-image: url(vendor/images/flags/gf.png);
+    background-image: url(images/flags/gf.png);
 }
 .flag.flag-gg {
-    background-image: url(vendor/images/flags/gg.png);
+    background-image: url(images/flags/gg.png);
 }
 .flag.flag-gh {
-    background-image: url(vendor/images/flags/gh.png);
+    background-image: url(images/flags/gh.png);
 }
 .flag.flag-gi {
-    background-image: url(vendor/images/flags/gi.png);
+    background-image: url(images/flags/gi.png);
 }
 .flag.flag-gl {
-    background-image: url(vendor/images/flags/gl.png);
+    background-image: url(images/flags/gl.png);
 }
 .flag.flag-gm {
-    background-image: url(vendor/images/flags/gm.png);
+    background-image: url(images/flags/gm.png);
 }
 .flag.flag-gn {
-    background-image: url(vendor/images/flags/gn.png);
+    background-image: url(images/flags/gn.png);
 }
 .flag.flag-gp {
-    background-image: url(vendor/images/flags/gp.png);
+    background-image: url(images/flags/gp.png);
 }
 .flag.flag-gq {
-    background-image: url(vendor/images/flags/gq.png);
+    background-image: url(images/flags/gq.png);
 }
 .flag.flag-gr {
-    background-image: url(vendor/images/flags/gr.png);
+    background-image: url(images/flags/gr.png);
 }
 .flag.flag-gs {
-    background-image: url(vendor/images/flags/gs.png);
+    background-image: url(images/flags/gs.png);
 }
 .flag.flag-gt {
-    background-image: url(vendor/images/flags/gt.png);
+    background-image: url(images/flags/gt.png);
 }
 .flag.flag-gu {
-    background-image: url(vendor/images/flags/gu.png);
+    background-image: url(images/flags/gu.png);
 }
 .flag.flag-gw {
-    background-image: url(vendor/images/flags/gw.png);
+    background-image: url(images/flags/gw.png);
 }
 .flag.flag-gy {
-    background-image: url(vendor/images/flags/gy.png);
+    background-image: url(images/flags/gy.png);
 }
 .flag.flag-hk {
-    background-image: url(vendor/images/flags/hk.png);
+    background-image: url(images/flags/hk.png);
 }
 .flag.flag-hm {
-    background-image: url(vendor/images/flags/hm.png);
+    background-image: url(images/flags/hm.png);
 }
 .flag.flag-hn {
-    background-image: url(vendor/images/flags/hn.png);
+    background-image: url(images/flags/hn.png);
 }
 .flag.flag-hr {
-    background-image: url(vendor/images/flags/hr.png);
+    background-image: url(images/flags/hr.png);
 }
 .flag.flag-ht {
-    background-image: url(vendor/images/flags/ht.png);
+    background-image: url(images/flags/ht.png);
 }
 .flag.flag-hu {
-    background-image: url(vendor/images/flags/hu.png);
+    background-image: url(images/flags/hu.png);
 }
 .flag.flag-ic {
-    background-image: url(vendor/images/flags/ic.png);
+    background-image: url(images/flags/ic.png);
 }
 .flag.flag-id {
-    background-image: url(vendor/images/flags/id.png);
+    background-image: url(images/flags/id.png);
 }
 .flag.flag-ie {
-    background-image: url(vendor/images/flags/ie.png);
+    background-image: url(images/flags/ie.png);
 }
 .flag.flag-il {
-    background-image: url(vendor/images/flags/il.png);
+    background-image: url(images/flags/il.png);
 }
 .flag.flag-im {
-    background-image: url(vendor/images/flags/im.png);
+    background-image: url(images/flags/im.png);
 }
 .flag.flag-in {
-    background-image: url(vendor/images/flags/in.png);
+    background-image: url(images/flags/in.png);
 }
 .flag.flag-io {
-    background-image: url(vendor/images/flags/io.png);
+    background-image: url(images/flags/io.png);
 }
 .flag.flag-iq {
-    background-image: url(vendor/images/flags/iq.png);
+    background-image: url(images/flags/iq.png);
 }
 .flag.flag-ir {
-    background-image: url(vendor/images/flags/ir.png);
+    background-image: url(images/flags/ir.png);
 }
 .flag.flag-is {
-    background-image: url(vendor/images/flags/is.png);
+    background-image: url(images/flags/is.png);
 }
 .flag.flag-it {
-    background-image: url(vendor/images/flags/it.png);
+    background-image: url(images/flags/it.png);
 }
 .flag.flag-je {
-    background-image: url(vendor/images/flags/je.png);
+    background-image: url(images/flags/je.png);
 }
 .flag.flag-jm {
-    background-image: url(vendor/images/flags/jm.png);
+    background-image: url(images/flags/jm.png);
 }
 .flag.flag-jo {
-    background-image: url(vendor/images/flags/jo.png);
+    background-image: url(images/flags/jo.png);
 }
 .flag.flag-jp {
-    background-image: url(vendor/images/flags/jp.png);
+    background-image: url(images/flags/jp.png);
 }
 .flag.flag-ke {
-    background-image: url(vendor/images/flags/ke.png);
+    background-image: url(images/flags/ke.png);
 }
 .flag.flag-kg {
-    background-image: url(vendor/images/flags/kg.png);
+    background-image: url(images/flags/kg.png);
 }
 .flag.flag-kh {
-    background-image: url(vendor/images/flags/kh.png);
+    background-image: url(images/flags/kh.png);
 }
 .flag.flag-ki {
-    background-image: url(vendor/images/flags/ki.png);
+    background-image: url(images/flags/ki.png);
 }
 .flag.flag-km {
-    background-image: url(vendor/images/flags/km.png);
+    background-image: url(images/flags/km.png);
 }
 .flag.flag-kn {
-    background-image: url(vendor/images/flags/kn.png);
+    background-image: url(images/flags/kn.png);
 }
 .flag.flag-kp {
-    background-image: url(vendor/images/flags/kp.png);
+    background-image: url(images/flags/kp.png);
 }
 .flag.flag-kr {
-    background-image: url(vendor/images/flags/kr.png);
+    background-image: url(images/flags/kr.png);
 }
 .flag.flag-kurdistan {
-    background-image: url(vendor/images/flags/kurdistan.png);
+    background-image: url(images/flags/kurdistan.png);
 }
 .flag.flag-kw {
-    background-image: url(vendor/images/flags/kw.png);
+    background-image: url(images/flags/kw.png);
 }
 .flag.flag-ky {
-    background-image: url(vendor/images/flags/ky.png);
+    background-image: url(images/flags/ky.png);
 }
 .flag.flag-kz {
-    background-image: url(vendor/images/flags/kz.png);
+    background-image: url(images/flags/kz.png);
 }
 .flag.flag-la {
-    background-image: url(vendor/images/flags/la.png);
+    background-image: url(images/flags/la.png);
 }
 .flag.flag-lb {
-    background-image: url(vendor/images/flags/lb.png);
+    background-image: url(images/flags/lb.png);
 }
 .flag.flag-lc {
-    background-image: url(vendor/images/flags/lc.png);
+    background-image: url(images/flags/lc.png);
 }
 .flag.flag-li {
-    background-image: url(vendor/images/flags/li.png);
+    background-image: url(images/flags/li.png);
 }
 .flag.flag-lk {
-    background-image: url(vendor/images/flags/lk.png);
+    background-image: url(images/flags/lk.png);
 }
 .flag.flag-lr {
-    background-image: url(vendor/images/flags/lr.png);
+    background-image: url(images/flags/lr.png);
 }
 .flag.flag-ls {
-    background-image: url(vendor/images/flags/ls.png);
+    background-image: url(images/flags/ls.png);
 }
 .flag.flag-lt {
-    background-image: url(vendor/images/flags/lt.png);
+    background-image: url(images/flags/lt.png);
 }
 .flag.flag-lu {
-    background-image: url(vendor/images/flags/lu.png);
+    background-image: url(images/flags/lu.png);
 }
 .flag.flag-lv {
-    background-image: url(vendor/images/flags/lv.png);
+    background-image: url(images/flags/lv.png);
 }
 .flag.flag-ly {
-    background-image: url(vendor/images/flags/ly.png);
+    background-image: url(images/flags/ly.png);
 }
 .flag.flag-ma {
-    background-image: url(vendor/images/flags/ma.png);
+    background-image: url(images/flags/ma.png);
 }
 .flag.flag-mc {
-    background-image: url(vendor/images/flags/mc.png);
+    background-image: url(images/flags/mc.png);
 }
 .flag.flag-md {
-    background-image: url(vendor/images/flags/md.png);
+    background-image: url(images/flags/md.png);
 }
-.flag.flag-me { background-image: url(vendor/images/flags/me.png); }
+.flag.flag-me { background-image: url(images/flags/me.png); }
 .flag.flag-mg {
-    background-image: url(vendor/images/flags/mg.png);
+    background-image: url(images/flags/mg.png);
 }
 .flag.flag-mh {
-    background-image: url(vendor/images/flags/mh.png);
+    background-image: url(images/flags/mh.png);
 }
 .flag.flag-mk {
-    background-image: url(vendor/images/flags/mk.png);
+    background-image: url(images/flags/mk.png);
 }
 .flag.flag-ml {
-    background-image: url(vendor/images/flags/ml.png);
+    background-image: url(images/flags/ml.png);
 }
 .flag.flag-mm {
-    background-image: url(vendor/images/flags/mm.png);
+    background-image: url(images/flags/mm.png);
 }
 .flag.flag-mn {
-    background-image: url(vendor/images/flags/mn.png);
+    background-image: url(images/flags/mn.png);
 }
 .flag.flag-mo {
-    background-image: url(vendor/images/flags/mo.png);
+    background-image: url(images/flags/mo.png);
 }
 .flag.flag-mp {
-    background-image: url(vendor/images/flags/mp.png);
+    background-image: url(images/flags/mp.png);
 }
 .flag.flag-mq {
-    background-image: url(vendor/images/flags/mq.png);
+    background-image: url(images/flags/mq.png);
 }
 .flag.flag-mr {
-    background-image: url(vendor/images/flags/mr.png);
+    background-image: url(images/flags/mr.png);
 }
 .flag.flag-ms {
-    background-image: url(vendor/images/flags/ms.png);
+    background-image: url(images/flags/ms.png);
 }
 .flag.flag-mt {
-    background-image: url(vendor/images/flags/mt.png);
+    background-image: url(images/flags/mt.png);
 }
 .flag.flag-mu {
-    background-image: url(vendor/images/flags/mu.png);
+    background-image: url(images/flags/mu.png);
 }
 .flag.flag-mv {
-    background-image: url(vendor/images/flags/mv.png);
+    background-image: url(images/flags/mv.png);
 }
 .flag.flag-mw {
-    background-image: url(vendor/images/flags/mw.png);
+    background-image: url(images/flags/mw.png);
 }
 .flag.flag-mx {
-    background-image: url(vendor/images/flags/mx.png);
+    background-image: url(images/flags/mx.png);
 }
 .flag.flag-my {
-    background-image: url(vendor/images/flags/my.png);
+    background-image: url(images/flags/my.png);
 }
 .flag.flag-mz {
-    background-image: url(vendor/images/flags/mz.png);
+    background-image: url(images/flags/mz.png);
 }
 .flag.flag-na {
-    background-image: url(vendor/images/flags/na.png);
+    background-image: url(images/flags/na.png);
 }
 .flag.flag-nc {
-    background-image: url(vendor/images/flags/nc.png);
+    background-image: url(images/flags/nc.png);
 }
 .flag.flag-ne {
-    background-image: url(vendor/images/flags/ne.png);
+    background-image: url(images/flags/ne.png);
 }
 .flag.flag-nf {
-    background-image: url(vendor/images/flags/nf.png);
+    background-image: url(images/flags/nf.png);
 }
 .flag.flag-ng {
-    background-image: url(vendor/images/flags/ng.png);
+    background-image: url(images/flags/ng.png);
 }
 .flag.flag-ni {
-    background-image: url(vendor/images/flags/ni.png);
+    background-image: url(images/flags/ni.png);
 }
 .flag.flag-nl {
-    background-image: url(vendor/images/flags/nl.png);
+    background-image: url(images/flags/nl.png);
 }
 .flag.flag-no {
-    background-image: url(vendor/images/flags/no.png);
+    background-image: url(images/flags/no.png);
 }
 .flag.flag-np {
-    background-image: url(vendor/images/flags/np.png);
+    background-image: url(images/flags/np.png);
 }
 .flag.flag-nr {
-    background-image: url(vendor/images/flags/nr.png);
+    background-image: url(images/flags/nr.png);
 }
 .flag.flag-nu {
-    background-image: url(vendor/images/flags/nu.png);
+    background-image: url(images/flags/nu.png);
 }
 .flag.flag-nz {
-    background-image: url(vendor/images/flags/nz.png);
+    background-image: url(images/flags/nz.png);
 }
 .flag.flag-om {
-    background-image: url(vendor/images/flags/om.png);
+    background-image: url(images/flags/om.png);
 }
 .flag.flag-pa {
-    background-image: url(vendor/images/flags/pa.png);
+    background-image: url(images/flags/pa.png);
 }
 .flag.flag-pe {
-    background-image: url(vendor/images/flags/pe.png);
+    background-image: url(images/flags/pe.png);
 }
 .flag.flag-pf {
-    background-image: url(vendor/images/flags/pf.png);
+    background-image: url(images/flags/pf.png);
 }
 .flag.flag-pg {
-    background-image: url(vendor/images/flags/pg.png);
+    background-image: url(images/flags/pg.png);
 }
 .flag.flag-ph {
-    background-image: url(vendor/images/flags/ph.png);
+    background-image: url(images/flags/ph.png);
 }
 .flag.flag-pk {
-    background-image: url(vendor/images/flags/pk.png);
+    background-image: url(images/flags/pk.png);
 }
 .flag.flag-pl {
-    background-image: url(vendor/images/flags/pl.png);
+    background-image: url(images/flags/pl.png);
 }
 .flag.flag-pm {
-    background-image: url(vendor/images/flags/pm.png);
+    background-image: url(images/flags/pm.png);
 }
 .flag.flag-pn {
-    background-image: url(vendor/images/flags/pn.png);
+    background-image: url(images/flags/pn.png);
 }
 .flag.flag-pr {
-    background-image: url(vendor/images/flags/pr.png);
+    background-image: url(images/flags/pr.png);
 }
 .flag.flag-ps {
-    background-image: url(vendor/images/flags/ps.png);
+    background-image: url(images/flags/ps.png);
 }
 .flag.flag-pt {
-    background-image: url(vendor/images/flags/pt.png);
+    background-image: url(images/flags/pt.png);
 }
 .flag.flag-pw {
-    background-image: url(vendor/images/flags/pw.png);
+    background-image: url(images/flags/pw.png);
 }
 .flag.flag-py {
-    background-image: url(vendor/images/flags/py.png);
+    background-image: url(images/flags/py.png);
 }
 .flag.flag-qa {
-    background-image: url(vendor/images/flags/qa.png);
+    background-image: url(images/flags/qa.png);
 }
 .flag.flag-re {
-    background-image: url(vendor/images/flags/re.png);
+    background-image: url(images/flags/re.png);
 }
 .flag.flag-ro {
-    background-image: url(vendor/images/flags/ro.png);
+    background-image: url(images/flags/ro.png);
 }
 .flag.flag-rs {
-    background-image: url(vendor/images/flags/rs.png);
+    background-image: url(images/flags/rs.png);
 }
 .flag.flag-ru {
-    background-image: url(vendor/images/flags/ru.png);
+    background-image: url(images/flags/ru.png);
 }
 .flag.flag-rw {
-    background-image: url(vendor/images/flags/rw.png);
+    background-image: url(images/flags/rw.png);
 }
 .flag.flag-sa {
-    background-image: url(vendor/images/flags/sa.png);
+    background-image: url(images/flags/sa.png);
 }
 .flag.flag-sb {
-    background-image: url(vendor/images/flags/sb.png);
+    background-image: url(images/flags/sb.png);
 }
 .flag.flag-sc {
-    background-image: url(vendor/images/flags/sc.png);
+    background-image: url(images/flags/sc.png);
 }
 .flag.flag-scotland {
-    background-image: url(vendor/images/flags/scotland.png);
+    background-image: url(images/flags/scotland.png);
 }
 .flag.flag-sd {
-    background-image: url(vendor/images/flags/sd.png);
+    background-image: url(images/flags/sd.png);
 }
 .flag.flag-se {
-    background-image: url(vendor/images/flags/se.png);
+    background-image: url(images/flags/se.png);
 }
 .flag.flag-sg {
-    background-image: url(vendor/images/flags/sg.png);
+    background-image: url(images/flags/sg.png);
 }
 .flag.flag-sh {
-    background-image: url(vendor/images/flags/sh.png);
+    background-image: url(images/flags/sh.png);
 }
 .flag.flag-si {
-    background-image: url(vendor/images/flags/si.png);
+    background-image: url(images/flags/si.png);
 }
 .flag.flag-sk {
-    background-image: url(vendor/images/flags/sk.png);
+    background-image: url(images/flags/sk.png);
 }
 .flag.flag-sl {
-    background-image: url(vendor/images/flags/sl.png);
+    background-image: url(images/flags/sl.png);
 }
 .flag.flag-sm {
-    background-image: url(vendor/images/flags/sm.png);
+    background-image: url(images/flags/sm.png);
 }
 .flag.flag-sn {
-    background-image: url(vendor/images/flags/sn.png);
+    background-image: url(images/flags/sn.png);
 }
 .flag.flag-so {
-    background-image: url(vendor/images/flags/so.png);
+    background-image: url(images/flags/so.png);
 }
 .flag.flag-somaliland {
-    background-image: url(vendor/images/flags/somaliland.png);
+    background-image: url(images/flags/somaliland.png);
 }
 .flag.flag-sr {
-    background-image: url(vendor/images/flags/sr.png);
+    background-image: url(images/flags/sr.png);
 }
 .flag.flag-ss {
-    background-image: url(vendor/images/flags/ss.png);
+    background-image: url(images/flags/ss.png);
 }
 .flag.flag-st {
-    background-image: url(vendor/images/flags/st.png);
+    background-image: url(images/flags/st.png);
 }
 .flag.flag-sv {
-    background-image: url(vendor/images/flags/sv.png);
+    background-image: url(images/flags/sv.png);
 }
 .flag.flag-sx {
-    background-image: url(vendor/images/flags/sx.png);
+    background-image: url(images/flags/sx.png);
 }
 .flag.flag-sy {
-    background-image: url(vendor/images/flags/sy.png);
+    background-image: url(images/flags/sy.png);
 }
 .flag.flag-sz {
-    background-image: url(vendor/images/flags/sz.png);
+    background-image: url(images/flags/sz.png);
 }
 .flag.flag-tc {
-    background-image: url(vendor/images/flags/tc.png);
+    background-image: url(images/flags/tc.png);
 }
 .flag.flag-td {
-    background-image: url(vendor/images/flags/td.png);
+    background-image: url(images/flags/td.png);
 }
 .flag.flag-tf {
-    background-image: url(vendor/images/flags/tf.png);
+    background-image: url(images/flags/tf.png);
 }
 .flag.flag-tg {
-    background-image: url(vendor/images/flags/tg.png);
+    background-image: url(images/flags/tg.png);
 }
 .flag.flag-th {
-    background-image: url(vendor/images/flags/th.png);
+    background-image: url(images/flags/th.png);
 }
 .flag.flag-tj {
-    background-image: url(vendor/images/flags/tj.png);
+    background-image: url(images/flags/tj.png);
 }
 .flag.flag-tk {
-    background-image: url(vendor/images/flags/tk.png);
+    background-image: url(images/flags/tk.png);
 }
 .flag.flag-tl {
-    background-image: url(vendor/images/flags/tl.png);
+    background-image: url(images/flags/tl.png);
 }
 .flag.flag-tm {
-    background-image: url(vendor/images/flags/tm.png);
+    background-image: url(images/flags/tm.png);
 }
 .flag.flag-tn {
-    background-image: url(vendor/images/flags/tn.png);
+    background-image: url(images/flags/tn.png);
 }
 .flag.flag-to {
-    background-image: url(vendor/images/flags/to.png);
+    background-image: url(images/flags/to.png);
 }
 .flag.flag-tr {
-    background-image: url(vendor/images/flags/tr.png);
+    background-image: url(images/flags/tr.png);
 }
 .flag.flag-tt {
-    background-image: url(vendor/images/flags/tt.png);
+    background-image: url(images/flags/tt.png);
 }
 .flag.flag-tv {
-    background-image: url(vendor/images/flags/tv.png);
+    background-image: url(images/flags/tv.png);
 }
 .flag.flag-tw {
-    background-image: url(vendor/images/flags/tw.png);
+    background-image: url(images/flags/tw.png);
 }
 .flag.flag-tz {
-    background-image: url(vendor/images/flags/tz.png);
+    background-image: url(images/flags/tz.png);
 }
 .flag.flag-ua {
-    background-image: url(vendor/images/flags/ua.png);
+    background-image: url(images/flags/ua.png);
 }
 .flag.flag-ug {
-    background-image: url(vendor/images/flags/ug.png);
+    background-image: url(images/flags/ug.png);
 }
 .flag.flag-um {
-    background-image: url(vendor/images/flags/um.png);
+    background-image: url(images/flags/um.png);
 }
 .flag.flag-us {
-    background-image: url(vendor/images/flags/us.png);
+    background-image: url(images/flags/us.png);
 }
 .flag.flag-uy {
-    background-image: url(vendor/images/flags/uy.png);
+    background-image: url(images/flags/uy.png);
 }
 .flag.flag-uz {
-    background-image: url(vendor/images/flags/uz.png);
+    background-image: url(images/flags/uz.png);
 }
 .flag.flag-va {
-    background-image: url(vendor/images/flags/va.png);
+    background-image: url(images/flags/va.png);
 }
 .flag.flag-vc {
-    background-image: url(vendor/images/flags/vc.png);
+    background-image: url(images/flags/vc.png);
 }
 .flag.flag-ve {
-    background-image: url(vendor/images/flags/ve.png);
+    background-image: url(images/flags/ve.png);
 }
 .flag.flag-vg {
-    background-image: url(vendor/images/flags/vg.png);
+    background-image: url(images/flags/vg.png);
 }
 .flag.flag-vi {
-    background-image: url(vendor/images/flags/vi.png);
+    background-image: url(images/flags/vi.png);
 }
 .flag.flag-vn {
-    background-image: url(vendor/images/flags/vn.png);
+    background-image: url(images/flags/vn.png);
 }
 .flag.flag-vu {
-    background-image: url(vendor/images/flags/vu.png);
+    background-image: url(images/flags/vu.png);
 }
 .flag.flag-wales {
-    background-image: url(vendor/images/flags/wales.png);
+    background-image: url(images/flags/wales.png);
 }
 .flag.flag-wf {
-    background-image: url(vendor/images/flags/wf.png);
+    background-image: url(images/flags/wf.png);
 }
 .flag.flag-ws {
-    background-image: url(vendor/images/flags/ws.png);
+    background-image: url(images/flags/ws.png);
 }
 .flag.flag-ye {
-    background-image: url(vendor/images/flags/ye.png);
+    background-image: url(images/flags/ye.png);
 }
 .flag.flag-yt {
-    background-image: url(vendor/images/flags/yt.png);
+    background-image: url(images/flags/yt.png);
 }
 .flag.flag-za {
-    background-image: url(vendor/images/flags/za.png);
+    background-image: url(images/flags/za.png);
 }
 .flag.flag-zanzibar {
-    background-image: url(vendor/images/flags/zanzibar.png);
+    background-image: url(images/flags/zanzibar.png);
 }
 .flag.flag-zm {
-    background-image: url(vendor/images/flags/zm.png);
+    background-image: url(images/flags/zm.png);
 }
 .flag.flag-zw {
-    background-image: url(vendor/images/flags/zw.png);
+    background-image: url(images/flags/zw.png);
 }
 
 /*
@@ -1792,6 +1799,48 @@ input[type="radio"] {
 
 /*
 ===================================================================
+!Hero Unit
+===================================================================
+*/
+.hero {
+    background-color: #eee;
+    color           : inherit;
+    margin-bottom   : 30px;
+    padding         : 30px;
+}
+
+.hero h1,
+.hero .h1 {
+    color: inherit;
+}
+
+.hero p {
+    font-size    : 21px;
+    font-weight  : 200;
+    margin-bottom: 15px;
+}
+
+.hero hr {
+    border-top-color: #d5d5d5
+}
+
+.hero .container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 48px;
+        padding-top   : 48px;
+    }
+    .hero h1,
+    .hero .h1 {
+        font-size: 63px;
+    }
+}
+
+/*
+===================================================================
 !Labels and !Badges
 ===================================================================
 */
@@ -2045,6 +2094,48 @@ a.badge.badge-white:hover {
         font-size  : .85em;
         font-weight: normal;
     }
+
+/*
+===================================================================
+!Hero Unit
+===================================================================
+*/
+.hero {
+    background-color: #eee;
+    color           : inherit;
+    margin-bottom   : 30px;
+    padding         : 30px;
+}
+
+.hero h1,
+.hero .h1 {
+    color: inherit;
+}
+
+.hero p {
+    font-size    : 21px;
+    font-weight  : 200;
+    margin-bottom: 15px;
+}
+
+.hero hr {
+    border-top-color: #d5d5d5
+}
+
+.hero .container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 48px;
+        padding-top   : 48px;
+    }
+    .hero h1,
+    .hero .h1 {
+        font-size: 63px;
+    }
+}
 
 /*
 ===================================================================
