@@ -33,9 +33,9 @@
 
     // automatically add icons to menu items
     $(".menu > li").has("ul").each(function(){
-        $("> a:not(.no-fa)",this).append('<i class="fa fa-caret-down ml5p op50"></i>');
+        $("> a:not(.no-fa)",this).append('<i class="fa fa-angle-down"></i>');
         $("ul > li",this).has("ul").each(function(){
-            $("> a:not(.no-fa)",this).append('<i class="fa fa-caret-right"></i>')
+            $("> a:not(.no-fa)",this).append('<i class="fa fa-angle-right"></i>')
         })
     })
 

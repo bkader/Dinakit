@@ -2163,16 +2163,6 @@ a.badge.badge-white:hover {
     top     : 0;
 }
 
-.menu > li > ul > li > a .fa {
-    color  : #333 !important;
-    display: inline-block;
-    float  : right;
-    opacity: .3;
-}
-.menu > li > ul > li > a:hover .fa {
-    opacity: .75;
-}
-
 .menu > li {
     *display: inline;
     *zoom   : 1;
@@ -2188,6 +2178,23 @@ a.badge.badge-white:hover {
     display: inline-block;
     padding: 7px 16px;
 }
+
+.menu > li > a > .fa {
+    margin-left: 5px !important;
+    opacity    : .5;
+    padding    : 0;
+}
+
+.menu > li > ul > li > a .fa {
+    color  : #333 !important;
+    display: inline-block;
+    float  : right;
+    opacity: .3;
+}
+.menu > li > ul > li > a:hover .fa {
+    opacity: .75;
+}
+
 .menu > li > ul {
             box-shadow: 0px 2px 3px 0px rgba(0,0,0,.3);
          -o-box-shadow: 0px 2px 3px 0px rgba(0,0,0,.3);
@@ -2262,12 +2269,14 @@ a.badge.badge-white:hover {
     background-color  : #fff;
     display           : none;
     list-style        : none;
-    margin            : 0;
+    margin            : -4px 0 0;
     min-width         : 180px;
-    padding           : 0;
+    padding           : 4px 0;
     position          : absolute;
-    top               : 0; left: 100%;
+    top               : 0;
+    left              : 100%;
     visibility        : hidden;
+    z-index           : 102;
 }
 
 .menu > li > ul > li:hover > ul {
@@ -2287,7 +2296,7 @@ a.badge.badge-white:hover {
 }
 
 .menu > li > ul li.divider {
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0,0,0,.025);
     margin    : 4px 0;
 }
 
