@@ -8,12 +8,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link rel="stylesheet" href="http://cdn.itemplat.es/dinakit/css/dinakit.min.css">
+        <!--link rel="stylesheet" href="http://cdn.itemplat.es/dinakit/css/dinakit.min.css"-->
+        <link rel="stylesheet" href="http://localhost/dinakit/css/dinakit.css">
         <link rel="stylesheet" href="css/docs.css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js">
 
         <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
         <![endif]-->
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
@@ -23,6 +24,25 @@
         <link rel="shortcut icon" href="img/favicon.png">
     </head>
     <body>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="menu">
+                            <li><a class="scroll" href="#top">Home</a></li>
+                            <li><a class="scroll" href="#alerts">Alerts</a></li>
+                            <li><a class="scroll" href="#box">Box</a></li>
+                            <li><a class="scroll" href="#breadcrumb">Breadcrumb</a></li>
+                            <li><a class="scroll" href="#browsers">Browsers</a></li>
+                            <li><a class="scroll" href="#buttons">Buttons</a></li>
+                            <li><a class="scroll" href="#flags">Flags</a></li>
+                            <li><a class="scroll" href="#forms">Forms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         
         <div class="container">
 
@@ -30,11 +50,12 @@
                 <div class="hero text-center">
                     <h1>Dinakit Framework</h1>
                     <p>Documentation will be added <span class="test-modal button button-green"><i class="fa fa-thumbs-up"></i> Later</span></p>
-                    <hr>
+                    <br>
                     <p><a class="button button-blue" href="http://go.itemplat.es/DinaKitGH"><i class="fa fa-github"></i> github repository</a></p>
                 </div>
             </div>
-            <div class="row">
+
+            <div class="row mt2e" id="top">
                 <div class="col-12 text-center">
                     <p>Made with love and passion by <a href="http://iangraphics.dz/" target="_blank">IanGraphics&trade;</a></p>
                     <p>
@@ -45,10 +66,313 @@
                 </div>
             </div>
 
+            <!-- alerts -->
+            <div class="row mt2e" id="alerts">
+                <div class="col-12">
+                    <h3>Alerts <small><code>class="alert"</code></small></h3>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="alert m1e">
+                        <a href="#" class="alert-close"><i class="fa fa-times"></i></a>
+                        .alert <em>or</em> .alert.alert-default
+                    </div>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-danger m1e">
+                        <a href="#" class="alert-close"><i class="fa fa-times"></i></a>
+                        .alert.alert-danger
+                    </div>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-info m1e">
+                        <a href="#" class="alert-close"><i class="fa fa-times"></i></a>
+                        .alert.alert-info
+                    </div>
+                    <div>&nbsp;</div>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-success m1e">
+                        <a href="#" class="alert-close"><i class="fa fa-times"></i></a>
+                        .alert.alert-success
+                    </div>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+            <!-- end of alerts -->
+
+
+            <!-- box -->
+            <div class="row mt2e" id="box">
+                <div class="col-12">
+                    <h3>Boxes</h3>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="box m5p">
+                        <div class="box-heading">
+                            <img src="http://placehold.it/50x50" class="box-media">
+                            <h4>Heading 4</h4>
+                            <small>This is <code>small</code> tag</small>
+                            <div class="box-action">
+                                <ul class="menu menu-right">
+                                    <li>
+                                        <a href="#"></a>
+                                        <ul>
+                                            <li><a href="#">Action One</a></li>
+                                            <li clas="divider"></li>
+                                            <li><a href="#">Action Two</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-tag">default</div>
+                        </div>
+                        <div class="box-body">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="box-footer">
+                            This is the box footer
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="box m5p">
+                        <div class="box-heading">
+                            <img src="http://placehold.it/50x50" class="box-media">
+                            <h4>Heading 4</h4>
+                            <small>This is <code>small</code> tag</small>
+                            <div class="box-action">
+                                <ul class="menu menu-right">
+                                    <li>
+                                        <a href="#"></a>
+                                        <ul>
+                                            <li><a href="#">Action One</a></li>
+                                            <li clas="divider"></li>
+                                            <li><a href="#">Action Two</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-tag tag-purple">purple</div>
+                        </div>
+                        <div class="box-body">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="box-footer">
+                            This is the box footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of box -->
+
+            <!-- breadcrumb -->
+            <div class="row mt2e" id="breadcrumb">
+                <div class="col-12">
+                    <h3>Breadcrumb</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="background-color:#e5e5e5;">
+                    <ul class="breadcrumb mt10p">
+                        <li><a href="#">First</a></li>
+                        <li><a href="#">Second</a></li>
+                        <li><a href="#">Third</a></li>
+                        <li class="active"><span>Active</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of breadcrumb -->
+
+            <!-- browsers -->
+            <div class="row mt2e" id="browser">
+                <div class="col-12">
+                    <h3>Browser Icons <small class="float-right"><code>&lt;i class="browser browser-{...}"&gt;&lt;/i&gt;</code></small></h3>
+                </div>
+            </div>
+            <div class="row mt2e" id="browsers">
+                <div class="col-12">
+                    <ul>
+                        <li><i class="browser browser-android"></i> Android</li>
+                        <li><i class="browser browser-chrome"></i> Chrome</li>
+                        <li><i class="browser browser-firefox"></i> Firefox</li>
+                        <li><i class="browser browser-ie"></i> Internet</li>
+                        <li><i class="browser browser-netscape"></i> Netscape</li>
+                        <li><i class="browser browser-opera"></i> Opera</li>
+                        <li><i class="browser browser-safari"></i> Safari</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of browsers -->
+
+            <!-- buttons -->
+            <div class="row mt2e" id="buttons">
+                <div class="col-12"><h3>Buttons</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="button button-default button-xlarge" href="#">Default</a>
+                    <a class="button button-purple button-xlarge" href="#">Purle</a>
+                    <a class="button button-blue button-xlarge" href="#">Blue</a>
+                    <a class="button button-green button-xlarge" href="#">Green</a>
+                    <a class="button button-orange button-xlarge" href="#">Orange</a>
+                    <a class="button button-red button-xlarge" href="#">Red</a>
+                    <a class="button button-pink button-xlarge" href="#">Pink</a>
+                    <a class="button button-black button-xlarge" href="#">Black</a>
+                    <a class="button button-white button-xlarge" href="#">White</a>
+                    <a class="button button-link button-xlarge" href="#">Link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="button button-default button-large" href="#">Default</a>
+                    <a class="button button-purple button-large" href="#">Purle</a>
+                    <a class="button button-blue button-large" href="#">Blue</a>
+                    <a class="button button-green button-large" href="#">Green</a>
+                    <a class="button button-orange button-large" href="#">Orange</a>
+                    <a class="button button-red button-large" href="#">Red</a>
+                    <a class="button button-pink button-large" href="#">Pink</a>
+                    <a class="button button-black button-large" href="#">Black</a>
+                    <a class="button button-white button-large" href="#">White</a>
+                    <a class="button button-link button-large" href="#">Link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="button button-default" href="#">Default</a>
+                    <a class="button button-purple" href="#">Purle</a>
+                    <a class="button button-blue" href="#">Blue</a>
+                    <a class="button button-green" href="#">Green</a>
+                    <a class="button button-orange" href="#">Orange</a>
+                    <a class="button button-red" href="#">Red</a>
+                    <a class="button button-pink" href="#">Pink</a>
+                    <a class="button button-black" href="#">Black</a>
+                    <a class="button button-white" href="#">White</a>
+                    <a class="button button-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="button button-default button-small" href="#">Default</a>
+                    <a class="button button-purple button-small" href="#">Purle</a>
+                    <a class="button button-blue button-small" href="#">Blue</a>
+                    <a class="button button-green button-small" href="#">Green</a>
+                    <a class="button button-orange button-small" href="#">Orange</a>
+                    <a class="button button-red button-small" href="#">Red</a>
+                    <a class="button button-pink button-small" href="#">Pink</a>
+                    <a class="button button-black button-small" href="#">Black</a>
+                    <a class="button button-white button-small" href="#">White</a>
+                    <a class="button button-link button-small" href="#">Link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="button button-default button-mini" href="#">Default</a>
+                    <a class="button button-purple button-mini" href="#">Purle</a>
+                    <a class="button button-blue button-mini" href="#">Blue</a>
+                    <a class="button button-green button-mini" href="#">Green</a>
+                    <a class="button button-orange button-mini" href="#">Orange</a>
+                    <a class="button button-red button-mini" href="#">Red</a>
+                    <a class="button button-pink button-mini" href="#">Pink</a>
+                    <a class="button button-black button-mini" href="#">Black</a>
+                    <a class="button button-white button-mini" href="#">White</a>
+                    <a class="button button-link button-mini" href="#">Link</a>
+                </div>
+            </div>
+            <div class="row mt1e">
+                <div class="col-12">
+                    <h4>Button Groups <small>Single button classes when applied to button groups, it affects all children</small></h4>
+                    <br>
+                </div>
+                <div class="col-12">
+                    <div class="button-grp">
+                        <a class="button" href="#">Default</a>
+                        <a class="button button-red" href="#">Red</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Default</a>
+                        <a class="button" href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end of buttons -->
+
+            <!-- flags -->
+            <div class="row mt2e" id="flags">
+                <div class="col-12">
+                    <h3>Flags</h3>
+                    <br>
+                    <p>Simply use <code>&lt;i class="flag flag-{..}&gt;&lt;/i&gt;</code></p>
+                    <p>Examples: <code>flag flag-dz</code>: <i class="flag flag-dz"></i></p>
+                </div>
+            </div>
+            <div class="row"></div>
+            <!-- end of flags -->
+
+
+            <!-- forms -->
+            <div class="row mt2e" id="forms">
+                <div class="col-12">
+                    <h3>Forms &amp; Inputs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <form class="form-stacked m5p">
+                        <div class="form-group">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label><input type="checkbox"> Checkbox</label>
+                            <button class="button button-blue float-right">Button</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-8">
+                    <form class="form-aligned m5p">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <div class="form-field">
+                                <input type="text" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="form-field">
+                                <input type="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <div class="form-field">
+                                <button class="button button-blue">Button</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end of forms -->
+
         </div>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="http://cdn.itemplat.es/dinakit/js/dinakit.min.js"></script>
+        <script src="http://localhost/dinakit/js/dinakit.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

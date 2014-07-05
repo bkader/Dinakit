@@ -135,8 +135,8 @@ hr {
             color   : inherit;
             padding : 2px 3px;
             position: absolute;
-            right   : 10px;
-            top     : 5px;
+            right   : 0;
+            top     : 0;
         }
         .box > .box-heading > .box-action > a:link,
         .box > .box-heading > .box-action > a:visited {
@@ -154,17 +154,15 @@ hr {
         }
 
         .box > .box-heading > .box-tag {
-                    border-radius: 2px;
-               -moz-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            background-color     : #e5e5e5;
-            bottom               : 2px;
-            color                : #333;
-            overflow             : hidden;
-            padding              : 1px 3px;
-            position             : absolute;
-            right                : 2px;
-            text-transform       : lowercase;
+            background-color: #e5e5e5;
+            bottom          : 1px;
+            color           : #333;
+            font-size       : 12px;
+            overflow        : hidden;
+            padding         : 2px 3px;
+            position        : absolute;
+            right           : 1px;
+            text-transform  : lowercase;
         }
         .box > .box-heading > .box-tag.tag-purple {
             background-color: #862165;
@@ -244,7 +242,7 @@ hr {
         display : inline-block;
     }
     .breadcrumb > li:after {
-        color  : #ddd;
+        color  : #aaa;
         content: "\2022";
         padding: 0 5px 0 10px;
     }
@@ -259,6 +257,7 @@ hr {
     .breadcrumb > li > a:hover,
     .breadcrumb > li > a:active,
     .breadcrumb > li > a:focus {
+        color          : inherit;
         text-decoration: underline;
     }
     .breadcrumb > .active > span,

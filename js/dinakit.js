@@ -25,8 +25,6 @@
     // scroll to
     $(document).on("click",".scroll",function(t){
         var target = $(this).attr('href');
-        var pathname = window.location;
-        history.pushState({}, '', $(this).attr("href"));
         $("html, body").animate({ scrollTop: $(target).offset().top }, 1000);
         t.preventDefault()
     });
