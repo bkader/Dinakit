@@ -3083,3 +3083,133 @@ img.img-responsive{ max-width: 100%; height: auto; display: block; }
 .rad3e { -webkit-border-radius: 3em; -moz-border-radius: 3em; border-radius: 3em; }
 .rad4e { -webkit-border-radius: 4em; -moz-border-radius: 4em; border-radius: 4em; }
 .rad5e { -webkit-border-radius: 5em; -moz-border-radius: 5em; border-radius: 5em; }
+
+/*
+===================================================================
+!Resposive Styles
+===================================================================
+*/
+
+/**
+* All Smartphones in portrait and landscape
+*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+
+/**
+* All Smartphones in landscape
+*/
+@media only screen and (min-width : 321px) {}
+
+/**
+* All Smartphones in portrait
+*/
+@media only screen and (max-width : 479px) {}
+
+/*
+-------------------------------------------------------------------
+!Android Devices
+-------------------------------------------------------------------
+*/
+
+/**
+* Android 240 X 320
+*/
+@media only screen and (max-width: 241px){}
+
+/**
+* Android(Samsung Galaxy) in portrait 380 X 685
+*/
+@media only screen and (min-width: 375px) and (max-width: 385px){}
+
+/**
+* Android(Samsung Galaxy) in Landscape 685 X  380
+*/
+@media only screen and (min-width: 680px) and (max-width: 690px){}
+
+/**
+* Kindle Portrait 600 X 1024
+*/
+@media only screen and (min-width: 595px) and (max-width: 610px){}
+
+/**
+* Kindle Landscape 1024 X 600
+*/
+@media only screen and (min-width: 1000px) and (max-width: 1030px){}
+
+/*
+-------------------------------------------------------------------
+!All Generation iPads
+-------------------------------------------------------------------
+*/
+
+/**
+* iPads in portrait and landscape
+*/
+@media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) {}
+
+/**
+* iPad in landscape
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/**
+* iPad in portrait
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){}
+
+/*
+-------------------------------------------------------------------
+!Retina iPad 3 & 4
+-------------------------------------------------------------------
+*/
+
+/**
+* Retina iPad 3 & 4 in portrait and landscape
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/**
+* Retina iPad 3 & 4 in landscape
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/**
+* Retina iPad 3 & 4 in Portrait
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/*
+-------------------------------------------------------------------
+!iPad 1, 2 & Mini
+-------------------------------------------------------------------
+*/
+
+/**
+* iPad 1 & 2 in portrait and landscape
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/**
+* iPad 1 & 2 in landscape
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/**
+* iPad 1 & 2 in portrait
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/**
+* Desktops and laptops
+*/
+@media only screen and (min-width : 1224px) {}
+
+/**
+* Large screens
+*/
+@media only screen and (min-width : 1824px) {}
+
+/**
+* Only iPhone 4
+*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {}
