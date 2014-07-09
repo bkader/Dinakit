@@ -559,8 +559,8 @@ hr {
 .button-pinterest,
 .button-rss,
 .button-tumblr,
-.button-github,
-.button-twitter{
+.button-twitter,
+.button-github {
     color: #fff !important;
 }
 
