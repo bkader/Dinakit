@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*!
- *  Dinakit Framework 1.0 by @IanGraphics - http://dinakit.itemplat.es/
+ *  Dinakit Framework 1.0 by @IanGraphics - http://dinakit.iangraphics.dz/
  *  author: Kader Bouyakoub - author uri: https://github.com/bkader
  *  License - "Don't Be A Dick License" - DBAD by philsturgeon (http://www.dbad-license.org/)
  */
@@ -549,6 +549,181 @@ hr {
 .button-grp.button-white > .button:focus,
 .button-grp.button-white > .button:hover {
     background-color: #f9f9f9;
+}
+
+/* social network buttons */
+.button-dribbble,
+.button-facebook,
+.button-googleplus,
+.button-linkedin,
+.button-pinterest,
+.button-rss,
+.button-tumblr,
+.button-github,
+.button-twitter{
+    color: #fff !important;
+}
+
+/* dribbble */
+.button-grp.button-dribbble > .button,
+.button-dribbble {
+    background      :     -ms-linear-gradient(top,#ea4c89,#c93764);
+    background      :    -moz-linear-gradient(top,#ea4c89,#c93764);
+    background      : -webkit-linear-gradient(top,#ea4c89,#c93764);
+    background-color: #c93764;
+    text-shadow     : 0 -1px -1px #9d2849;
+}
+.button-grp.button-dribbble > .button:active,
+.button-grp.button-dribbble > .button:focus,
+.button-grp.button-dribbble > .button:hover,
+.button-dribbble:active,
+.button-dribbble:focus,
+.button-dribbble:hover {
+    background-color: #ea4c89;
+}
+
+/* facebook */
+.button-grp.button-facebook > .button,
+.button-facebook {
+    background      :     -ms-linear-gradient(top,#3b5998,#2b4170);
+    background      :    -moz-linear-gradient(top,#3b5998,#2b4170);
+    background      : -webkit-linear-gradient(top,#3b5998,#2b4170);
+    background-color: #2b4170;
+    text-shadow     : 0 -1px -1px #1f2f52;
+}
+.button-grp.button-facebook > .button:active,
+.button-grp.button-facebook > .button:focus,
+.button-grp.button-facebook > .button:hover,
+.button-facebook:active,
+.button-facebook:focus,
+.button-facebook:hover {
+    background-color: #3b5998;
+}
+
+/* googleplus */
+.button-grp.button-googleplus > .button,
+.button-googleplus {
+    background      :     -ms-linear-gradient(top,#e64522,#c33219);
+    background      :    -moz-linear-gradient(top,#e64522,#c33219);
+    background      : -webkit-linear-gradient(top,#e64522,#c33219);
+    background-color: #c33219;
+    text-shadow     : 0 -1px -1px #972412;
+}
+.button-grp.button-googleplus > .button:active,
+.button-grp.button-googleplus > .button:focus,
+.button-grp.button-googleplus > .button:hover,
+.button-googleplus:active,
+.button-googleplus:focus,
+.button-googleplus:hover {
+    background-color: #e64522;
+}
+
+/* linkedin */
+.button-grp.button-linkedin > .button,
+.button-linkedin {
+    background      :     -ms-linear-gradient(top,#009cda,#0073b2);
+    background      :    -moz-linear-gradient(top,#009cda,#0073b2);
+    background      : -webkit-linear-gradient(top,#009cda,#0073b2);
+    background-color: #0073b2;
+    text-shadow     : 0 -1px -1px #005486;
+}
+.button-grp.button-linkedin > .button:active,
+.button-grp.button-linkedin > .button:focus,
+.button-grp.button-linkedin > .button:hover,
+.button-linkedin:active,
+.button-linkedin:focus,
+.button-linkedin:hover {
+    background-color: #009cda;
+}
+
+/* pinterest */
+.button-grp.button-pinterest > .button,
+.button-pinterest {
+    background      :     -ms-linear-gradient(top,#cb2027,#a0171c);
+    background      :    -moz-linear-gradient(top,#cb2027,#a0171c);
+    background      : -webkit-linear-gradient(top,#cb2027,#a0171c);
+    background-color: #a0171c;
+    text-shadow     : 0 -1px -1px #761114;
+}
+.button-grp.button-pinterest > .button:active,
+.button-grp.button-pinterest > .button:focus,
+.button-grp.button-pinterest > .button:hover,
+.button-pinterest:active,
+.button-pinterest:focus,
+.button-pinterest:hover {
+    background-color: #cb2027;
+}
+
+/* rss */
+.button-grp.button-rss > .button,
+.button-rss {
+    background      :     -ms-linear-gradient(top,#e88845,#e2733d);
+    background      :    -moz-linear-gradient(top,#e88845,#e2733d);
+    background      : -webkit-linear-gradient(top,#e88845,#e2733d);
+    background-color: #e2733d;
+    text-shadow     :0 -1px -1px #9a4824;
+}
+.button-grp.button-rss > .button:active,
+.button-grp.button-rss > .button:focus,
+.button-grp.button-rss > .button:hover,
+.button-rss:active,
+.button-rss:focus,
+.button-rss:hover {
+    background-color: #e88845;
+}
+
+/* tumblr */
+.button-grp.button-tumblr > .button,
+.button-tumblr {
+    background      :     -ms-linear-gradient(top,#3a5876,#2c4762);
+    background      :    -moz-linear-gradient(top,#3a5876,#2c4762);
+    background      : -webkit-linear-gradient(top,#3a5876,#2c4762);
+    background-color: #2c4762;
+    text-shadow     : 0 -1px -1px #203448;
+}
+.button-grp.button-tumblr > .button:active,
+.button-grp.button-tumblr > .button:focus,
+.button-grp.button-tumblr > .button:hover,
+.button-tumblr:active,
+.button-tumblr:focus,
+.button-tumblr:hover {
+    background-color: #3a5876;
+}
+
+/* twitter */
+.button-grp.button-twitter > .button,
+.button-twitter {
+    background      :     -ms-linear-gradient(top,#00aced,#0081ce);
+    background      :    -moz-linear-gradient(top,#00aced,#0081ce);
+    background      : -webkit-linear-gradient(top,#00aced,#0081ce);
+    background-color: #0081ce;
+    text-shadow     : 0 -1px -1px #005ea3;
+}
+.button-grp.button-twitter > .button:active,
+.button-grp.button-twitter > .button:focus,
+.button-grp.button-twitter > .button:hover,
+.button-twitter:active,
+.button-twitter:focus,
+.button-twitter:hover {
+    background-color: #00aced;
+}
+
+/* github */
+.button-grp.button-github > .button,
+.button-github {
+    background      :     -ms-linear-gradient(top,#333,#111);
+    background      :    -moz-linear-gradient(top,#333,#111);
+    background      : -webkit-linear-gradient(top,#333,#111);
+    background-color: #333;
+    text-shadow     : 0 -1px -1px #005ea3;
+}
+.button-grp.button-github > .button:active,
+.button-grp.button-github > .button:focus,
+.button-grp.button-github > .button:hover,
+.button-github:active,
+.button-github:focus,
+.button-github:hover {
+    background-color: #333;
 }
 
 /*
@@ -1794,6 +1969,30 @@ input[type="radio"] {
 }
 .col-12 {
     width: 100%;
+}
+
+/* Landscape mobile & down */
+@media (max-width: 30em) {
+    .container, .container-fluid { width: auto !important; max-width: 100%; padding: 0;}
+    .row { margin: 10px; }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 100%; }
+}
+
+/* Portrait tablet to landscape */
+@media (min-width: 30em) and (max-width: 50em) {
+    .container, .container-fluid { width: auto !important; max-width: 100%; padding: 0;}
+    .row { margin: 10px; }
+    .col-4, .col-6, .col-8, .col-10, .col-12 { width: 50%; }
+    .col-1, .col-2, .col-3, .col-5, .col-7, .col-9, .col-11 { width: 100%; }
+}
+
+/* Landscape to small desktop */
+@media (min-width: 50em) and (max-width: 68.750em) {
+    .container, .container-fluid { width: auto !important; max-width: 100%; padding: 0;}
+    .row { margin: 10px; }
+    .col-2, .col-7 { width: 100%; }
+    .col-4, .col-8, .col-10, .col-12 { width: 50%; }
 }
 
 /*
