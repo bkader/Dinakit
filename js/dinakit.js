@@ -1,10 +1,15 @@
 /*!
- *  Dinakit Framework 1.0 by @IanGraphics - http://dinakit.itemplat.es/
+ *  Dinakit Framework 1.2 by @IanGraphics - http://dinakit.itemplat.es/
  *  author: Kader Bouyakoub - author uri: https://github.com/bkader
  *  License - "Don't Be A Dick License" - DBAD by philsturgeon (http://www.dbad-license.org/)
  */
 
 (function($){
+
+    /* ignore links with href="#" */
+    $(document).on('click', 'a[href=#]', function(e) {
+        e.preventDefault();
+    });
 
     // close alerts
     $(document).on("click",".alert-close",function(t){
@@ -35,6 +40,6 @@
         $("ul > li",this).has("ul").each(function(){
             $("> a:not(.no-fa)",this).append('<i class="fa fa-angle-right"></i>')
         })
-    })
+    });
 
 })(jQuery);
