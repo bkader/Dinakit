@@ -5,4 +5,4 @@ iTemplates DinaKit Framework
 
 This Framework was made for a personal use but i have decided to share it with you.
 
-http://iangraphics.github.io/DinaKit/
+http://dinakit.itemplat.es/
