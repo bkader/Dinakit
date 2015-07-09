@@ -10,29 +10,61 @@
         <meta property="og:url" content="http://dinakit.itemplat.es/">
         <meta property="og:title" content="Dinakit Framework by @IanGraphics">
         <meta property="og:image" content="http://dinakit.itemplat.es/img/dinakit.jpg">
-        <link rel="stylesheet" href="http://dinakit.cdn.itemplat.es/css/dinakit.min.css">
-        <link rel="stylesheet" href="http://dinakit.itemplat.es/css/docs.css">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js">
+        <link rel="stylesheet" href="dist/css/dinakit.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <link rel="stylesheet" href="js/vendor/modernizr.js">
         <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
         <![endif]-->
-        <link rel="shortcut icon" href="http://dinakit.itemplat.es/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body>
+    <body id="top">
 
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul class="menu">
-                            <li><a class="scroll" href="#top">Home</a></li>
-                            <li><a class="scroll" href="#alerts">Alerts</a></li>
-                            <li><a class="scroll" href="#box">Box</a></li>
-                            <li><a class="scroll" href="#breadcrumb">Breadcrumb</a></li>
-                            <li><a class="scroll" href="#browsers">Browsers</a></li>
-                            <li><a class="scroll" href="#buttons">Buttons</a></li>
-                            <li><a class="scroll" href="#flags">Flags</a></li>
-                            <li><a class="scroll" href="#forms">Forms</a></li>
+                        <ul class="menu navbar">
+                            <li><a class="scroll" href="#top">Get Started</a></li>
+                            <li>
+                                <a href="#">CSS <i class="fa fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a class="scroll" href="#grid">Grid</a></li>
+                                    <li><a class="scroll" href="#typography">Typography</a></li>
+                                    <li><a class="scroll" href="#code">Code</a></li>
+                                    <li><a class="scroll" href="#tables">Tables</a></li>
+                                    <li><a class="scroll" href="#forms">Forms</a></li>
+                                    <li><a class="scroll" href="#buttons">Buttons</a></li>
+                                    <li><a class="scroll" href="#images">Images</a></li>
+                                    <li><a class="scroll" href="#classes">Useful Classes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Components <i class="fa fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a class="scroll" href="#dropdown">Dropdowns</a></li>
+                                    <li><a class="scroll" href="#btn-group">Button Groups</a></li>
+                                    <li><a class="scroll" href="#btn-dropdown">Button Dropdowns</a></li>
+                                    <li><a class="scroll" href="#input-icon">Input Groups</a></li>
+                                    <li><a class="scroll" href="#menu">Menu</a></li>
+                                    <li><a class="scroll" href="#breadcrumb">Breadcrumb</a></li>
+                                    <li><a class="scroll" href="#breadcrumb">Pagination</a></li>
+                                    <li><a class="scroll" href="#labels-badges">Labels &amp; Badges</a></li>
+                                    <li><a class="scroll" href="#boxes">Boxes</a></li>
+                                    <li><a class="scroll" href="#boxes">Progress bars</a></li>
+                                    <li><a class="scroll" href="#boxes">Media object</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Javascript <i class="fa fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a class="scroll" href="#modal">Modal</a></li>
+                                    <li><a class="scroll" href="#tabs">Tabs</a></li>
+                                    <li><a class="scroll" href="#tooltip">Tooltip</a></li>
+                                    <li><a class="scroll" href="#alerts">Alert</a></li>
+                                    <li><a class="scroll" href="#collapse">Collapse</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -44,19 +76,19 @@
             <div class="row">
                 <div class="hero text-center">
                     <h1>Dinakit Framework</h1>
-                    <p>Documentation will be added <span class="test-modal button button-green"><i class="fa fa-thumbs-up"></i> Later</span></p>
+                    <p>Documentation will be added <span class="test-modal btn btn-green"><i class="fa fa-thumbs-up"></i> Later</span></p>
                     <br>
-                    <p><a class="button button-blue" href="http://go.itemplat.es/DinaKitGH"><i class="fa fa-github"></i> github repository</a></p>
+                    <p><a class="btn btn-blue" href="http://go.itemplat.es/DinaKitGH"><i class="fa fa-github"></i> github repository</a></p>
                 </div>
             </div>
 
-            <div class="row mt2e" id="top">
+            <div class="row mt2e">
                 <div class="col-x-12 col-s-12 col-m-12 col-l-12 text-center">
                     <p>Made with love and passion by <a href="http://iangraphics.dz/" target="_blank">IanGraphics&trade;</a></p>
                     <p>
-                        <a class="button button-facebook" href="http://go.itemplat.es/1j3WpgW" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a class="button button-twitter" href="http://go.itemplat.es/TIPuhk" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a class="button button-github" href="http://go.itemplat.es/1j70rpg" target="_blank"><i class="fa fa-github"></i></a>
+                        <a class="btn btn-facebook" href="http://go.itemplat.es/1j3WpgW" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-twitter" href="http://go.itemplat.es/TIPuhk" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-github" href="http://go.itemplat.es/1j70rpg" target="_blank"><i class="fa fa-github"></i></a>
                     </p>
                 </div>
             </div>
@@ -70,9 +102,9 @@
             </div>
             <div class="row">
                 <div class="col-x-12 col-s-6 col-m-3 col-l-3">
-                    <div class="alert">
-                        <a href="#" class="alert-close"><i class="fa fa-times"></i></a>
-                        .alert <em>or</em> .alert.alert-default
+                    <div class="alert alert-default">
+                        <button class="alert-close"><i class="fa fa-times"></i></button>
+                        .alert.alert-default
                     </div>
                 </div>
                 <div class="col-x-12 col-s-6 col-m-3 col-l-3">
@@ -107,16 +139,24 @@
             <div class="row">
                 <div class="col-x-12 col-s-12 col-m-6 col-l-6">
                     <div class="box">
-                        <div class="box-heading">
-                            <img src="http://placehold.it/50x50" class="box-media">
-                            <h4>Heading 4</h4>
-                            <small>This is <code>small</code> tag</small>
+                        <div class="box-header">
+                            <h1 class="box-title">Box Header</h1>
+                            <small>&lt;small&gt;...&lt;/small&gt;</small>
                             <div class="box-action">
-                                <a href="#"><i class="fa fa-times"></i></a>
+                                <ul class="menu menu-right">
+                                    <li>
+                                        <a href="#"><i class="fa fa-caret-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Delete</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="box-tag">default</div>
+                            <div class="box-tag tag-red">default</div>
                         </div>
-                        <div class="box-body">
+                        <div class="box-content">
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
@@ -128,22 +168,11 @@
 
                 <div class="col-x-12 col-s-12 col-m-6 col-l-6">
                     <div class="box">
-                        <div class="box-heading">
-                            <img src="http://placehold.it/50x50" class="box-media">
-                            <h4>Heading 4</h4>
-                            <small>This is <code>small</code> tag</small>
-                            <div class="box-action">
-                                <a href="#"><i class="fa fa-times"></i></a>
-                            </div>
-                            <div class="box-tag tag-purple">purple</div>
+                        <div class="box-header"></div>
+                        <div class="box-content">
+                            <p>Box with empty <code>box-header</code> and <code>box-footer</code>.</p>
                         </div>
-                        <div class="box-body">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="box-footer">
-                            This is the box footer
-                        </div>
+                        <div class="box-footer"></div>
                     </div>
                 </div>
             </div>
@@ -156,12 +185,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-x-12 col-s-12 col-m-12 col-l-12" style="background-color:#e5e5e5;">
+                <div class="col-x-12 col-s-12 col-m-12 col-l-12" style="background-color:#e5e5e5; padding-top: 2px; padding-bottom: 2px;">
                     <ul class="breadcrumb mt10p">
-                        <li><a href="#">First</a></li>
-                        <li><a href="#">Second</a></li>
-                        <li><a href="#">Third</a></li>
-                        <li class="active"><span>Active</span></li>
+                        <li class="item"><a href="#">First</a></li>
+                        <li class="item"><a href="#">Second</a></li>
+                        <li class="item"><a href="#">Third</a></li>
+                        <li class="item active"><a href="#aaa">Active</a></li>
                     </ul>
                 </div>
             </div>
@@ -185,39 +214,39 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>&lt;i class="browser browser-anroid"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser android"&gt;&lt;/i&gt;</code></td>
                                 <td>Android</td>
-                                <td><i class="browser browser-android"></i></td>
+                                <td><i class="browser android"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-chrome"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser chrome"&gt;&lt;/i&gt;</code></td>
                                 <td>Chrome</td>
-                                <td><i class="browser browser-chrome"></i></td>
+                                <td><i class="browser chrome"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-firefox"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser firefox"&gt;&lt;/i&gt;</code></td>
                                 <td>Firefox</td>
-                                <td><i class="browser browser-firefox"></i></td>
+                                <td><i class="browser firefox"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-ie"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser ie"&gt;&lt;/i&gt;</code></td>
                                 <td>Internet Explorer</td>
-                                <td><i class="browser browser-ie"></i></td>
+                                <td><i class="browser ie"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-netscape"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser netscape"&gt;&lt;/i&gt;</code></td>
                                 <td>Netscape</td>
-                                <td><i class="browser browser-netscape"></i></td>
+                                <td><i class="browser netscape"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-opera"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser opera"&gt;&lt;/i&gt;</code></td>
                                 <td>Opera</td>
-                                <td><i class="browser browser-opera"></i></td>
+                                <td><i class="browser opera"></i></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;i class="browser browser-safari"&gt;&lt;/i&gt;</code></td>
+                                <td><code>&lt;i class="browser safari"&gt;&lt;/i&gt;</code></td>
                                 <td>Safari</td>
-                                <td><i class="browser browser-safari"></i></td>
+                                <td><i class="browser safari"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -231,26 +260,26 @@
             </div>
             <div class="row">
                 <div class="col-x-12 col-s-12 col-m-12 col-l-12">
-                    <a class="button button-default button-xlarge" href="#">xlarge</a>
-                    <a class="button button-default button-large" href="#">large</a>
-                    <a class="button button-default" href="#">default</a>
-                    <a class="button button-link" href="#">link</a>
-                    <a class="button button-default button-small" href="#">small</a>
-                    <a class="button button-default button-mini" href="#">mini</a>
+                    <a class="btn btn-default btn-xlarge" href="#">xlarge</a>
+                    <a class="btn btn-default btn-large" href="#">large</a>
+                    <a class="btn btn-default" href="#">default</a>
+                    <a class="btn btn-link" href="#">link</a>
+                    <a class="btn btn-default btn-small" href="#">small</a>
+                    <a class="btn btn-default btn-mini" href="#">mini</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-x-12 col-s-12 col-m-12 col-l-12">
-                    <a class="button button-default" href="#">Default</a>
-                    <a class="button button-purple" href="#">Purle</a>
-                    <a class="button button-blue" href="#">Blue</a>
-                    <a class="button button-green" href="#">Green</a>
-                    <a class="button button-orange" href="#">Orange</a>
-                    <a class="button button-red" href="#">Red</a>
-                    <a class="button button-pink" href="#">Pink</a>
-                    <a class="button button-black" href="#">Black</a>
-                    <a class="button button-white" href="#">White</a>
-                    <a class="button button-link" href="#">Link</a>
+                    <a class="btn btn-default" href="#">Default</a>
+                    <a class="btn btn-purple" href="#">Purle</a>
+                    <a class="btn btn-blue" href="#">Blue</a>
+                    <a class="btn btn-green" href="#">Green</a>
+                    <a class="btn btn-orange" href="#">Orange</a>
+                    <a class="btn btn-red" href="#">Red</a>
+                    <a class="btn btn-pink" href="#">Pink</a>
+                    <a class="btn btn-black" href="#">Black</a>
+                    <a class="btn btn-white" href="#">White</a>
+                    <a class="btn btn-link" href="#">Link</a>
                 </div>
             </div>
             <div class="row mt1e">
@@ -258,12 +287,21 @@
                     <h4>Button Groups <small>Single button classes when applied to button groups, it affects all children</small></h4>
                     <br>
                 </div>
-                <div class="col-x-12 col-s-12 col-m-12 col-l-12 text-center">
-                    <div class="button-grp button-pill">
-                        <a class="button" href="#">Default</a>
-                        <a class="button button-red" href="#">Red</a>
-                        <a class="button" href="#">Default</a>
-                        <a class="button" href="#">Default</a>
+                <div class="col-x-12 col-s-12 col-m-12 col-l-12">
+                    <div class="btn-dropdown">
+                        <a href="#" class="btn btn-circle toggle-dropdown">Dropdown <i class="fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group btn-pill">
+                        <a class="btn" href="#">Default</a>
+                        <a class="btn btn-red" href="#">Red</a>
+                        <a class="btn" href="#">Default</a>
+                        <a class="btn" href="#">Default</a>
                     </div>
                 </div>
             </div>
@@ -273,15 +311,15 @@
                     <br>
                 </div>
                 <div class="col-x-12 col-s-8 col-m-9 col-l-9">
-                    <a class="button button-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-                    <a class="button button-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="button button-googleplus" href="#"><i class="fa fa-google-plus"></i></a>
-                    <a class="button button-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                    <a class="button button-pinterest" href="#"><i class="fa fa-pinterest"></i></a>
-                    <a class="button button-rss" href="#"><i class="fa fa-rss"></i></a>
-                    <a class="button button-tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-                    <a class="button button-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="button button-github" href="#"><i class="fa fa-github"></i></a>
+                    <a class="btn btn-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    <a class="btn btn-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-googleplus" href="#"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                    <a class="btn btn-rss" href="#"><i class="fa fa-rss"></i></a>
+                    <a class="btn btn-tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                    <a class="btn btn-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-github" href="#"><i class="fa fa-github"></i></a>
                 </div>
             </div>
             <!-- end of buttons -->
@@ -306,8 +344,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-x-12 col-s-6 col-m-4 col-l-4">
-                    <form class="form-stacked m5p">
+                <div class="col-x-12 col-s-12 col-m-3 col-l-3">
+                    <form class="form form-stacked m5p">
                         <div class="form-group">
                             <input type="text" placeholder="Username">
                         </div>
@@ -315,41 +353,110 @@
                             <input type="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label><input type="checkbox"> Checkbox</label>
+                            <label class="checkbox"><input type="checkbox"> Checkbox</label>
                             <button class="button button-blue float-right">Button</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-x-12 col-s-6 col-m-8 col-l-8">
-                    <form class="form-aligned m5p">
+                <div class="col-x-12 col-s-12 col-m-3 col-l-3">
+                    <form class="form form-aligned m5p">
                         <div class="form-group">
                             <label>Username</label>
-                            <div class="form-field">
-                                <input type="text" placeholder="Username">
-                            </div>
+                            <input type="text" placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <div class="form-field">
-                                <input type="password" placeholder="Password">
-                            </div>
+                            <input type="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label>&nbsp;</label>
-                            <div class="form-field">
-                                <button class="button button-blue">Button</button>
-                            </div>
+                            <button class="button button-blue">Button</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-x-12 col-s-12 col-m-6 col-l-6">
+                    <form class="form form-inline">
+                        <div class="form-group">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="button button-blue">Button</button>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- end of forms -->
 
+            <div class="row">
+                <div class="col-x-12 col-s-6">
+                    <div class="collapse styled">
+                        <div class="title active">Testing</div>
+                        <div class="content active">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro sequi temporibus adipisci dolores, fuga, sed maxime eos magni. Quo consequatur non voluptate, dicta rem veritatis voluptates ab quos maxime?
+                        </div>
+                        <div class="title">Testing</div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro sequi temporibus adipisci dolores, fuga, sed maxime eos magni. Quo consequatur non voluptate, dicta rem veritatis voluptates ab quos maxime?
+                        </div>
+                        <div class="title">Testing</div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro sequi temporibus adipisci dolores, fuga, sed maxime eos magni. Quo consequatur non voluptate, dicta rem veritatis voluptates ab quos maxime?
+                        </div>
+                        <div class="title">Testing</div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro sequi temporibus adipisci dolores, fuga, sed maxime eos magni. Quo consequatur non voluptate, dicta rem veritatis voluptates ab quos maxime?
+                        </div>
+                        <div class="title">Testing</div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro sequi temporibus adipisci dolores, fuga, sed maxime eos magni. Quo consequatur non voluptate, dicta rem veritatis voluptates ab quos maxime?
+                        </div>
+                    </div>
+                </div>
+                <div class="col-x-12 col-s-6">
+                    <div class="media">
+                        <div class="media-object"><img src="http://placehold.it/50x50"></div>
+                        <div class="media-content">
+                            <h1 class="media-title">Header</h1>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odio optio tempora maiores repellat sapiente tenetur ex praesentium culpa quo, porro nesciunt odit aspernatur cum totam. Aperiam quidem, ipsum accusamus.</small>
+                        </div>
+                        <div class="media-action">
+                            <div class="btn-dropdown">
+                                <a href="#" class="toggle-dropdown"><i class="fa fa-caret-down"></i></a>
+                                <ul class="menu-right">
+                                    <li><a href="#">Line</a></li>
+                                    <li><a href="#">Line</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-x-12 col-s-6">
+                    <ul class="pagination pagination-large push-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="https://www.google.com/">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                    <hr>
+                    <ul class="pager pager-green">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="http://dinakit.cdn.itemplat.es/js/dinakit.min.js"></script>
-        <script src="http://dinakit.itemplat.es/js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+        <script src="dist/js/dinakit.js"></script>
+        <script src="js/main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

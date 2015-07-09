@@ -1,9 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2);
-
 body {
-    font-family: 'Exo 2', Tahoma, Arial, sans-serif;
-    font-size: 14px;
-    padding-top: 80px;
+    font: 14px "Lato", Tahoma, Arial, sans-serif;
+    padding-top: 50px;
     padding-bottom: 80px;
     background: #FEFEFE;
 }
@@ -13,17 +10,6 @@ body {
 .container + .container-fluid,
 .container + .container {
     margin-top: 100px;
-}
-
-a {
-    color: #da4f49;
-    text-decoration: none;
-}
-a:not(.button):hover,
-a:not(.button):active,
-a:not(.button):focus {
-    color: #E0E0E0;
-    text-decoration: underline;
 }
 
 h1,h2,h3,h4,h5 {
@@ -40,6 +26,24 @@ header {
     top: 0;
     z-index: 9999;
     width: 100%;
+    min-height: 35px;
+}
+
+.menu.navbar > li > a:link,
+.menu.navbar > li > a:visited {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 35px;
+    color: #989898 !important;
+}
+
+.menu.navbar > li.active > a,
+.menu.navbar > li:hover > a,
+.menu.navbar > li > a:active,
+.menu.navbar > li > a:focus,
+.menu.navbar > li > a:hover {
+    background: none;
+    color: #fff !important;
 }
 
 .grid [class*="col-"] {
@@ -65,9 +69,4 @@ footer {
     width: 100%;
     padding: 10px 0;
     font-size: 12px;
-}
-
-
-.menu > li > a {
-    color: #989898 !important;
 }
