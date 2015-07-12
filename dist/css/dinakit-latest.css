@@ -1275,6 +1275,92 @@ form [class^="col-"]:last-child,
     padding-right: 0;
 }
 
+.checkbox {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+}
+.checkbox > input[type="checkbox"] {display:none;visibility:hidden}
+.checkbox > label {
+    cursor: pointer !important;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 0;
+}
+
+/** SIMPLE CHECKBOX **/
+
+.checkbox > label:before {
+    content: " ";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 1px #555;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+.checkbox:hover > label:before {
+    box-shadow: 0 0 1px #111;
+}
+
+.checkbox.checked > label:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/** TOGGLE CHECKBOX **/
+
+.checkbox.slider > label {padding-left: 37px}
+
+
+.checkbox.slider > label:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 16px;
+    background-color: rgba(0,0,0,.05);
+    z-index: 1;
+    border-radius: 50em;
+    margin-right: 10px;
+    box-shadow: none;
+}
+
+.checkbox.slider:hover > label:before {background-color: rgba(0,0,0,.1)}
+.checkbox.slider.checked > label:before {background-color: #2185d0}
+
+.checkbox.slider > label:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15), 0 0 0 1px rgba(34,36,38,.15) inset;
+    z-index: 2;
+    border-radius: 50em;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.checkbox.slider.checked > label:after {
+    left: auto;
+    left: 16px;
+}
+
 /**
  * Inline Form
  */
@@ -1905,8 +1991,8 @@ img {
     display: block;
 }
 /* image with rounded corners */
-.img.img-rounded,
-img.img-rounded {
+.img.rounded,
+img.rounded {
             border-radius: 6px;
          -o-border-radius: 6px;
         -ms-border-radius: 6px;
@@ -1915,8 +2001,8 @@ img.img-rounded {
 }
 
 /* image circle */
-.img.img-circle,
-img.img-circle {
+.img.circle,
+img.circle {
         border-radius: 50%;
      -o-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1925,20 +2011,39 @@ img.img-circle {
 }
 
 /* image as thumbnail */
-.img.img-thumb,
-img.img-thumb {
+.img.thumbnail,
+img.thumbnail {
     background-color     : #fff;
     background-image     : none;
     border               : 1px solid #ddd;
     padding              : 2px;
 }
 
-/* responsibe image */
-.img.img-responsive,
-img.img-responsive{
+/* fluid/responsibe image */
+.img.fluid,
+img.fluid{
     display  : block;
     height   : auto;
     max-width: 100%;
+}
+
+/* vertical align */
+.img.valign-top,
+img.valign-top {
+    display       : inline-block;
+    vertical-align: top;
+}
+
+.img.valign-middle,
+img.valign-middle {
+    display       : inline-block;
+    vertical-align: middle;
+}
+
+.img.valign-bottom,
+img.valign-bottom {
+    display       : inline-block;
+    vertical-align: bottom;
 }
 
 /*=================================================================
@@ -1965,19 +2070,26 @@ img.img-responsive{
             transition: background .2s ease;
 }
 
+.label.label-image {
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    vertical-align: baseline;
+    text-transform: none;
+    padding: 7px 10px 7px 6px;
+}
+.label.label-image > img {
+    border-radius: 3px 0 0 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin: -7px 6px -7px -6px;
+}
+
 .label {
     padding: .6em .8em;
     vertical-align  : baseline;
 }
 
-.label > .label-close {
-    cursor            : pointer;
-    margin-right      : 0;
-    margin-left       : .5em;
-    opacity           : .8;
-    -webkit-transition: background .2s ease;
-    transition        : background .2s ease;
-}
 .badge {
     padding              : 3px 7px;
     min-width            : 10px;
@@ -1996,9 +2108,13 @@ img.img-responsive{
     cursor            : pointer;
     margin-right      : 0;
     margin-left       : .5em;
-    opacity           : .8;
+    opacity           : .3;
     -webkit-transition: background .2s ease;
     transition        : background .2s ease;
+}
+.label > .label-close:hover,
+.badge > .badge-close:hover {
+    opacity           : .7;
 }
 
 /**
@@ -2471,6 +2587,7 @@ a.badge.badge-white:hover {
 }
 .menu.menu-vertical > li.divider {
     height          : 1px;
+    width           : 100%;
     margin          : 5px 0;
     overflow        : hidden;
     background-color: #fff;
@@ -3394,7 +3511,7 @@ table.table-hovered tbody tr:hover > th {
 */
 
 a[data-tooltip] {
-	position: relative;
+    position: relative;
 }
 
 a[data-tooltip]:after {
@@ -3681,127 +3798,7 @@ dl.inline dd {
 }
 
 /*=================================================================
-[27. Smileys]
-=================================================================*/
-.smiley {
-    display   :inline-block;
-    overflow  :hidden;
-    background:url(images/smileys.png) no-repeat;
-}
-
-.smiley.angel{
-    width     : 16px;
-    height    : 15px;
-    background:-2px -2px;
-}
-.smiley.angry{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -36px;
-}
-.smiley.confused{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -52px;
-}
-.smiley.confused2{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -68px;
-}
-.smiley.cool{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -84px;
-}
-.smiley.cry{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -100px;
-}
-.smiley.curly_lips{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -116px;
-}
-.smiley.devil{
-    width     : 14px;
-    height    : 15px;
-    background:-2px -19px;
-}
-.smiley.geek{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -132px;
-}
-.smiley.happy{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -148px;
-}
-.smiley.heart{
-    width     : 14px;
-    height    : 13px;
-    background:-2px -324px;
-}
-.smiley.kiss{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -164px;
-}
-.smiley.mad{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -36px;
-}
-.smiley.moody{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -180px;
-}
-.smiley.pacman{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -196px;
-}
-.smiley.sad{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -212px;
-}
-.smiley.smile{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -228px;
-}
-.smiley.smile2{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -244px;
-}
-.smiley.surprised{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -260px;
-}
-.smiley.thinking{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -276px;
-}
-.smiley.tongue{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -292px;
-}
-.smiley.wink{
-    width     : 14px;
-    height    : 14px;
-    background:-2px -308px;
-}
-
-/*=================================================================
-[28. Useful Classes]
+[27. Useful Classes]
 =================================================================*/
 
 /* clear float */
