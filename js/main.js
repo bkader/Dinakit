@@ -1,9 +1,19 @@
-;(function($) {
-    /* test */
-    $(document).on('click', '.test-modal', function(e) {
-        var modal = '<div class="modal"><div class="modal-inner"><div class="modal-heading"><a href="#" class="modal-close"><i class="fa fa-times"></i></a>Yup! This is a modal</div><div class="modal-body">This is only a test buddy!</div><div class="modal-footer text-right"><a href="#" class="modal-close button button-black">Close</a></div></div></div>';
+// Allow for console.log to not break IE
+if (typeof window.console == "undefined" || typeof window.console.log == "undefined") {
+  window.console = {
+    log  : function() {},
+    info : function(){},
+    warn : function(){}
+  };
+}
+if(typeof window.console.group == 'undefined' || typeof window.console.groupEnd == 'undefined' || typeof window.console.groupCollapsed == 'undefined') {
+  window.console.group = function(){};
+  window.console.groupEnd = function(){};
+  window.console.groupCollapsed = function(){};
+}
+if(typeof window.console.markTimeline == 'undefined') {
+  window.console.markTimeline = function(){};
+}
+window.console.clear = function(){};
 
-        $(modal).hide().appendTo('body').fadeIn(150);
-        e.preventDefault();
-    });
-})(jQuery);
+;(function($) {})(jQuery);

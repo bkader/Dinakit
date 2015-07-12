@@ -5,7 +5,7 @@
  *
  */
 
-!function(){
+;(function($) {
 
     /* ignore links with href="#" and links with a[role="button"] */
     $(document).on('click', 'a[href=#], a[role="button"]', function(e) {
@@ -60,13 +60,17 @@
     // label close
     $(document).delegate('.label-close', 'click', function (e) {
         e.preventDefault();
-        $(this).closest('.label').remove();
+        $(this).closest('.label').fadeOut(function () {
+            $(this).remove();
+        });
     });
 
     // badge close
     $(document).delegate('.badge-close', 'click', function (e) {
         e.preventDefault();
-        $(this).closest('.badge').remove();
+        $(this).closest('.badge').fadeOut(function () {
+            $(this).remove();
+        });
     });
 
     // disable pagination active item click
@@ -113,4 +117,17 @@
         $(target).addClass('active');
     });
 
-}(jQuery);
+    // checkbox
+    $(document).on('click', '.checkbox', function (e) {
+        e.preventDefault();
+        var $that = $(this), $checkbox = $that.children('input[type="checkbox"]');
+        if($checkbox.prop("checked")) {
+            $that.removeClass('checked');
+            $checkbox.prop('checked', false);
+        } else {
+            $that.addClass('checked');
+            $checkbox.prop('checked', true);
+        }
+    });
+
+})(jQuery);
