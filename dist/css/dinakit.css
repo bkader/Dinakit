@@ -142,12 +142,22 @@ a:not(.btn):not(.modal-close):not(.alert-close):not(.label):not(.badge):hover {
         color           : #468847;
     }
 
+    .alert h1,
+    .alert h2,
+    .alert h3,
+    .alert h4,
+    .alert h5,
+    .alert h6 {
+        padding: 0;
+        margin : 0 0 7px;
+    }
+
 /*=================================================================
 [04. Boxes / .box]
 =================================================================*/
 
 .box {
-    background-color: #FFFFFF;
+    background-color: #fff;
     border-color    : #e5e6e9 #dfe0e4 #d0d1d5;
     border-style    : solid;
     border-width    : 1px;
@@ -162,6 +172,10 @@ a:not(.btn):not(.modal-close):not(.alert-close):not(.label):not(.badge):hover {
         border-bottom   : 1px solid #ddd;
         padding         : 10px 35px 10px 15px;
         position        : relative;
+    }
+
+    .box.box-default .box-header {
+        background-color: #f5f5f5;
     }
 
     .box .box-header:before,
@@ -275,14 +289,14 @@ a:not(.btn):not(.modal-close):not(.alert-close):not(.label):not(.badge):hover {
         }
 
     .box .box-footer {
-        border-top      : 1px solid #ddd;
         background-color: #f5f5f5;
+        border-top      : 1px solid #ddd;
         padding         : 10px 15px;
     }
     .box .box-header:empty,
     .box .box-footer:empty {
-        height : 3px !important;
-        padding: 0 !important;
+        height: 3px;
+        padding: 0;
     }
     .box .box-footer:before,
     .box .box-footer:after {
@@ -300,8 +314,7 @@ a:not(.btn):not(.modal-close):not(.alert-close):not(.label):not(.badge):hover {
 =================================================================*/
 
 .breadcrumb {
-    background-color: #fefefe;
-    font-size       : 12px;
+    font-size       : inherit;
     list-style      : none;
     margin          : 0;
     padding         : 8px 15px;

@@ -3,70 +3,40 @@ body {
     background: #fefefe;
 }
 
+.container {
+    max-width: 960px;
+}
 
 
-.leftcol {
+header {
     position: fixed;
     top: 0;
-    left: 0;
-    bottom: 0;
-    width: 173px;
-    background-color: #1b1c1d;
-    z-index: 1;
+    width: 100%;
+    z-index: 1052;
+    background-color: #222;
+    height: 32px;
 }
 
-
-.leftcol > .header {
-    height: 50px;
-    z-index: 3;
+header .menu > li > a:link,
+header .menu > li > a:visited {
+    color: #ddd !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 32px;
 }
 
-.leftcol > .content {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    bottom: 0;
-    width: 173px;
-    padding: 5px 5px 5px 5px;
-    z-index: 1;
+header .menu > li.active > a,
+header .menu > li:hover > a,
+header .menu > li > a:active,
+header .menu > li > a:focus,
+header .menu > li > a:hover {
+    color: #fff !important;
+    background-color: #111 !important;
 }
 
-.leftcol > .content > .menu.menu-vertical {
-    background: none;
-}
-
-.leftcol > .content > .menu.menu-vertical > li {}
-
-.leftcol > .content > .menu.menu-vertical > li + li {
-    border-top: none;
-}
-
-.leftcol > .content > .menu.menu-vertical > li.header {
-    background-color: transparent;
-    color: #f9f9f9
-}
-
-.leftcol > .content > .menu.menu-vertical > li.divider {
-    background-color: #333;
-}
-
-.leftcol > .content > .menu.menu-vertical > li > a:link,
-.leftcol > .content > .menu.menu-vertical > li > a:visited {
-    background: none;
-    color: #999 !important;
-}
-
-.leftcol > .content > .menu.menu-vertical > li.active > a,
-.leftcol > .content > .menu.menu-vertical > li:hover > a,
-.leftcol > .content > .menu.menu-vertical > li > a:active,
-.leftcol > .content > .menu.menu-vertical > li > a:focus,
-.leftcol > .content > .menu.menu-vertical > li > a:hover {
-    color: #f9f9f9 !important;
-}
-
-.contentcol {
+.wrapper {
     position        : relative;
-    padding         : 15px 15px 15px 240px;
+    padding-top: 47px;
     z-index         : 0;
     -webkit-box-flex: 1;
         -webkit-flex: 1 1 auto;
@@ -75,4 +45,9 @@ body {
     min-width       : 0px;
     min-height      : 1300px;
     z-index: 0;
+}
+
+section + section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
