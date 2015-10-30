@@ -98,7 +98,7 @@
     $(document).delegate(".scroll","click",function (e) {
         e.preventDefault();
         var target = $(this).attr('href');
-        if(target.length == 0) return;
+        if($(target).length == 0) { return false; }
         $("html, body").animate({ scrollTop: $(target).offset().top }, 1000);
     });
 

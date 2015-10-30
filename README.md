@@ -1,7 +1,7 @@
 DinaKit
 =======
 
-iTemplates DinaKit Framework
+InGraphics DinaKit Framework
 
 This Framework was made for a personal use but i have decided to share it with you.
 

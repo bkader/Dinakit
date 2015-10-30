@@ -36,7 +36,8 @@
 |   24. Tabs
 |   25. Tooltip (under development)
 |   26. Typography
-|   27. Useful classes
+|   27. Smileys
+|   28. Useful classes
 |
 =================================================================*/
 
@@ -46,14 +47,14 @@
 !normalize.css v1.1.0 | MIT License | git.io/normalize
 -------------------------------------------------------------------
 !Font Awesome 4.3.0 by @davegandy - http://fontawesome.io
--------------------------------------------------------------------
-!smileys.css v1.0 | MIT License | @KaderBouyakoub
 =================================================================*/
 
+/*@import url(http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);*/
 @import url(vendor/normalize/normalize.min.css);
 @import url(vendor/font-awesome/css/font-awesome.min.css);
 @import url(vendor/lato-font/css/lato.min.css);
-@import url(vendor/smileys/smileys.min.css);
 
 /*=================================================================
 [02. Basic styling]
@@ -799,7 +800,10 @@ a:not(.btn):not(.modal-close):not(.alert-close):not(.label):not(.badge):hover {
     -webkit-border-radius: 240px;
     height               : 120px;
     line-height          : 120px;
-    padding              : 0px;
+    overflow             : hidden;
+    text-overflow        : ellipsis;
+    white-space          : nowrap;
+    padding              : 0 5px;
     width                : 120px;
 }
 
@@ -1319,10 +1323,10 @@ form [class^="col-"]:last-child,
 
 /** TOGGLE CHECKBOX **/
 
-.checkbox.slider > label {padding-left: 37px}
+.checkbox.cb-slider > label {padding-left: 37px}
 
 
-.checkbox.slider > label:before {
+.checkbox.cb-slider > label:before {
     content: " ";
     position: absolute;
     top: 0;
@@ -1337,10 +1341,18 @@ form [class^="col-"]:last-child,
     box-shadow: none;
 }
 
-.checkbox.slider:hover > label:before {background-color: rgba(0,0,0,.1)}
-.checkbox.slider.checked > label:before {background-color: #2185d0}
+.checkbox.cb-slider:hover > label:before {background-color: rgba(0,0,0,.1)}
+.checkbox.cb-slider.checked > label:before {background-color: rgba(0,0,0,.3);}
+.checkbox.cb-slider.cb-purple.checked > label:before {background-color: #862165}
+.checkbox.cb-slider.cb-blue.checked > label:before {background-color: #4890a8}
+.checkbox.cb-slider.cb-green.checked > label:before {background-color: #5bb75b}
+.checkbox.cb-slider.cb-orange.checked > label:before {background-color: #faa732}
+.checkbox.cb-slider.cb-red.checked > label:before {background-color: #da4f49}
+.checkbox.cb-slider.cb-pink.checked > label:before {background-color: #db35c0}
+.checkbox.cb-slider.cb-black.checked > label:before {background-color: #363636}
+.checkbox.cb-slider.cb-white.checked > label:before {background-color: #fff}
 
-.checkbox.slider > label:after {
+.checkbox.cb-slider > label:after {
     content: " ";
     display: block;
     position: absolute;
@@ -1358,7 +1370,7 @@ form [class^="col-"]:last-child,
          -o-transition: all .25s ease;
             transition: all .25s ease;
 }
-.checkbox.slider.checked > label:after {
+.checkbox.cb-slider.checked > label:after {
     left: auto;
     left: 16px;
 }
@@ -3513,7 +3525,7 @@ table.table-hovered tbody tr:hover > th {
 */
 
 a[data-tooltip] {
-	position: relative;
+    position: relative;
 }
 
 a[data-tooltip]:after {
@@ -3575,7 +3587,7 @@ h5, .h5,
 h6, .h6 {
     color      : inherit;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.1;
 }
 
@@ -3594,22 +3606,22 @@ h6, .h6 {
 }
 
 h1, .h1 {
-    font-size: 36px;
+    font-style: 2rem;
 }
 h2, .h2 {
-    font-size: 30px;
+    font-size: 1.714rem;
 }
 h3, .h3 {
-    font-size: 24px;
+    font-size: 1.28rem;
 }
 h4, .h4 {
-    font-size: 18px;
+    font-size: 1.071rem;
 }
 h5, .h5 {
-    font-size: 14px;
+    font-size: 1rem;
 }
 h6, .h6 {
-    font-size: 12px;
+    font-size: 0.67rem;
 }
 
 small,
@@ -3622,9 +3634,11 @@ h2 small, h2 .small, .h2 small, .h2 .small,
 h3 small, h3 .small, .h3 small, .h3 .small,
 h4 small, h4 .small, .h4 small, .h4 .small,
 h5 small, h5 .small, .h5 small, .h5 .small,
-h6 small, h6 .small, .h6 small, .h6 .small{
-    color      : #999;
+h6 small, h6 .small, .h6 small, .h6 .small {
+    box-sizing : border-box;
+    display: block;
     font-weight: 400;
+    color      : #999;
     line-height: 1;
 }
 h1 small, h1 .small, .h1 small, .h1 .small,
@@ -3637,6 +3651,10 @@ h4 small, h4 .small, .h4 small, .h4 .small,
 h5 small, h5 .small, .h5 small, .h5 .small,
 h6 small, h6 .small, .h6 small, .h6 .small {
     font-size: 75%;
+}
+
+h1 > small {
+    font-size: 1.14285714rem;
 }
 
 /* paragraphs */
@@ -3800,7 +3818,128 @@ dl.inline dd {
 }
 
 /*=================================================================
-[27. Useful Classes]
+[27. Smileys]
+=================================================================*/
+
+.smiley {
+    display   : inline-block;
+    overflow  : hidden;
+    background: url(smileys.png) no-repeat;
+}
+
+.smiley.angel {
+    width: 16px;
+    height: 15px;
+    background: -2px -2px;
+}
+.smiley.angry {
+    width: 14px;
+    height: 14px;
+    background: -2px -36px;
+}
+.smiley.confused {
+    width: 14px;
+    height: 14px;
+    background: -2px -52px;
+}
+.smiley.confused2 {
+    width: 14px;
+    height: 14px;
+    background: -2px -68px;
+}
+.smiley.cool {
+    width: 14px;
+    height: 14px;
+    background: -2px -84px;
+}
+.smiley.cry {
+    width: 14px;
+    height: 14px;
+    background: -2px -100px;
+}
+.smiley.curly_lips {
+    width: 14px;
+    height: 14px;
+    background: -2px -116px;
+}
+.smiley.devil {
+    width: 14px;
+    height: 15px;
+    background: -2px -19px;
+}
+.smiley.geek {
+    width: 14px;
+    height: 14px;
+    background: -2px -132px;
+}
+.smiley.happy {
+    width: 14px;
+    height: 14px;
+    background: -2px -148px;
+}
+.smiley.heart {
+    width: 14px;
+    height: 13px;
+    background: -2px -324px;
+}
+.smiley.kiss {
+    width: 14px;
+    height: 14px;
+    background: -2px -164px;
+}
+.smiley.mad {
+    width: 14px;
+    height: 14px;
+    background: -2px -36px;
+}
+.smiley.moody {
+    width: 14px;
+    height: 14px;
+    background: -2px -180px;
+}
+.smiley.pacman {
+    width: 14px;
+    height: 14px;
+    background: -2px -196px;
+}
+.smiley.sad {
+    width: 14px;
+    height: 14px;
+    background: -2px -212px;
+}
+.smiley.smile {
+    width: 14px;
+    height: 14px;
+    background: -2px -228px;
+}
+.smiley.smile2 {
+    width: 14px;
+    height: 14px;
+    background: -2px -244px;
+}
+.smiley.surprised {
+    width: 14px;
+    height: 14px;
+    background: -2px -260px;
+}
+.smiley.thinking {
+    width: 14px;
+    height: 14px;
+    background: -2px -276px;
+}
+.smiley.tongue {
+    width: 14px;
+    height: 14px;
+    background: -2px -292px;
+}
+.smiley.wink {
+    width: 14px;
+    height: 14px;
+    background: -2px -308px;
+}
+
+/*=================================================================
+[28. Useful Classes]
 =================================================================*/
 
 /* clear float */
