@@ -206,7 +206,7 @@ a:hover {
         }
 
         .box .box-header .box-action {
-            font-size: 0.8rem;
+            font-size: 0.8em;
             color    : inherit;
             padding  : 0.133em 0.200em;
             position : absolute;
@@ -403,7 +403,7 @@ a:hover {
     cursor             : pointer;
     display            : inline-block;
     font-family        : inherit;
-    font-size          : 14px;
+    font-size          : 0.875em;
     font-weight        : 400;
     line-height        : 1.5;
     margin             : 0;
@@ -1286,19 +1286,6 @@ label {
     font-weight  : 700;
 }
 
-form [class^="col-"],
-.form [class^="col-"] {
-    padding: 0 7.5px;
-}
-form [class^="col-"]:first-child,
-.form [class^="col-"]:first-child {
-    padding-left: 0;
-}
-form [class^="col-"]:last-child,
-.form [class^="col-"]:last-child {
-    padding-right: 0;
-}
-
 .checkbox {
     display: inline-block;
     vertical-align: top;
@@ -1334,9 +1321,10 @@ form [class^="col-"]:last-child,
 .checkbox.checked > label:after {
     content: "\f00c";
     font-family: FontAwesome;
+    font-size: 0.813em;
     position: absolute;
-    top: 1px;
-    left: 1px;
+    top: -1px;
+    left: 2px;
 }
 
 /** TOGGLE CHECKBOX **/
@@ -1478,7 +1466,7 @@ form [class^="col-"]:last-child,
     .form .form-group .form-help {
         color    : #999;
         display  : block;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         padding  : 3px 0;
     }
     .form .form-group .form-help:empty {
@@ -1811,7 +1799,7 @@ input[type="radio"] {
     clear: both;
 }
 
-.row {zoom: 1;margin: 0 -2%;}
+.row {zoom: 1}
 
 @media (min-width: 400px) {
   .container {
@@ -1850,8 +1838,6 @@ input[type="radio"] {
 *[class*="col-"] {
     position: relative;
     min-height: 1px;
-    padding-left: 2%;
-    padding-right: 2%;
     width: 100%;
     float: left;
     box-sizing: border-box;
@@ -1882,24 +1868,18 @@ input[type="radio"] {
 .push-col-x-10 {left: 86.6666666667%}
 .push-col-x-11 {left: 95.3333333333%}
 
-@media (min-width: 550px) {
-    .col-x-12,
-    .col-x-11,
-    .col-x-10,
-    .col-x-9,
-    .col-x-8,
-    .col-x-7,
-    .col-x-6,
-    .col-x-5,
-    .col-x-4,
-    .col-x-3,
-    .col-x-2,
-    .col-x-1,
+@media (min-width: 768px) {
     *[class*="col-"] {
         margin-left: 4%;
     }
     *[class*="col-"]:first-child {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    *[class*="col-"] + *[class*="col-"] {
+        margin-top: 2%;
     }
 }
 
@@ -2011,7 +1991,7 @@ input[type="radio"] {
 }
 
 .hero p {
-    font-size    : 1.4rem;
+    font-size    : 1.4em;
     font-weight  : 300;
     margin-bottom: 1.000em;
 }
@@ -2111,7 +2091,7 @@ img.valign-bottom {
     background-color     : #e8e8e8;
     color                : #555;
     display              : inline-block;
-    font-size            : 0.8rem;
+    font-size            : 0.8em;
     font-weight          : bold;
     line-height          : 1;
     text-decoration      : none;
@@ -2396,20 +2376,20 @@ a.badge.badge-white:hover {
     }
     .media > .media-content > .media-title {
         display  : block;
-        font-size: 0.8667rem;
+        font-size: 0.8667em;
         padding  : 0;
     }
     .media > .media-content > .media-title > small {
         color      : #989898;
         float      : right;
-        font-size  : 0.7333rem;
+        font-size  : 0.7333em;
         font-weight: normal;
     }
     .media > .media-content > .media-subtitle {
         color      : #87868c;
         display    : block;
         font-weight: 400;
-        font-size  : 0.6667rem;
+        font-size  : 0.6667em;
         padding    : 0;
     }
 
@@ -2647,7 +2627,7 @@ a.badge.badge-white:hover {
 .menu.menu-vertical > li.header {
     padding       : 7px;
     text-transform: uppercase;
-    font-size     : 0.8rem
+    font-size     : 0.8em
 }
 .menu.menu-vertical > li.divider {
     height          : 1px;
