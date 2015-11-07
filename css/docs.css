@@ -34,6 +34,36 @@ header .menu > li > a:hover {
     background-color: #111 !important;
 }
 
+@media (max-width: 768px) {
+
+    header .menu,
+    header .menu > li ul {
+        background-color: #222;
+    }
+
+    header .menu > li {
+        display: block;
+        float: none;
+    }
+
+    header .menu a:link,
+    header .menu a:visited {
+        color: #ddd !important;
+    }
+
+    header .menu li.active > a,
+    header .menu a:active,
+    header .menu a:focus,
+    header .menu a:hover {
+        color: #fff !important;
+        background-color: #111 !important;
+    }
+
+    header .menu li.divider {
+        background-color: #000 !important;
+    }
+}
+
 .wrapper {
     position        : relative;
     padding-top: 47px;
