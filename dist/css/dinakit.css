@@ -236,31 +236,31 @@ a:hover {
         }
             .box .box-header .box-tag.tag-purple {
                 background-color: #862165;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-blue {
                 background-color: #4890a8;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-green {
                 background-color: #5bb75b;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-orange {
                 background-color: #faa732;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-red {
                 background-color: #da4f49;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-pink {
                 background-color: #db35c0;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-black {
                 background-color: #363636;
-                color           : #fff ;
+                color           : #fff;
             }
             .box .box-header .box-tag.tag-white {
                 background-color: #fff;
@@ -1381,75 +1381,6 @@ legend {
 
 select {
     width: auto;
-}
-
-.select {
-    cursor: pointer;
-    word-wrap: break-word;
-    line-height: 1em;
-    white-space: normal;
-    outline: 0;
-    -webkit-transform: rotateZ(0);
-    transform: rotateZ(0);
-    min-width: 14em;
-    display: inline-block;
-    width: 100%;
-    padding: 0.467em 0.800em;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    position: relative;
-    z-index: 1;
-}
-.select.open {
-    border-radius: 4px 4px 0 0;
-}
-
-.select .fa {
-    float: right;
-}
-.select > input.search {
-    background: none!important;
-    border:none !important;
-    box-shadow: none !important;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    outline: 0;
-    -webkit-tap-heighlight-color: rgba(255,255,255,0);
-    padding: inherit;
-    z-index: 2;
-}
-
-.select > .menu {
-    display: none;
-    cursor: auto;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    max-height: 15em;
-    overflow: auto;
-    width: calc(100% + 2px);
-    margin: 0 -1px;
-    font-size: 1em;
-    box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: 0 0 4px 4px;
-    z-index: 11;
-    will-change: transform, opacity;
-}
-.select.open > .menu {
-    display: block;
-}
-
-.select > .text {
-    z-index: 0;
-}
-.select.open > .text {
-    filter: alpha(opacity=20);
-    opacity: .2;
 }
 
 textarea {
@@ -5017,13 +4948,13 @@ blockquote:after {
 //-----------------------------------------------------------------*/
 
 .bg-none { background: none !important; }
-.bg-purple { background-color: #862165; color: #fff ; }
-.bg-blue { background-color: #4890a8; color: #fff ; }
-.bg-green { background-color: #5bb75b; color: #fff ; }
-.bg-orange { background-color: #faa732; color: #fff ; }
-.bg-red { background-color: #da4f49; color: #fff ; }
-.bg-pink { background-color: #db35c0; color: #fff ; }
-.bg-black { background-color: #363636; color: #fff ; }
+.bg-purple { background-color: #862165; color: #fff; }
+.bg-blue { background-color: #4890a8; color: #fff; }
+.bg-green { background-color: #5bb75b; color: #fff; }
+.bg-orange { background-color: #faa732; color: #fff; }
+.bg-red { background-color: #da4f49; color: #fff; }
+.bg-pink { background-color: #db35c0; color: #fff; }
+.bg-black { background-color: #363636; color: #fff; }
 .bg-white { background-color: #fff; color: #363636 ; }
 
 /*-------------------------------------------------------------------
@@ -5039,35 +4970,3 @@ blockquote:after {
 .border-pink { border-color: #db35c0 !important; }
 .border-black { border-color: #363636 !important; }
 .border-white { border-color: #fff !important; }
-
-.carousel {
-    position: relative;
-}
-
-.carousel > .controls {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    list-style-type: none;
-}
-.carousel > .controls > .control {
-    width: 30px;
-    height: 30px;
-    background-color: #999;
-    border-radius: 50%;
-    display: inline-block;
-}
-.carousel > .controls > .control:not(.active) {
-    cursor: pointer;
-    background-color: #000;
-}
-
-.carousel > .inner {}
-
-.carousel > .inner > .item {
-    float: left;
-}
-.carousel > .inner > .item > .object {}
-.carousel > .inner > .item > .content {}
-.carousel > .inner > .item > .content > .item {}
-.carousel > .inner > .item > .action {}
