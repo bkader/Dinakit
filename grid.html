@@ -8,40 +8,90 @@
         <meta name="description" content="Yet a simple HTML5/CSS3 Framework made as simple as it can be">
         <meta name="author" content="IanGraphics">
         <meta property="og:url" content="http://dinakit.itemplat.es/">
-        <meta property="og:title" content="Dinakit Framework by @IanGraphics">
-        <meta property="og:image" content="http://dinakit.itemplat.es/img/dinakit.jpg">
-        <link rel="stylesheet" href="http://dinakit.cdn.itemplat.es/css/dinakit.min.css">
-        <link rel="stylesheet" href="http://dinakit.cdn.itemplat.es/css/dinakit.min.css">
-        <link rel="stylesheet" href="http://dinakit.itemplat.es/css/docs.css">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js">
+        <meta property="og:title" content="Dinakit Framework by @KaderBouyakoub">
+        <meta property="og:image" content="img/dinakit.jpg">
+        <link rel="stylesheet" href="dist/css/dinakit.css">
+        <link rel="stylesheet" href="css/docs.css">
         <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
         <![endif]-->
-        <link rel="shortcut icon" href="http://dinakit.itemplat.es/favicon.ico">
-        <style type="text/css">
-        *[class^='col-'] {
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: #eee;
-                    box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
-                 -o-box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
-                -ms-box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
-               -moz-box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
-            -webkit-box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
-        }
-        </style>
+        <script src="js/vendor/modernizr.min.js"></script>
+        <link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body>
+    <body id="top">
 
         <div class="container">
-            <div class="row" style="background-color: red">
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
-                <div class="col-x-6 col-s-4 col-m-3 col-l-2">col-3</div>
+
+            <div class="row" style="background-color: #e5e5e5;">
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+                <div class="col-x-12 col-s-6 col-m-3 col-l-1 col-docs">3</div>
+            </div>
+            <div class="row">
+                <div class="col-l-12 col-docs">col-l-12</div>
+                <div class="col-l-12 col-docs">col-l-12</div>
+                <div class="col-l-12 col-docs">col-l-12</div>
+                <div class="col-l-12 col-docs">
+                    <p>col-l-12</p>
+                    <div class="row">
+                        <div class="col-x-12 col-s-8 col-m-8 col-l-6 col-docs">
+                        </div>
+                        <div class="col-x-12 col-s-4 col-m-4 col-l-6 col-docs">
+                            <div class="row">
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">
+                                    <span class="hide-s hide-m hide-l">X</span>
+                                    <span class="hide-x hide-m hide-l">S</span>
+                                    <span class="hide-x hide-s hide-l">M</span>
+                                    <span class="hide-x hide-s hide-m">L</span>
+                                </div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                                <div class="col-x-6 col-s-4 col-m-3 col-docs">12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

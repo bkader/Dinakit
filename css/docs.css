@@ -1,5 +1,5 @@
 body {
-    font: 400 15/1.6 "Raleway", Tahoma, Arial, sans-serif;
+    font: 400 15px/1.6 "Titillium Web", Tahoma, Arial, sans-serif;
     background: #fefefe;
 }
 
@@ -14,7 +14,7 @@ header {
     width: 100%;
     z-index: 1052;
     background-color: #222;
-    height: 32px;
+    height: 52px;
 }
 
 header .menu > li > a:link,
@@ -34,36 +34,6 @@ header .menu > li > a:hover {
     background-color: #111 !important;
 }
 
-@media (max-width: 768px) {
-
-    header .menu,
-    header .menu > li ul {
-        background-color: #222;
-    }
-
-    header .menu > li {
-        display: block;
-        float: none;
-    }
-
-    header .menu a:link,
-    header .menu a:visited {
-        color: #ddd !important;
-    }
-
-    header .menu li.active > a,
-    header .menu a:active,
-    header .menu a:focus,
-    header .menu a:hover {
-        color: #fff !important;
-        background-color: #111 !important;
-    }
-
-    header .menu li.divider {
-        background-color: #000 !important;
-    }
-}
-
 .wrapper {
     position        : relative;
     padding-top: 47px;
@@ -80,4 +50,12 @@ header .menu > li > a:hover {
 section + section {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+
+.col-docs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 1px #666;
 }

@@ -16,4 +16,16 @@ if(typeof window.console.markTimeline == 'undefined') {
 }
 window.console.clear = function(){};
 
-;(function($) {})(jQuery);
+;(function($) {
+	'use strict';
+
+	$(document).on('click', '#emo_send', function(e) {
+		e.preventDefault();
+		var _textarea = $("#emo_test"),
+			_text = _textarea.val(),
+			_preview = $("#emo_preview");
+		if (!_text.length) return;
+		_preview.append(emoticonize(_text));
+		_textarea.val('');
+	})
+})(jQuery);
