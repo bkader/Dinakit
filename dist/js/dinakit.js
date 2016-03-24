@@ -1,3 +1,8 @@
+/*
+ * # Dinakit Framework 2.0 by @KaderBouyakoub <bkader@mail.com>
+ * https://bitbucket.org/iangraphics/dinakit - http://dinakit.tk/
+ * License - "Don't Be A Dick License" - DBAD by philsturgeon (http://www.dbad-license.org/)
+ */
 (function($) {
     'use strict';
     $(document).on('click', 'a[href="#"], a[role="button"]', function(e) {
@@ -119,30 +124,9 @@
         }
     });
 
-    /*$(document).on('focus', 'textarea.auto-expand', function() {
-    	$(this).css({
-    		overflow: 'hidden',
-    		'min-height': $(this).innerHeight(),
-    	});
-    }).on('change keyup keydown paste cut', 'textarea.auto-expand', function(e) {
-    	var $that = $(this)
-    		, minHeight = $that.innerHeight()
-    		, $val = $that.val();
-    	if ($.trim($val).length > 0) {
-    		$that.height(0).height(this.scrollHeight);
-    	} else {
-    		//console.log('empty');
-    		$that.height(0);
-    	}
-    });*/
-
 	$(document).on('change keyup keydown paste cut', 'textarea.auto-expand', function () {
 		$(this).css({'overflow':'hidden'}).height(0).height(this.scrollHeight);
 	}).find('textarea.auto-expand').change();
-
-/*$(document).on('change keyup keydown paste cut', 'textarea.auto-expand', function () {
-        $(this).height(0).height(this.scrollHeight);
-    }).find('textarea.auto-expand').change();*/
 
     $(document).ready(function() {
 
@@ -203,48 +187,6 @@
         });
 
     });
-
-    $.fn.toggleClick = function (func1, func2) {
-        var funcs = [func1, func2];
-        this.data('toggleClicked', 0);
-        this.click(function() {
-            var data = $(this).data(),
-                tc = data.toggleClicked;
-            $.proxy(funcs[tc], this)();
-            data.toggleClicked = (tc + 1) % 2;
-        });
-        return this;
-    };
-
-    $('.select').toggleClick(function() {
-        $(this).addClass('open');
-    }, function() {
-        $(this).removeClass('open');
-    });
-    /*$(document).on('toggleClick', '.select', function(e) {
-        e.preventDefault();
-        return $(this).addClass('open');
-        var $this     = $(this),
-            input     = $this.find('[type="hidden"]'),
-            search    = $this.find('input.search'),
-            preview   = $this.find('.text'),
-            menu      = $this.find('.menu'),
-            opened    = false;
-        if (input && preview) {
-            $this.addClass('open');
-            menu.find('a[data-value]').click(function(e) {
-                e.preventDefault();
-                var $val = $(this).attr('data-value'),
-                    $html = $(this).html();
-                if ($val.length && $html.length) {
-                    preview.html($html);
-                }
-            });
-        }
-    }, function(e) {
-        e.preventDefault();
-        return $(this).removeClass('open');
-    });*/
 
     $.fn.emoticonize = function() {
         var emoticons = {
@@ -308,7 +250,6 @@
 
     $('html').click(function () {
         $('.btn-dropdown:not(:hover)').removeClass('open');
-        $('.select').removeClass('open');
     });
 
 }(jQuery));
