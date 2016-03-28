@@ -1,8 +1,3 @@
-DinaKit
-=======
-
-InGraphics DinaKit Framework
-
-This Framework was made for a personal use but i have decided to share it with you.
-
-http://dinakit.itemplat.es/
+[@bkader](https://github.com/bkader)'s Dinakit Framework
+Inspired from various other frameworks.
+Find documentation here: http://dinakit.bkader.com/
