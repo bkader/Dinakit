@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dinakit: Landing Page</title>
+    <meta name="description" content="Dinakit Framework">
+    <meta name="author" content="Kader Bouyakoub">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/css/dinakit.css">
+    <style>
+    section {
+        padding: 6em 0;
+        text-align: center;
+    }
+    section.dark {
+      background-color: #666;
+      color: #fff;
+    }
+    section.hero {
+        padding: 10rem 0;
+    }
+    .section-heading,
+    .section-description {
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-heading {
+        font-weight: 300;
+    }
+
+    /* Help
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    section.help {
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+    }
+
+    /* Bigger than 550 */
+    @media (min-width: 550px) {
+      section {
+        padding: 12rem 0 11rem;
+      }
+      .hero {
+        padding-bottom: 12rem;
+        text-align: left;
+        height: 165px;
+      }
+      .hero-heading {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* Bigger than 750 */
+    @media (min-width: 750px) {
+      .hero {
+        height: 190px;
+      }
+      .hero-heading {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 14rem 0 15rem;
+      }
+      .hero {
+        padding: 16rem 0 14rem;
+      }
+      .section-description {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* Bigger than 1000 */
+    @media (min-width: 1000px) {
+      section {
+        padding: 12rem 0 11rem;
+      }
+      .hero {
+        padding: 22rem 0;
+      }
+      .hero-heading {
+        font-size: 2rem;
+      }
+    }
+    </style>
+  </head>
+  <body>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-x-12 col-s-12 col-m-12 text-center">
+            <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
+            <a class="btn btn-blue btn-pill btn-xlarge" href="http://dinakit.bkader.com/">Try Dinakit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-x-12 col-s-12 col-m-4">
+            <h2>67%</h2>
+            <h5 class="text-teal">Purchase Increase</h5>
+            <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+          </div>
+          <div class="col-x-12 col-s-12 col-m-4">
+            <h2>90%</h2>
+            <h5 class="text-teal">Multi-device Users</h5>
+            <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+          </div>
+          <div class="col-x-12 col-s-12 col-m-4">
+            <h2>66%</h2>
+            <h5 class="text-teal">Sad Users</h5>
+            <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="help">
+      <div class="container">
+        <h3 class="section-heading">Need help getting started?</h3>
+        <p class="section-description">Dinakit is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
+        <a class="btn btn-blue btn-pill" href="http://dinakit.bkader.com/">View Dinakit Docs</a>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container">
+        <h3 class="section-heading">Responsive Images</h3>
+        <p class="section-description">Dinakit images sit easily in grid with <strong>.fluid</strong> class. I suggest exploring solution to serving different images based on device size.</p>
+        <div class="row">
+          <div class="col-x-12 col-s-12 col-m-4">
+            <img class="fluid" src="../img/image.png">
+          </div>
+          <div class="col-x-12 col-s-12 col-m-4">
+            <img class="fluid" src="../img/image.png">
+          </div>
+          <div class="col-x-12 col-s-12 col-m-4">
+            <img class="fluid" src="../img/image.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../dist/js/dinakit.js"></script>
+  </body>
+</html>

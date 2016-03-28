@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dinakit: Homepage</title>
+        <meta name="description" content="Dinakit Framework">
+        <meta name="author" content="Kader Bouyakoub">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../dist/css/dinakit.css">
+        <style>
+		body {
+		    font: 400 15px/1.6 "Titillium Web", Tahoma, Arial, sans-serif;
+		    background: #fefefe;
+		}
+
+
+		header {
+		    width: 100%;
+		    z-index: 201;
+		}
+
+		@media (min-width: 768px) {
+		    header {
+		        position: fixed;
+		        left: 0;
+		        top: 0;
+		        box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+		    }
+		}
+
+		header .header {
+		    padding: .5em 0;
+		    height: auto;
+		    background-color: #1b1c1d;
+		}
+		header .header.light {
+		    background-color: #fff;
+		}
+
+		.header [class*="col-"] {
+		    padding-bottom: 0;
+		}
+
+		.header .menu * {
+		    -webkit-transition: all 150ms ease-in-out;
+		    -moz-transition: all 150ms ease-in-out;
+		    transition: all 150ms ease-in-out;
+		}
+		.header .menu li > a {
+		    color: rgaba(255,255,255,.7);
+		    font-weight: bold;
+		}
+		.header .menu li.active > a,
+		.header .menu li > a:active,
+		.header .menu li > a:focus,
+		.header .menu li > a:hover {
+		    color: rgba(255,255,255,1);
+		}
+		.header .menu li.active > a {
+		    color: rgba(255,255,255,.9);
+		    border-bottom: 1px solid rgba(255,255,255,.9);
+		}
+
+		.header.light .menu li > a {
+		    color: rgaba(0,0,0,.7);
+		    font-weight: bold;
+		}
+		.header.light .menu li.active > a,
+		.header.light .menu li > a:active,
+		.header.light .menu li > a:focus,
+		.header.light .menu li > a:hover {
+		    color: rgba(0,0,0,.9);
+		}
+
+		.header .menu li.active > a {
+		}
+		.header.light .menu li.active > a {
+		    border-bottom: 1px solid rgba(0,0,0,.3);
+		}
+
+		.wrapper {
+		    height: 100%;
+		    position: relative;
+		}
+
+		@media (min-width: 768px) {
+		    .wrapper {
+		        padding-top: 2.67em;
+		    }
+		}
+
+		section {
+		    padding-top: 5em;
+		    padding-bottom: 5em;
+		}
+		section.hero {
+		    background-color: #1b1c1d;
+		    color: #fff;
+		}
+
+		@media (min-width: 768px) {
+		    section.hero {
+		        padding-top: 10em;
+		        padding-bottom: 8em;
+		    }
+		}
+		section.hero h1 {
+		    font-size: 4em;
+		    font-weight: normal;
+		}
+		section.hero h2 {
+		    font-size: 1.7em;
+		    font-weight: normal;
+		}
+
+        </style>
+    </head>
+    <body>
+
+		<header>
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-x-12 col-s-8 col-m-8">
+							<ul class="menu">
+								<li class="active"><a href="#" role="button">Home</a></li>
+								<li><a href="#" role="button">Work</a></li>
+								<li><a href="#" role="button">Company</a></li>
+								<li><a href="#" role="button">Careers</a></li>
+							</ul>
+						</div>
+						<div class="hide-xs col-s-4 col-m-4">
+							<span class="float-right">
+								<a href="#" role="button" class="btn">Login</a>
+								<a href="#" role="button" class="btn btn-blue">Register</a>
+							</span>
+						</div>
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.header-->
+		</header><!--/header-->
+
+		<div class="wrapper">
+
+			<section class="hero">
+				<div class="container text-center">
+					<h1>Lorem ipsum dolor sit amet</h1>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<a href="#" role="button" class="btn btn-blue btn-large">Get Started</a>
+				</div>
+			</section>
+
+			<section class="container">
+				<div class="row">
+					<div class="col-x-12 col-s-12 col-m-6">
+						<h3>Morbi varius vehicula nulla nec efficitur</h3>
+						<p>Maecenas suscipit, augue ac posuere dapibus, sem odio volutpat felis, lacinia condimentum felis sapien vel tellus. Nunc sed iaculis dolor, vitae convallis diam. Sed vel sem tellus.</p>
+						<h3 style="margin-top: 2.2em;">Vestibulum nec faucibus mi</h3>
+						<p>Maecenas mattis, magna sit amet tempor consequat, neque augue finibus leo, et fermentum diam nulla sed nisi. Pellentesque vel dictum erat. Aenean posuere diam eu pharetra gravida.</p>
+					</div>
+					<div class="col-x-12 col-s-12 col-m-4 push-col-m-2">
+						<img src="../img/image.png" alt="Sample" class="fluid">
+					</div>
+				</div><!--/.row-->
+				<div class="row" style="margin-top: 3em;">
+					<div class="col-x-12 text-center">
+						<a href="http://dinakit.bkader.com/" class="btn btn-xlarge">Check Dinakit Docs</a>
+					</div><!--/.col-x-12-->
+				</div><!--/.row-->
+			</section><!--/section.container-->
+
+			<section class="container">
+				<div class="row text-center">
+					<div class="col-x-12 col-s-12 col-m-6">
+						<h3>Aliquam erat volutpat</h3>
+						<p>Suspendisse at semper purus, at volutpat felis.</p>
+					</div>
+					<div class="col-x-12 col-s-12 col-m-6">
+						<h3>"Suspendisse eu sodales elit."</h3>
+						<p><i class="avatar tiny circle"></i><strong>Man</strong> Chief Fun Officer Acme Toys</p>
+					</div>
+				</div><!--/.row-->
+			</section><!--/section.container-->
+
+		</div><!--/.wrapper-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../dist/js/dinakit.js"></script>
+		<script>
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 500) {
+				$(".header").addClass("light");
+			} else {
+				$(".header").removeClass("light");
+			}
+		});
+		</script>
+    </body>
+</html>

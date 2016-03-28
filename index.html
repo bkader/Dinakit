@@ -7,767 +7,580 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Yet a simple HTML5/CSS3 Framework made as simple as it can be">
         <meta name="author" content="IanGraphics">
-        <meta property="og:url" content="http://dinakit.itemplat.es/">
+        <meta property="og:url" content="http://dinakit.bkader.com/">
         <meta property="og:title" content="Dinakit Framework by @KaderBouyakoub">
         <meta property="og:image" content="img/dinakit.jpg">
-        <link rel="stylesheet" href="dist/css/dinakit-dev.css">
+        <link rel="stylesheet" href="dist/css/dinakit.min.css">
         <link rel="stylesheet" href="css/docs.css">
         <!--[if lt IE 9]>
-        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="jhttps://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
-        <script src="js/vendor/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body id="top">
-
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-x-6 col-s-4 col-m-3 col-l-3"><a href="#">DinaKit Framework</a></div><!--/.col-x-1-->
-                    <div class="col-x-6 col-s-8 col-m-6 col-l-6">
-                        <ul class="menu">
-                            <!--introduction-->
-                            <li><a href="#top" class="scroll">Get Started</a></li>
-                            <li>
-                                <a href="#">CSS</a>
-                                <ul>
-                                    <li><a href="#grid" class="scroll">Grid</a></li>
-                                    <li><a href="#table" class="scroll">Table</a></li>
-                                    <li><a href="#form" class="scroll">Form</a></li>
-                                    <li><a href="#button" class="scroll">Button</a></li>
-                                    <li><a href="#image" class="scroll">Image</a></li>
-                                    <li><a href="#classes" class="scroll">Useful Classes</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#flag" class="scroll">Flag Icons</a></li>
-                                    <li><a href="#browser" class="scroll">Browsers Icons</a></li>
-                                    <li><a href="#smileys" class="scroll">Smileys</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Components</a>
-                                <ul>
-                                    <li><a href="#menu" class="scroll">Menu</a></li>
-                                    <li><a href="#breadcrumb" class="scroll">Breadcrumb</a></li>
-                                    <li><a href="#pagination" class="scroll">Pagination</a></li>
-                                    <li><a href="#label" class="scroll">Labels &amp; Badges</a></li>
-                                    <li><a href="#hero" class="scroll">Hero Unit</a></li>
-                                    <li><a href="#alert" class="scroll">Alerts</a></li>
-                                    <li><a href="#progress" class="scroll">Progress bar</a></li>
-                                    <li><a href="#media" class="scroll">Media Object</a></li>
-                                    <li><a href="#box" class="scroll">Boxes</a></li>
-                                    <li><a href="#gallery" class="scroll">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">JavaScript</a>
-                                <ul>
-                                    <li><a href="#collapse" class="scroll">Collapse</a></li>
-                                    <li><a href="#modal" class="scroll">Modal</a></li>
-                                    <li><a href="#tabs" class="scroll">Tabs</a></li>
-                                    <li><a href="#tooltip" class="scroll">Tooltip</a></li>
-                                </ul>
-                            </li>
-                        </ul><!--.collapse-->
-                    </div><!--/.col-x-8-->
-                    <div class="hide-x hide-s col-m-3 col-l-3">
-                        <ul class="menu menu-inline menu-right float-right">
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                            <li><a href="#"><i class="fa fa-bitbucket"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        </ul>
-                    </div><!--/.col-x-3-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </header><!--/header-->
+    <body>
 
         <div class="wrapper">
-            <div class="container">
+            <nav class="nav-side">
+                <div class="nav-inner">
+                    <div class="nav-header">
+                        <a href="http://dinakit.bkader.com/" role="button" class="header-link">Dinakit Framework</a>
+                    </div>
+                    <div class="nav-content">
+                        <ul class="menu menu-vertical">
+                            <li><a href="#start" class="scroll">Get Started</a></li>
+                            <li class="header">CSS</li>
+                            <li><a href="#grid" class="scroll">Grid</a></li>
+                            <li><a href="#table" class="scroll">Table</a></li>
+                            <li><a href="#form" class="scroll">Form</a></li>
+                            <li><a href="#button" class="scroll">Button</a></li>
+                            <li><a href="#image" class="scroll">Image</a></li>
+                            <li><a href="#classes" class="scroll">Useful Classes</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#flags" class="scroll">Flags</a></li>
+                            <li><a href="#browsers" class="scroll">Browsers</a></li>
+                            <li><a href="#smileys" class="scroll">Smileys</a></li>
+                            <li class="header">Components</li>
+                            <li><a href="#menu" class="scroll">Menu</a></li>
+                            <li><a href="#breadcrumb" class="scroll">Breadcrumb</a></li>
+                            <li><a href="#pagination" class="scroll">Pagination and Pager</a></li>
+                            <li><a href="#labels" class="scroll">Labels and Badges</a></li>
+                            <li><a href="#hero" class="scroll">Hero Unit</a></li>
+                            <li><a href="#alert" class="scroll">Alerts</a></li>
+                            <li><a href="#progress" class="scroll">Progress Bar</a></li>
+                            <li><a href="#media" class="scroll">Media Object</a></li>
+                            <li><a href="#box" class="scroll">Boxes</a></li>
+                            <li><a href="#gallery" class="scroll">Gallery</a></li>
+                            <li><a href="#tooltip" class="scroll">Tooltip</a></li>
+                            <li class="header">Javascript</li>
+                            <li><a href="#alerts" class="scroll">Alerts</a></li>
+                            <li><a href="#collapse" class="scroll">Collapse</a></li>
+                            <li><a href="#modal" class="scroll">Modal</a></li>
+                            <li><a href="#tabs" class="scroll">Tabs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-footer">
+                    <a href="https://github.com/bkader" target="_blank" class="btn btn-small btn-blue">@bkader</a><a href="https://github.com/bkader/DinaKit" target="_blank" class="btn btn-small btn-black"><i class="fa fa-github"></i></a>
+                </div>
+            </nav>
+            <div class="content-wrap">
+                <div class="main-content">
 
-                <section class="row">
-                    <div class="col-x-12">
-                        <h1>Gettings Started<small>All you need to know about Dinakit Framework</small></h1>
+                    <section id="start">
+                        <h1>Getting Started</h1>
+                        <h4><small>Getting up and running with Dinakit Framework</small></h4>
                         <hr>
-                        <p>To install <strong>DinaKit Framework</strong> simply download our latest release and link both <strong>CSS</strong> and <strong>JS</strong> files.</p>
-                    </div><!--/.col-x-12-->
-                </section><!--/.row-->
+                        <p><code>Dinakit</code>'s inspiration comes from a lot of well-known CSS/HTML frameworks such as <a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>, <a href="http://semantic-ui.com/" target="_blank" rel="nofollow">Semantic-UI</a> and others.</p>
+                        <p>To use <a href="#">Dinakit Framework</a>, simply <a href="https://github.com/bkader/DinaKit/releases" target="_blank">download</a> our latest release and link both <strong>CSS</strong> and <strong>JS</strong> files.</p>
+                        <p>You can use CDN hosted package:</p>
+                        <p class="text-center">
+                            <a href="https://github.com/bkader/DinaKit/releases" target="_blank" class="btn btn-blue btn-large">Download Dinakit Framework</a>
+                        </p>
+                        <pre><code><a target="_blank" href="http://dinakit.bkader.com/dist/css/dinakit.min.css" rel="nofollow">http://dinakit.bkader.com/dist/css/dinakit.min.css</a></code><br><code><a target="_blank" href="http://dinakit.bkader.com/dist/js/dinakit.min.js" rel="nofollow">http://dinakit.bkader.com/dist/js/dinakit.min.js</a></code></pre>
+                        <p>Or use <a href="https://cdnjs.com/" target="_blank" rel="nofollow">CDNJS</a>.</p>
+                        <pre><code><a target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/DinaKit/2.0.0/css/dinakit.min.css" rel="nofollow">https://cdnjs.cloudflare.com/ajax/libs/DinaKit/2.0.0/css/dinakit.min.css</a></code></pre>
+                        <pre><code><a target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/DinaKit/2.0.0/js/dinakit.min.js" rel="nofollow">https://cdnjs.cloudflare.com/ajax/libs/DinaKit/2.0.0/js/dinakit.min.js</a></code></pre>
+                    </section>
 
-                <section class="row" id="alert">
-                    <div class="col-x-12">
-                        <h3>Alerts <small>Alerts are used to display all types of messages : error, success, warning or info.</small></h3>
-                        <p>To use the <strong>Alert</strong> message simple create an element such us a <code>div</code> and give it the class <code>class="alert"</code>. The default alert message is the warning version.</p>
-                        <br>
-                        <div class="row">
-                            <div class="col-x-12 col-s-6 col-m-6">
-                                <div class="alert">
-                                    <h5>Default Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                                <div class="alert alert-error">
-                                    <h5>Error Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-error"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                            </div>
-                            <div class="col-x-12 col-s-6 col-m-6">
-                                <div class="alert alert-info">
-                                    <h5>Info Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-info"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                                <div class="alert alert-success">
-                                    <h5>Success Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-success"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <p><strong>Alerts</strong> can be closed by adding an <code>a</code> element with as class <code>alert-close</code>.</p>
-                        <p>The element we use : <code>&lt;span class="alert-close"&gt;&lt;/span&gt;</code></p>
-                        <br>
-                        <div class="row">
-                            <div class="col-x-12 col-s-6 col-m-6">
-                                <div class="alert">
-                                    <span class="alert-close"></span>
-                                    <h5>Default Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                                <div class="alert alert-error">
-                                    <span class="alert-close"></span>
-                                    <h5>Error Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-error"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                            </div>
-                            <div class="col-x-12 col-s-6 col-m-6">
-                                <div class="alert alert-info">
-                                    <span class="alert-close"></span>
-                                    <h5>Info Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-info"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                                <div class="alert alert-success">
-                                    <span class="alert-close"></span>
-                                    <h5>Success Alert</h5>
-                                    <p>Element : <code>&lt;div class="alert alert-success"&gt;...&lt;/div&gt;</code></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section><!--/.row#alert-->
-
-                <section class="row" id="box">
-                    <div class="col-x-12 col-s-8 push-col-s-4 col-m-6 push-col-m-6">
-                        <h3>Boxes</h3>
-                        <p>These elements are not necessary but sometimes you want to put your content into a box. Simple use our <code>box</code> component.</p>
-                        <br>
-                        <h5>Basic Example <small>Refer to page source code for more details.</small></h5>
-                        <br>
-                        <div class="box">
-                            <div class="box-header">
-                                <h1 class="box-title">This is the box title</h1>
-                                <small>&lt;small&gt; or &lt;abbr&gt; elements go here</small>
-                                <div class="box-action">
-                                    <div class="btn-dropdown">
-                                        <a href="#" role="button" class="btn btn-small btn-link toggle-dropdown" data-toggle="dropdown"><i class="fa fa-caret-down"></i></a>
-                                        <ul class="menu-right">
-                                            <li><a href="#" role="butto">Link</a></li>
-                                            <i class="divider" role="separator"></i>
-                                            <li><a href="#" role="butto">Link</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="box-tag">box-tag</div>
-                            </div><!--/.box-header-->
-                            <div class="box-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, labore aliquam, ullam repellendus modi voluptatem delectus voluptatibus porro odit quae doloribus qui soluta, maiores autem nemo. Explicabo cupiditate debitis ab.</p>
-                            </div><!--/.box-content-->
-                            <div class="box-footer"></div><!--/.box-footer-->
-                        </div><!--/.box-->
-                    </div><!--/.col-x-12-->
-                </section><!--/.row#box-->
-
-                <section class="row" id="breadcrumb">
-                    <div class="col-x-12 col-s-8 col-m-6">
-                        <h3>Breadcrumb</h3>
-                        <p><strong>Breadcrumbs</strong> are always a nice feature to have on a website. With <strong>DinaKit</strong>, it is so easy to use theme.</p>
-                        <p>Simply create a <code>class="breadcrumb"</code> parent inside which you put a <code>&lt;class="item"&gt;</code> children containing your <code>&lt;a&gt;</code> elements. Active items should have <code>active</code> class.</p>
+                    <section id="grid">
+                        <h2>Grid System</h2>
+                        <h4><small>A grid is used to harmonize negative space in layout</small></h4>
                         <hr>
-                        <div class="breadcrumb">
-                            <div class="item"><a href="#">Home</a></div>
-                            <div class="item"><a href="#">Page</a></div>
-                            <div class="item active"><a href="#">About</a></div>
+                        <h4>Introduction</h4>
+                        <p>A grid is used to design layouts and page parts. It is used to align negative space in designs.</p>
+                        <p>Using a grid makes content appear to flow more naturally on site pages.</p>
+                        <div class="row">
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
                         </div>
-                    </div>
-                </section><!--/.row#breadcrumb-->
-
-                <section class="row" id="browser">
-                    <div class="col-x-12 col-s-8 push-col-s-4 col-m-6 push-col-m-6">
-                        <h3>Browser <small>Icons that are not <strong>REALLY</strong> necessary</small></h3>
-                        <p>If you are making a design and you want to use browsers' icons, you can avoid downloading images or sprites and simply use our <code>browser</code> or <code>brw</code> classses.</p>
                         <br>
-                        <p><i class="browser chrome"></i><i class="browser firefox"></i><i class="browser ie"></i><i class="browser maxthon"></i><i class="browser netscape"></i><i class="browser opera"></i><i class="browser safari"></i><i class="browser theworld"></i><i class="browser traveler"></i></p>
-                    </div><!--/.col-x-12.col-s-6-->
-                </section><!--/.row#browser-->
+                        <h4>Container</h4>
+                        <p>The <code>container</code> centers all elements on the page: <code>&lt;div class="container"&gt;...&lt;/div&gt;</code></p>
+                        <p>The container may contain as many <code>row</code> as you desire.</p>
+                        <br>
+                        <h4>Rows</h4>
+                        <p>Rows are used to divided page parts horizontally. Each <code>row</code> may contain as many <code>columns</code> as you want. To use a row, simply use: <code>&lt;div class="row"&gt;...&lt;/div&gt;</code></p>
+                        <br>
+                        <h4>Columns</h4>
+                        <p><a href="#">Dinakit</a> uses 12 columns grid. <code>&lt;div class="col-[xs|sm|md|lg|xl]-[1-12]"&gt;...&lt;/div&gt;</code></p>
+                        <p><code>col-x-..</code> are used for devices which <code>max-width: 767px</code>.</p>
+                        <p><code>col-s-..</code> are used for devices which <code>min-width: 768px</code> and <code>max-width: 991px</code>.</p>
+                        <p><code>col-m-..</code> are used for devices which <code>min-width: 992px</code> and <code>max-width: 1199px</code>.</p>
+                        <p><code>col-l-..</code> are used for devices which <code>min-width: 1200px</code>.</p>
+                        <p>If you want to make your design responsive, make sure to start with mobile first: <code>-x-</code> up to <code>-s-</code></p>
+                    </section>
 
-                <section class="row" id="button">
-                    <div class="col-x-12">
+                    <section id="table">
+                        <h2>Tables</h2>
+                        <p>A table displays a collection of data grouped into rows.</p>
+                        <br>
+                        <h4>Types</h4>
+                        <br>
+                        <h5>Table <small>A standard table</small></h5>
+                        <p>Just add <code>table</code> class to a table and you get the result below.</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h5>Compact <small>A compact table</small></h5>
+                        <p>By adding the class <code>...class="table compact"...</code> You get the following</p>
+                        <table class="table compact">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h5>Bordered <small>A bordered table</small></h5>
+                        <p>By adding the class <code>...class="table bordered"...</code> You get the following</p>
+                        <table class="table bordered">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h5>Stripped <small>A stripped table</small></h5>
+                        <p>By adding the class <code>...class="table stripped"...</code> You get the following</p>
+                        <table class="table stripped">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h5>Hovered <small>A hovered table</small></h5>
+                        <p>By adding the class <code>...class="table hovered"...</code> You get the following</p>
+                        <table class="table hovered">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h5>Colored <small>A colored table</small></h5>
+                        <p>By adding the class <code>...class="[color]"...</code> to a row, you can its background color. Available color classes are : purple, blue, green, orange, red, pink, black and white.</p>
+                        <table class="table hovered">
+                            <thead>
+                                <tr class="purple">
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="blue">
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr class="green">
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr class="red">
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section id="form"></section>
+
+                    <section id="button">
+                        <h2>Buttons</h2>
+                        <p>A button is a nicer way to display HTML buttons and links and indicates a possible user action.</p>
+                        <br>
+                        <h3>Types</h3>
+                        <hr>
+                        <h4>Simple</h4>
+                        <p>A standard button is used by adding the class <code>btn</code> to a button or any other element.</p>
+                        <p><a href="#" role="button" class="btn"><strong>a</strong> tag</a><button class="btn">Button</button></p>
+                        <p><code>&lt;a href="#" class="btn"&gt;...&lt;/a&gt;</code><br><code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br><code>&lt;input type="..." class="btn"&gt;</code></p>
+                        <br>
+                        <h4>Colored Buttons</h4>
+                        <p>You can colorize a button by adding available colors: <code>btn-purple</code> ... Available colors are: purple, blue, teal, green, orange, yellow, red, brown, pink, black and white.</p>
+                        <p><a href="#" role="button" class="btn btn-purple">Purple</a><a href="#" role="button" class="btn btn-blue">Blue</a><a href="#" role="button" class="btn btn-teal">Teal</a><a href="#" role="button" class="btn btn-green">Green</a><a href="#" role="button" class="btn btn-orange">Orange</a><a href="#" role="button" class="btn btn-yellow">Yellow</a><a href="#" role="button" class="btn btn-red">Red</a><a href="#" role="button" class="btn btn-brown">Brown</a><a href="#" role="button" class="btn btn-pink">Pink</a><a href="#" role="button" class="btn btn-black">Black</a><a href="#" role="button" class="btn btn-white">White</a></p>
+                        <br>
+                        <h4>Hollow Buttons</h4>
+                        <p>Hollow buttons are outlined buttons with transparent background and colored borders. Hollow buttons are available for all colors. Simple add <code>btn-hollow</code> and you're done!</p>
+                        <p><a href="#" role="button" class="btn btn-purple btn-hollow">Purple</a><a href="#" role="button" class="btn btn-blue btn-hollow">Blue</a><a href="#" role="button" class="btn btn-teal btn-hollow">Teal</a><a href="#" role="button" class="btn btn-green btn-hollow">Green</a><a href="#" role="button" class="btn btn-yellow btn-hollow">Yellow</a><a href="#" role="button" class="btn btn-orange btn-hollow">Orange</a><a href="#" role="button" class="btn btn-red btn-hollow">Red</a><a href="#" role="button" class="btn btn-brown btn-hollow">Brown</a><a href="#" role="button" class="btn btn-pink btn-hollow">Pink</a><a href="#" role="button" class="btn btn-black btn-hollow">Black</a></p>
+                        <br>
+                        <h4>Grouped Buttons</h4>
+                        <p>You can group buttons to eliminate margins between them. All buttons must be put under a <code>btn-group</code> element.</p>
+                        <p><span class="btn-group"><a href="#" role="button" class="btn">Button</a><a href="#" role="button" class="btn">Button</a><a href="#" role="button" class="btn">Button</a></span></p>
+                        <p>You can give each button a specific but if you want to give them all the same color add any of the known color classes to the group like so: <code>btn-group btn-blue</code></p>
+                        <p><span class="btn-group btn-blue"><a href="#" role="button" class="btn">Button</a><a href="#" role="button" class="btn">Button</a><a href="#" role="button" class="btn">Button</a></span><span class="btn-group"><a href="#" role="button" class="btn btn-red">Button</a><a href="#" role="button" class="btn btn-orange">Button</a><a href="#" role="button" class="btn btn-green">Button</a></span></p>
+                        <br>
+                        <h4>Buttons Divider</h4>
+                        <p>You can add a divider between buttons. Simply put a <code>.divider</code> bewteen buttons you want to separate.</p>
+                        <div class="btn-group"><a href="#" class="btn btn-blue">Button</a><span class="divider"></span><a href="#" class="btn btn-green">Button</a><span class="divider"></span><a href="#" class="btn btn-red">Button</a><span class="divider"></span><a href="#" class="btn btn-orange">Button</a></div>
+                        <p>If you want to put your own test inside the divider, add a <code>data-text="..."</code> tag to it. Like : <code>data-text="ou"</code></p>
+                        <p><span class="btn-group">
+                            <a href="#" class="btn btn-red">Red Button</a><span class="divider" data-text="ou"></span><a href="#" class="btn btn-green">Green Button</a>
+                        </span></p>
+                        <br>
+                        <h3>Buttons Groups Sizes</h3>
+                        <p>Buttons groups accept like individual buttons sizes classes like so: <code>btn-group btn-small</code></p>
+                        <p><span class="btn-group btn-small"><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a></span><span class="btn-group btn-large"><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a></span><span class="btn-group btn-xlarge"><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a><a href="#" class="btn">Button</a></span></p>
+                        <br>
+                        <h4>Buttons Sizes</h4>
+                        <p>You can change buttons sizes by adding available sizes classes: <code>btn-tiny</code>, <code>btn-small</code>, <code>btn-large</code> and <code>btn-xlarge</code></p>
+                        <p><a href="#" class="btn btn-tiny">Tiny</a><a href="#" class="btn btn-small">Small</a><a href="#" class="btn">Default</a><a href="#" class="btn btn-large">Large</a><a href="#" class="btn btn-xlarge">xLarge</a></p>
+                        <p>If you want a button to take all the container width, <code>100%</code>, simply add <code>btn-block</code> class to it.</p>
+                        <p><a href="#" class="btn btn-block">Full Width</a></p>
+                        <h4>Extra Classes</h4>
+                        <p>You can make a button appear like a link by adding the class <code>btn-link</code> : <a href="#" class="btn btn-link">Link</a></p>
+                        <p>Disabling a button is done by adding the <code>disabled</code> attribute or class.</p>
                         <p>
-                            <span class="btn-group">
-                                <a href="#" role="button" class="btn btn-blue">This</a>
-                                <span class="divider" data-text="ou"></span>
-                                <a href="#" role="button" class="btn btn-red">That</a>
+                            <span class="btn-group btn-purple">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-primary">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-info">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-success">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-warning">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-yellow">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-danger">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-brown">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-pink">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-inverse">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
+                            </span><span class="btn-group btn-white">
+                                <button class="btn">Enabled</button><span class="divider"></span><button class="btn disabled">Disabled</button>
                             </span>
-                            <a href="#" class="btn">Button</a>
-                            <a href="#" class="btn btn-white">White</a>
-                            <a href="#" class="btn btn-purple">Purple</a>
-                            <a href="#" class="btn btn-blue">Blue</a>
-                            <a href="#" class="btn btn-green">Green</a>
-                            <a href="#" class="btn btn-orange">Orange</a>
-                            <a href="#" class="btn btn-red">Red</a>
-                            <a href="#" class="btn btn-pink">Pink</a>
-                            <a href="#" class="btn btn-black">Black</a>
-                            <a href="#" class="btn btn-link">Link</a>
+                            <hr>
+                            <button class="btn btn-purple disabled">Disabled</button><button class="btn btn-primary disabled">Disabled</button><button class="btn btn-blue disabled">Disabled</button><button class="btn btn-info disabled">Disabled</button><button class="btn btn-teal disabled">Disabled</button><button class="btn btn-success disabled">Disabled</button><button class="btn btn-green disabled">Disabled</button><button class="btn btn-warning disabled">Disabled</button><button class="btn btn-orange disabled">Disabled</button><button class="btn btn-yellow disabled">Disabled</button><button class="btn btn-danger disabled">Disabled</button><button class="btn btn-red disabled">Disabled</button><button class="btn btn-brown disabled">Disabled</button><button class="btn btn-pink disabled">Disabled</button><button class="btn btn-inverse disabled">Disabled</button><button class="btn btn-black disabled">Disabled</button><button class="btn btn-white disabled">Disabled</button>
                         </p>
+                        <p>You can give your buttons extra <code>border-radius</code> by adding <code>btn-pill</code>.</p>
+                        <p><a href="#" class="btn btn-blue btn-pill">Pill</a><a href="#" class="btn btn-green btn-pill">Pill</a><a href="#" class="btn btn-red btn-pill">Pill</a></p>
+                        <p>A group of buttons can also use this class, this will result of the following:</p>
                         <p>
-                            <a href="#" class="btn btn-tiny">tiny</a>
-                            <a href="#" class="btn btn-mini">Mini</a>
-                            <a href="#" class="btn btn-small">Small</a>
-                            <a href="#" class="btn btn-large">Large</a>
-                            <a href="#" class="btn btn-xlarge">Xlarge</a>
-                            <a href="#" class="btn btn-pill">Pill</a>
-                        </p>
-                        <p><a href="#" class="btn btn-block">Block</a></p>
-                        <p>
-                        Hello there <a href="#" class="btn btn-small btn-purple">Purple</a><a href="#" class="btn btn-blue">blue</a>
-                            <span class="btn-group">
-                                <a href="#" class="btn btn-blue"><i class="fa fa-user"></i></a><a href="#" class="btn btn-teal"><i class="fa fa-envelope"></i></a><a href="#" class="btn btn-green"><i class="fa fa-bell"></i></a>
+                            <span class="btn-group btn-pill">
+                                <a href="#" class="btn btn-blue">Button</a>
+                                <a href="#" class="btn btn-green">Button</a>
+                                <a href="#" class="btn btn-red">Button</a>
                             </span>
-                            <a href="#" class="btn btn-green btn-tiny">Green</a>
-                            <a href="#" class="btn btn-yellow btn-mini">Yellow</a>
-                            <a href="#" class="btn btn-orange btn-small">Orange</a>
-                            <a href="#" class="btn btn-brown btn-large">Brown</a>
-                            <a href="#" class="btn btn-red btn-xlarge">Red</a>
-                            <a href="#" class="btn btn-black">Black</a>
                         </p>
+                        <hr>
+                        <p>Buttons can contain <code>label</code> elements inside. You have to put a <code>span.btn</code> inside it to get the result below</p>
+                        <pre>&lt;div class="btn btn-label"&gt;<br>&nbsp;&nbsp;&nbsp;&lt;span class="btn"&gt;Button&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&lt;span class="label"&gt;10&lt;/span&gt;<br>&lt;/div&gt;</pre>
+                        <pre>&lt;div class="btn btn-label"&gt;<br>&nbsp;&nbsp;&nbsp;&lt;span class="label"&gt;10&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&lt;span class="btn"&gt;Button&lt;/span&gt;<br>&lt;/div&gt;</pre>
                         <p>
-                            <a href="#" role="button" class="label label-image label-pill">
-                                <img src="" alt="">
-                                Hello There:
-                            </a>
-                            <a href="#" role="button" class="btn btn-label btn-pill">
-                                <span class="btn"><i class="fa fa-heart"></i></span>
-                                <span class="label">2,048</span>
-                            </a>
-                            <a href="#" role="button" class="btn btn-red btn-pill btn-label">
-                                <span class="btn">Play Now</span>
-                                <span class="label"><i class="fa fa-play"></i></span>
-                            </a>
-                            <a href="#" role="button" class="btn btn-green btn-circle btn-label">
-                                <span class="label">2,048</span>
-                                <span class="btn"><i class="fa fa-heart"></i></span>
-                            </a>
-                            <a href="#" role="button" class="btn btn-github btn-label btn-pill">
-                                <span class="label">2,048</span>
-                                <span class="btn"><i class="fa fa-github"></i></span>
-                            </a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-purple btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-purple btn-label"><span class="label">10</span><span class="btn">Button</span></a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-blue btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-blue btn-label"><span class="label">10</span><span class="btn">Button</span></a><br>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-teal btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-teal btn-label"><span class="label">10</span><span class="btn">Button</span></a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-green btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-green btn-label"><span class="label">10</span><span class="btn">Button</span></a><br>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-orange btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-orange btn-label"><span class="label">10</span><span class="btn">Button</span></a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-yellow btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-yellow btn-label"><span class="label">10</span><span class="btn">Button</span></a><br>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-red btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-red btn-label"><span class="label">10</span><span class="btn">Button</span></a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-brown btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-brown btn-label"><span class="label">10</span><span class="btn">Button</span></a><br>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-pink btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-pink btn-label"><span class="label">10</span><span class="btn">Button</span></a>
+                            <a href="#" role="button" class="btn btn-pill btn-small btn-black btn-label"><span class="btn">Button</span><span class="label">10</span></a><a href="#" role="button" class="btn btn-pill btn-small btn-black btn-label"><span class="label">10</span><span class="btn">Button</span></a>
                         </p>
-                    </div><!--/.col-x-12-->
-                </section><!--/.row-->
-
-                <section class="row" id="collapse">
-                    <div class="col-x-12 col-s-12 col-m-6">
-                        <div class="collapse">
-                            <div class="title">Simple Collapse</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                            <div class="title">Title 2</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                            <div class="title">Title 3</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                        </div>
-                    </div>
-                    <div class="col-x-12 col-s-12 col-m-6">
-                        <div class="collapse styled">
-                            <div class="title">Bordered Collapse</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                            <div class="title">Title 2</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                            <div class="title">Title 3</div>
-                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere earum corporis sit at maxime a itaque perspiciatis necessitatibus quod aperiam quia error fuga, cupiditate rem veniam. Facilis, ipsum, quia.</div>
-                        </div>
-                    </div>
-                </section><!--/.row#collapse-->
-
-                <section class="row" id="flag">
-                    <div class="checkbox slider red">
-                        <input type="checkbox" name="checkbox" style="display: none;">
-                        <label for="checkbox">
-                            Check it
-                        </label>
-                    </div>
-                    <div class="col-x-12">
-                        <p>To use our flags, simply create a <code>&lt;i&gt;</code> tag or any other HTML tag and give it the class <code>flag flag-[country-iso2]</code></p>
+                        <br>
+                        <h4>Social Network Buttons</h4>
+                        <p>If you want to use a social network specific button color simply add <code>btn-[name]</code> to a button to colorize it.</p>
+                        <p><button type="button" class="btn btn-dribbble">Dribbble</button><button type="button" class="btn btn-facebook">Facebook</button><button type="button" class="btn btn-googleplus">Googleplus</button><button type="button" class="btn btn-linkedin">Linkedin</button><button type="button" class="btn btn-pinterest">Pinterest</button><button type="button" class="btn btn-rss">Rss</button><button type="button" class="btn btn-tumblr">Tumblr</button><button type="button" class="btn btn-twitter">Twitter</button><button type="button" class="btn btn-github">Github</button></p>
+                        <p>As <a href="#">Dinakit</a> uses <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="nofollow">Font Awesome</a>, you can make social network buttons looks likes so:</p>
                         <p>
-                            <i class="flag flag-ad"></i>
-                            <i class="flag flag-ae"></i>
-                            <i class="flag flag-af"></i>
-                            <i class="flag flag-ag"></i>
-                            <i class="flag flag-ai"></i>
-                            <i class="flag flag-al"></i>
-                            <i class="flag flag-am"></i>
-                            <i class="flag flag-an"></i>
-                            <i class="flag flag-ao"></i>
-                            <i class="flag flag-aq"></i>
-                            <i class="flag flag-ar"></i>
-                            <i class="flag flag-as"></i>
-                            <i class="flag flag-at"></i>
-                            <i class="flag flag-au"></i>
-                            <i class="flag flag-aw"></i>
-                            <i class="flag flag-ax"></i>
-                            <i class="flag flag-az"></i>
-                            <br>
-                            <i class="flag flag-ba"></i>
-                            <i class="flag flag-bb"></i>
-                            <i class="flag flag-bd"></i>
-                            <i class="flag flag-be"></i>
-                            <i class="flag flag-bf"></i>
-                            <i class="flag flag-bg"></i>
-                            <i class="flag flag-bh"></i>
-                            <i class="flag flag-bi"></i>
-                            <i class="flag flag-bj"></i>
-                            <i class="flag flag-bl"></i>
-                            <i class="flag flag-bm"></i>
-                            <i class="flag flag-bn"></i>
-                            <i class="flag flag-bo"></i>
-                            <i class="flag flag-bq"></i>
-                            <i class="flag flag-br"></i>
-                            <i class="flag flag-bs"></i>
-                            <i class="flag flag-bt"></i>
-                            <i class="flag flag-bv"></i>
-                            <i class="flag flag-bw"></i>
-                            <i class="flag flag-by"></i>
-                            <i class="flag flag-bz"></i>
-                            <br>
-                            <i class="flag flag-ca"></i>
-                            <i class="flag flag-catalonia"></i>
-                            <i class="flag flag-cc"></i>
-                            <i class="flag flag-cd"></i>
-                            <i class="flag flag-cf"></i>
-                            <i class="flag flag-cg"></i>
-                            <i class="flag flag-ch"></i>
-                            <i class="flag flag-ci"></i>
-                            <i class="flag flag-ck"></i>
-                            <i class="flag flag-cl"></i>
-                            <i class="flag flag-cm"></i>
-                            <i class="flag flag-cn"></i>
-                            <i class="flag flag-co"></i>
-                            <i class="flag flag-cr"></i>
-                            <i class="flag flag-cs"></i>
-                            <i class="flag flag-cu"></i>
-                            <i class="flag flag-cv"></i>
-                            <i class="flag flag-cw"></i>
-                            <i class="flag flag-cx"></i>
-                            <i class="flag flag-cy"></i>
-                            <i class="flag flag-cz"></i>
-                            <br>
-                            <i class="flag flag-de"></i>
-                            <i class="flag flag-dj"></i>
-                            <i class="flag flag-dk"></i>
-                            <i class="flag flag-dm"></i>
-                            <i class="flag flag-do"></i>
-                            <i class="flag flag-dz"></i>
-                            <br>
-                            <i class="flag flag-ec"></i>
-                            <i class="flag flag-ee"></i>
-                            <i class="flag flag-eg"></i>
-                            <i class="flag flag-eh"></i>
-                            <i class="flag flag-en"></i>
-                            <i class="flag flag-er"></i>
-                            <i class="flag flag-es"></i>
-                            <i class="flag flag-et"></i>
-                            <i class="flag flag-eu"></i>
-                            <br>
-                            <i class="flag flag-fam"></i>
-                            <i class="flag flag-fi"></i>
-                            <i class="flag flag-fj"></i>
-                            <i class="flag flag-fk"></i>
-                            <i class="flag flag-fm"></i>
-                            <i class="flag flag-fo"></i>
-                            <i class="flag flag-fr"></i>
-                            <br>
-                            <i class="flag flag-ga"></i>
-                            <i class="flag flag-gb"></i>
-                            <i class="flag flag-gd"></i>
-                            <i class="flag flag-ge"></i>
-                            <i class="flag flag-gf"></i>
-                            <i class="flag flag-gg"></i>
-                            <i class="flag flag-gh"></i>
-                            <i class="flag flag-gi"></i>
-                            <i class="flag flag-gl"></i>
-                            <i class="flag flag-gm"></i>
-                            <i class="flag flag-gn"></i>
-                            <i class="flag flag-gp"></i>
-                            <i class="flag flag-gq"></i>
-                            <i class="flag flag-gr"></i>
-                            <i class="flag flag-gs"></i>
-                            <i class="flag flag-gt"></i>
-                            <i class="flag flag-gu"></i>
-                            <i class="flag flag-gw"></i>
-                            <i class="flag flag-gy"></i>
-                            <br>
-                            <i class="flag flag-hk"></i>
-                            <i class="flag flag-hm"></i>
-                            <i class="flag flag-hn"></i>
-                            <i class="flag flag-hr"></i>
-                            <i class="flag flag-ht"></i>
-                            <i class="flag flag-hu"></i>
-                            <br>
-                            <i class="flag flag-id"></i>
-                            <i class="flag flag-ie"></i>
-                            <i class="flag flag-il"></i>
-                            <i class="flag flag-im"></i>
-                            <i class="flag flag-in"></i>
-                            <i class="flag flag-io"></i>
-                            <i class="flag flag-iq"></i>
-                            <i class="flag flag-ir"></i>
-                            <i class="flag flag-is"></i>
-                            <i class="flag flag-it"></i>
-                            <br>
-                            <i class="flag flag-je"></i>
-                            <i class="flag flag-jm"></i>
-                            <i class="flag flag-jo"></i>
-                            <i class="flag flag-jp"></i>
-                            <br>
-                            <i class="flag flag-ke"></i>
-                            <i class="flag flag-kg"></i>
-                            <i class="flag flag-kh"></i>
-                            <i class="flag flag-ki"></i>
-                            <i class="flag flag-km"></i>
-                            <i class="flag flag-kn"></i>
-                            <i class="flag flag-kp"></i>
-                            <i class="flag flag-kr"></i>
-                            <i class="flag flag-kw"></i>
-                            <i class="flag flag-ky"></i>
-                            <i class="flag flag-kz"></i>
-                            <br>
-                            <i class="flag flag-la"></i>
-                            <i class="flag flag-lb"></i>
-                            <i class="flag flag-lc"></i>
-                            <i class="flag flag-li"></i>
-                            <i class="flag flag-lk"></i>
-                            <i class="flag flag-lr"></i>
-                            <i class="flag flag-ls"></i>
-                            <i class="flag flag-lt"></i>
-                            <i class="flag flag-lu"></i>
-                            <i class="flag flag-lv"></i>
-                            <i class="flag flag-ly"></i>
-                            <br>
-                            <i class="flag flag-ma"></i>
-                            <i class="flag flag-mc"></i>
-                            <i class="flag flag-md"></i>
-                            <i class="flag flag-me"></i>
-                            <i class="flag flag-mf"></i>
-                            <i class="flag flag-mg"></i>
-                            <i class="flag flag-mh"></i>
-                            <i class="flag flag-mk"></i>
-                            <i class="flag flag-ml"></i>
-                            <i class="flag flag-mm"></i>
-                            <i class="flag flag-mn"></i>
-                            <i class="flag flag-mo"></i>
-                            <i class="flag flag-mp"></i>
-                            <i class="flag flag-mq"></i>
-                            <i class="flag flag-mr"></i>
-                            <i class="flag flag-ms"></i>
-                            <i class="flag flag-mt"></i>
-                            <i class="flag flag-mu"></i>
-                            <i class="flag flag-mv"></i>
-                            <i class="flag flag-mw"></i>
-                            <i class="flag flag-mx"></i>
-                            <i class="flag flag-my"></i>
-                            <i class="flag flag-mz"></i>
-                            <br>
-                            <i class="flag flag-na"></i>
-                            <i class="flag flag-nc"></i>
-                            <i class="flag flag-ne"></i>
-                            <i class="flag flag-nf"></i>
-                            <i class="flag flag-ng"></i>
-                            <i class="flag flag-ni"></i>
-                            <i class="flag flag-nl"></i>
-                            <i class="flag flag-no"></i>
-                            <i class="flag flag-np"></i>
-                            <i class="flag flag-nr"></i>
-                            <i class="flag flag-nu"></i>
-                            <i class="flag flag-nz"></i>
-                            <br>
-                            <i class="flag flag-om"></i>
-                            <br>
-                            <i class="flag flag-pa"></i>
-                            <i class="flag flag-pe"></i>
-                            <i class="flag flag-pf"></i>
-                            <i class="flag flag-pg"></i>
-                            <i class="flag flag-ph"></i>
-                            <i class="flag flag-pk"></i>
-                            <i class="flag flag-pl"></i>
-                            <i class="flag flag-pm"></i>
-                            <i class="flag flag-pn"></i>
-                            <i class="flag flag-pr"></i>
-                            <i class="flag flag-ps"></i>
-                            <i class="flag flag-pt"></i>
-                            <i class="flag flag-pw"></i>
-                            <i class="flag flag-py"></i>
-                            <br>
-                            <i class="flag flag-qa"></i>
-                            <br>
-                            <i class="flag flag-re"></i>
-                            <i class="flag flag-ro"></i>
-                            <i class="flag flag-rs"></i>
-                            <i class="flag flag-ru"></i>
-                            <i class="flag flag-rw"></i>
-                            <br>
-                            <i class="flag flag-sa"></i>
-                            <i class="flag flag-sb"></i>
-                            <i class="flag flag-sc"></i>
-                            <i class="flag flag-scotland"></i>
-                            <i class="flag flag-sd"></i>
-                            <i class="flag flag-se"></i>
-                            <i class="flag flag-sg"></i>
-                            <i class="flag flag-sh"></i>
-                            <i class="flag flag-si"></i>
-                            <i class="flag flag-sj"></i>
-                            <i class="flag flag-sk"></i>
-                            <i class="flag flag-sl"></i>
-                            <i class="flag flag-sm"></i>
-                            <i class="flag flag-sn"></i>
-                            <i class="flag flag-so"></i>
-                            <i class="flag flag-sr"></i>
-                            <i class="flag flag-ss"></i>
-                            <i class="flag flag-st"></i>
-                            <i class="flag flag-sv"></i>
-                            <i class="flag flag-sx"></i>
-                            <i class="flag flag-sy"></i>
-                            <i class="flag flag-sz"></i>
-                            <br>
-                            <i class="flag flag-tc"></i>
-                            <i class="flag flag-td"></i>
-                            <i class="flag flag-tf"></i>
-                            <i class="flag flag-tg"></i>
-                            <i class="flag flag-th"></i>
-                            <i class="flag flag-tj"></i>
-                            <i class="flag flag-tk"></i>
-                            <i class="flag flag-tl"></i>
-                            <i class="flag flag-tm"></i>
-                            <i class="flag flag-tn"></i>
-                            <i class="flag flag-to"></i>
-                            <i class="flag flag-tr"></i>
-                            <i class="flag flag-tt"></i>
-                            <i class="flag flag-tv"></i>
-                            <i class="flag flag-tw"></i>
-                            <i class="flag flag-tz"></i>
-                            <br>
-                            <i class="flag flag-ua"></i>
-                            <i class="flag flag-ug"></i>
-                            <i class="flag flag-um"></i>
-                            <i class="flag flag-us"></i>
-                            <i class="flag flag-uy"></i>
-                            <i class="flag flag-uz"></i>
-                            <br>
-                            <i class="flag flag-va"></i>
-                            <i class="flag flag-vc"></i>
-                            <i class="flag flag-ve"></i>
-                            <i class="flag flag-vg"></i>
-                            <i class="flag flag-vi"></i>
-                            <i class="flag flag-vn"></i>
-                            <i class="flag flag-vu"></i>
-                            <br>
-                            <i class="flag flag-wales"></i>
-                            <i class="flag flag-wf"></i>
-                            <i class="flag flag-ws"></i>
-                            <br>
-                            <i class="flag flag-ye"></i>
-                            <i class="flag flag-yt"></i>
-                            <br>
-                            <i class="flag flag-za"></i>
-                            <i class="flag flag-zm"></i>
-                            <i class="flag flag-zw"></i>
-                            <br>
-                            <i class="flag flag-ic"></i>
-                            <i class="flag flag-ku"></i>
-                            <i class="flag flag-ld"></i>
-                            <i class="flag flag-somaliland"></i>
-                            <i class="flag flag-tibet"></i>
-                            <i class="flag flag-xk"></i>
-                            <i class="flag flag-zanzibar"></i>
-                            <i class="flag flag-amazigh"></i>
+                            <button type="button" class="btn btn-dribbble"><i class="fa fa-dribbble"></i></button>
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-facebook"></i></button>
+                            <button type="button" class="btn btn-googleplus"><i class="fa fa-google-plus"></i></button>
+                            <button type="button" class="btn btn-linkedin"><i class="fa fa-linkedin"></i></button>
+                            <button type="button" class="btn btn-pinterest"><i class="fa fa-pinterest"></i></button>
+                            <button type="button" class="btn btn-rss"><i class="fa fa-rss"></i></button>
+                            <button type="button" class="btn btn-tumblr"><i class="fa fa-tumblr"></i></button>
+                            <button type="button" class="btn btn-twitter"><i class="fa fa-twitter"></i></button>
+                            <button type="button" class="btn btn-github"><i class="fa fa-github"></i></button>
                         </p>
-                    </div>
-                </section><!--/.row#flag-->
+                    </section>
 
-                <section class="row" id="form">
-                    <div class="col-x-12 col-s-12 col-m-6">
-                        <form action="#" class="form-inline">
-                            <div class="form-group group-icon icon-right">
-                                <span class="form-icon"><i class="fa fa-user"></i></span>
-                                <label class="sr-only" for="name">Name</label>
-                                <input type="text" name="name" class="placeholder" placeholder="Kader Bouyakoub" class="">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" placeholder="bkader[at].mail.com" class="">
-                            </div>
-                        </form>
-                    </div>
-                </section><!--/.row#form-->
+                    <section id="image"></section>
 
-                <section class="row" id="gallery">
-                    <div class="col-x-12 col-s-12 col-m-12">
-                        <div class="gallery" data-animation="pulse">
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right purple">purple</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right blue">blue</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right green">green</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right orange">orange</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right red">red</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right pink">pink</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""><small class="caption top right black">black</small></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                            <div class="item col-x-6 col-s-4 col-m-3 col-l-2"><img src="img/image.png" alt=""></div>
-                        </div>
-                    </div>
-                </section><!--/.row#gallery-->
-                <section id="grid">
-                    <div class="row">
-                        <div class="col-x-12 col-s-12 col-m-12">
-                            <p>Dinakit is dsigned to be mobile first. Classes are like so: <code>class="col-[x-s-m-l]-[1-12]"</code> all wrapped inside a <code>class="row"</code> which should most likely be inside a <code>class="container"</code></p>
-                        </div>
-                    </div>
-                    <div class="row" style="background-color: #eee;">
-                        <div class="col-x-4 push-col-x-8 col-s-4 push-col-s-8 col-m-3 push-col-m-9 col-l-2 push-col-l-10 col-docs">Pushed</div>
-                        <div class="col-x-4 pull-col-x-4 col-s-4 pull-col-s-4 col-m-3 pull-col-m-3 col-l-2 pull-col-l-2 col-docs">Pulled</div>
-                        <div class="col-x-4 pull-col-x-4 col-s-4 pull-col-s-4 col-m-4 pull-col-m-2 col-l-5 pull-col-l-1 col-docs">Centered</div>
-                    </div>
-                    <div class="row" style="background-color: #eee;">
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                        <div class="col-l-1 col-docs">col-l-1</div>
-                    </div>
-                    <div class="row" style="background-color: #eee;">
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                        <div class="col-x-12 col-s-6 col-m-4 col-l-3 col-docs"><span class="show-x">col-x-12</span><span class="show-s">col-s-6</span><span class="show-m">col-m-4</span><span class="show-l">col-l-3</span></div>
-                    </div>
-                </section><!--/.row#grid-->
-                <section class="row" id="image">
-                    <div class="col-x-6">
+                    <section id="classes"></section>
 
-                        <div class="gallery">
-                            <figure class="item img fade">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="flags">
+                        <h2>Flag Icons</h2>
+                        <p>A flag is used to represent a political state.</p>
+                        <br>
+                        <h4>Usage</h4>
+                        <p>A flag can use the two letters country code (iso-2) or the full country name.</p>
+                        <p>Simply use : <code>&lt;i class="flag flag-[iso-2|name]"&gt;&lt;/i&gt;</code></p>
+                        <table class="table compact bordered hovered">
+                            <thead>
+                                <tr><th>Letter</th><th>Flags</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bold">A</td>
+                                    <td><i class="flag flag-ad"></i><i class="flag flag-uae"></i><i class="flag flag-af"></i><i class="flag flag-ag"></i><i class="flag flag-ai"></i><i class="flag flag-al"></i><i class="flag flag-am"></i><i class="flag flag-an"></i><i class="flag flag-ao"></i><i class="flag flag-antartica"></i><i class="flag flag-ar"></i><i class="flag flag-as"></i><i class="flag flag-at"></i><i class="flag flag-au"></i><i class="flag flag-aw"></i><i class="flag flag-ax"></i><i class="flag flag-az"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">B</td>
+                                    <td><i class="flag flag-ba"></i><i class="flag flag-bb"></i><i class="flag flag-bd"></i><i class="flag flag-be"></i><i class="flag flag-bf"></i><i class="flag flag-bg"></i><i class="flag flag-bh"></i><i class="flag flag-bi"></i><i class="flag flag-bj"></i><i class="flag flag-bl"></i><i class="flag flag-bm"></i><i class="flag flag-bn"></i><i class="flag flag-bo"></i><i class="flag flag-bq"></i><i class="flag flag-br"></i><i class="flag flag-bs"></i><i class="flag flag-bt"></i><i class="flag flag-bv"></i><i class="flag flag-bw"></i><i class="flag flag-by"></i><i class="flag flag-bz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">C</td>
+                                    <td><i class="flag flag-ca"></i><i class="flag flag-catalonia"></i><i class="flag flag-cc"></i><i class="flag flag-cd"></i><i class="flag flag-cf"></i><i class="flag flag-cg"></i><i class="flag flag-ch"></i><i class="flag flag-ci"></i><i class="flag flag-ck"></i><i class="flag flag-cl"></i><i class="flag flag-cm"></i><i class="flag flag-cn"></i><i class="flag flag-co"></i><i class="flag flag-cr"></i><i class="flag flag-cs"></i><i class="flag flag-cu"></i><i class="flag flag-cv"></i><i class="flag flag-cw"></i><i class="flag flag-cx"></i><i class="flag flag-cy"></i><i class="flag flag-cz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">D</td>
+                                    <td><i class="flag flag-de"></i><i class="flag flag-dj"></i><i class="flag flag-dk"></i><i class="flag flag-dm"></i><i class="flag flag-do"></i><i class="flag flag-dz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">E</td>
+                                    <td><i class="flag flag-ec"></i><i class="flag flag-ee"></i><i class="flag flag-eg"></i><i class="flag flag-eh"></i><i class="flag flag-en"></i><i class="flag flag-er"></i><i class="flag flag-es"></i><i class="flag flag-et"></i><i class="flag flag-eu"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">F</td>
+                                    <td><i class="flag flag-fam"></i><i class="flag flag-fi"></i><i class="flag flag-fj"></i><i class="flag flag-fk"></i><i class="flag flag-fm"></i><i class="flag flag-fo"></i><i class="flag flag-fr"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">G</td>
+                                    <td><i class="flag flag-ga"></i><i class="flag flag-gb"></i><i class="flag flag-gd"></i><i class="flag flag-ge"></i><i class="flag flag-gf"></i><i class="flag flag-gg"></i><i class="flag flag-gh"></i><i class="flag flag-gi"></i><i class="flag flag-gl"></i><i class="flag flag-gm"></i><i class="flag flag-gn"></i><i class="flag flag-gp"></i><i class="flag flag-gq"></i><i class="flag flag-gr"></i><i class="flag flag-gs"></i><i class="flag flag-gt"></i><i class="flag flag-gu"></i><i class="flag flag-gw"></i><i class="flag flag-gy"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">H</td>
+                                    <td><i class="flag flag-hk"></i><i class="flag flag-hm"></i><i class="flag flag-hn"></i><i class="flag flag-hr"></i><i class="flag flag-ht"></i><i class="flag flag-hu"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">I</td>
+                                    <td><i class="flag flag-id"></i><i class="flag flag-ie"></i><i class="flag flag-il"></i><i class="flag flag-im"></i><i class="flag flag-in"></i><i class="flag flag-io"></i><i class="flag flag-iq"></i><i class="flag flag-ir"></i><i class="flag flag-is"></i><i class="flag flag-it"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">J</td>
+                                    <td><i class="flag flag-je"></i><i class="flag flag-jm"></i><i class="flag flag-jo"></i><i class="flag flag-jp"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">K</td>
+                                    <td><i class="flag flag-ke"></i><i class="flag flag-kg"></i><i class="flag flag-kh"></i><i class="flag flag-ki"></i><i class="flag flag-km"></i><i class="flag flag-kn"></i><i class="flag flag-kp"></i><i class="flag flag-kr"></i><i class="flag flag-kw"></i><i class="flag flag-ky"></i><i class="flag flag-kz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">L</td>
+                                    <td><i class="flag flag-la"></i><i class="flag flag-lb"></i><i class="flag flag-lc"></i><i class="flag flag-li"></i><i class="flag flag-lk"></i><i class="flag flag-lr"></i><i class="flag flag-ls"></i><i class="flag flag-lt"></i><i class="flag flag-lu"></i><i class="flag flag-lv"></i><i class="flag flag-ly"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">M</td>
+                                    <td><i class="flag flag-ma"></i><i class="flag flag-mc"></i><i class="flag flag-md"></i><i class="flag flag-me"></i><i class="flag flag-mf"></i><i class="flag flag-mg"></i><i class="flag flag-mh"></i><i class="flag flag-mk"></i><i class="flag flag-ml"></i><i class="flag flag-mm"></i><i class="flag flag-mn"></i><i class="flag flag-mo"></i><i class="flag flag-mp"></i><i class="flag flag-mq"></i><i class="flag flag-mr"></i><i class="flag flag-ms"></i><i class="flag flag-mt"></i><i class="flag flag-mu"></i><i class="flag flag-mv"></i><i class="flag flag-mw"></i><i class="flag flag-my"></i><i class="flag flag-mz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">N</td>
+                                    <td><i class="flag flag-na"></i><i class="flag flag-nc"></i><i class="flag flag-ne"></i><i class="flag flag-nf"></i><i class="flag flag-ng"></i><i class="flag flag-ni"></i><i class="flag flag-nl"></i><i class="flag flag-no"></i><i class="flag flag-np"></i><i class="flag flag-nr"></i><i class="flag flag-nu"></i><i class="flag flag-nz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">O</td>
+                                    <td>
+                                        <i class="flag flag-om"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">P</td>
+                                    <td><i class="flag flag-pa"></i><i class="flag flag-pe"></i><i class="flag flag-pf"></i><i class="flag flag-pg"></i><i class="flag flag-ph"></i><i class="flag flag-pk"></i><i class="flag flag-pl"></i><i class="flag flag-pm"></i><i class="flag flag-pn"></i><i class="flag flag-pr"></i><i class="flag flag-ps"></i><i class="flag flag-pt"></i><i class="flag flag-pw"></i><i class="flag flag-py"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">Q</td>
+                                    <td><i class="flag flag-qa"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">R</td>
+                                    <td><i class="flag flag-re"></i><i class="flag flag-ro"></i><i class="flag flag-rs"></i><i class="flag flag-ru"></i><i class="flag flag-rw"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">S</td>
+                                    <td><i class="flag flag-sa"></i><i class="flag flag-sb"></i><i class="flag flag-sc"></i><i class="flag flag-scotland"></i><i class="flag flag-sd"></i><i class="flag flag-se"></i><i class="flag flag-sg"></i><i class="flag flag-sh"></i><i class="flag flag-si"></i><i class="flag flag-sj"></i><i class="flag flag-sk"></i><i class="flag flag-sl"></i><i class="flag flag-sm"></i><i class="flag flag-sn"></i><i class="flag flag-so"></i><i class="flag flag-sr"></i><i class="flag flag-ss"></i><i class="flag flag-st"></i><i class="flag flag-sv"></i><i class="flag flag-sx"></i><i class="flag flag-sy"></i><i class="flag flag-sz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">T</td>
+                                    <td><i class="flag flag-tc"></i><i class="flag flag-td"></i><i class="flag flag-tf"></i><i class="flag flag-tg"></i><i class="flag flag-th"></i><i class="flag flag-tj"></i><i class="flag flag-tk"></i><i class="flag flag-tl"></i><i class="flag flag-tm"></i><i class="flag flag-tn"></i><i class="flag flag-to"></i><i class="flag flag-tr"></i><i class="flag flag-tt"></i><i class="flag flag-tv"></i><i class="flag flag-tw"></i><i class="flag flag-tz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">U</td>
+                                    <td><i class="flag flag-ua"></i><i class="flag flag-ug"></i><i class="flag flag-um"></i><i class="flag flag-us"></i><i class="flag flag-uy"></i><i class="flag flag-uz"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">V</td>
+                                    <td><i class="flag flag-va"></i><i class="flag flag-vc"></i><i class="flag flag-ve"></i><i class="flag flag-vg"></i><i class="flag flag-vi"></i><i class="flag flag-vn"></i><i class="flag flag-vu"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">W</td>
+                                    <td><i class="flag flag-wales"></i><i class="flag flag-wf"></i><i class="flag flag-ws"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">Y</td>
+                                    <td><i class="flag flag-ye"></i><i class="flag flag-yt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">Z</td>
+                                    <td><i class="flag flag-za"></i><i class="flag flag-zm"></i><i class="flag flag-zw"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">Extra</td>
+                                    <td><i class="flag flag-ic" title="Canary Islands"></i><i class="flag flag-ku" title="Kurdistan"></i><i class="flag flag-ld" title="Liberland"></i><i class="flag flag-somaliland" title="Somaliland"></i><i class="flag flag-tibet" title="Tibet"></i><i class="flag flag-xk" title="Kosovo"></i><i class="flag flag-zanzibar" title="Zanzibar"></i><i class="flag flag-amazigh" title="Amazigh Flag"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p>You can display the country' name next to the flag manually of you can add a <code>data-text="..."</code> attribute like so:</p>
+                        <p><i class="flag flag-dz" data-text="Algeria"></i></p>
+                    </section>
 
-                            <figure class="img item slide-up">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="browsers"></section>
 
-                            <figure class="img item slide-down">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="smileys"></section>
 
-                            <figure class="img item slide-left">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="menu"></section>
 
-                            <figure class="img item slide-right">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="breadcrumb"></section>
 
-                            <figure class="img item push-up">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="pagination"></section>
 
-                            <figure class="img item push-down">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="labels"></section>
 
-                            <figure class="img item push-left">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
+                    <section id="hero"></section>
 
-                            <figure class="img item push-right">
-                                <img src="http://placehold.it/128x128" alt="">
-                                <figcaption>This is a sample text</figcaption>
-                                <a href="#" role="button"></a>
-                            </figure>
-                        </div>
+                    <section id="alert"></section>
 
-                    </div>
-                    <div class="col-x-6">
-                        <div class="progress progress-rounded progress-striped">
-                            <div class="fill fill-purple" data-fill="68"></div>
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                </section><!--/.row#image-->
-                <section class="row" id="label">
-                    <div class="col-x-12 col-s-6 col-m-12">
-                        <p>
-                            <i class="avatar large circle"></i>
-                            <i class="avatar group large circle"></i>
-                            <i class="avatar page large circle"></i>
-                            <i class="avatar game large circle"></i>
-                            <i class="avatar calendar large circle"></i>
-                        </p>
-                        <p class="emoticonize">O:) :) :D 3:)</p>
-                    </div>
-                </section><!--/.row#label-->
-                <section class="row" id="list"></section><!--/.row#list-->
-                <section class="row" id="loader"></section><!--/.row#loader-->
-                <section class="row" id="reveal"></section><!--/.row#reveal-->
+                    <section id="progress"></section>
 
-            </div><!---/.container-->
-        </div><!--/.wrapper-->
+                    <section id="media"></section>
 
-        <div class="modal">
-            <div class="modal-inner">
-                <div class="modal-header">Modal Header</div>
-                <div class="modal-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam molestiae, provident assumenda rem esse, unde maxime recusandae asperiores ipsum quidem aut ullam non sequi nemo debitis amet officiis voluptatibus.</div>
-                <div class="modal-footer">Modal Footer</div>
+                    <section id="box"></section>
+
+                    <section id="gallery"></section>
+
+                    <section id="tooltip"></section>
+
+                    <section id="alerts"></section>
+
+                    <section id="modal"></section>
+
+                    <section id="tabs"></section>
+                </div>
             </div>
         </div>
 
-        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-        <script src="dist/js/dinakit.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="dist/js/dinakit.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>

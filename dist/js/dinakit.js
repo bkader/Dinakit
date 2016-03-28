@@ -1,5 +1,5 @@
 /*
- * # Dinakit Framework 2.0 by @KaderBouyakoub <bkader@mail.com>
+ * # Dinakit Framework 2.0.0 by @KaderBouyakoub <bkader@mail.com>
  * https://bitbucket.org/iangraphics/dinakit - http://dinakit.tk/
  * License - "Don't Be A Dick License" - DBAD by philsturgeon (http://www.dbad-license.org/)
  */
@@ -111,19 +111,6 @@
         $(target).addClass('active');
     });
 
-    // checkbox
-    $(document).on('click', '.checkbox', function (e) {
-        e.preventDefault();
-        var $that = $(this), $checkbox = $that.children('input[type="checkbox"]');
-        if($checkbox.prop("checked")) {
-            $that.removeClass('checked');
-            $checkbox.prop('checked', false);
-        } else {
-            $that.addClass('checked');
-            $checkbox.prop('checked', true);
-        }
-    });
-
 	$(document).on('change keyup keydown paste cut', 'textarea.auto-expand', function () {
 		$(this).css({'overflow':'hidden'}).height(0).height(this.scrollHeight);
 	}).find('textarea.auto-expand').change();
@@ -166,87 +153,26 @@
                         }
                     });
         });
-
-        $('.carousel').each(function() {
-            var self = $(this),
-                inner = self.find('.inner'),
-                items = inner.children('.item').length;
-
-            // Change self CSS
-            self.css({
-                overflow: 'hidden',
-                width: self.width()+'px',
-                height: 300 + 'px',
-            });
-            inner.css({
-                width: items * 100 + '%',
-                position: 'relative',
-                marginLeft: -100 + '%',
-            });
-            inner.children('.item').width(100 / items + '%');
-        });
-
     });
 
-    $.fn.emoticonize = function() {
-        var emoticons = {
-            // smile
-            ':-)': 'smile', ':)': 'smile', ':]': 'smile', '=)': 'smile',
-            // sad
-            ':-(': 'sad', ':(': 'sad', ':[': 'sad', '=(': 'sad',
-            // tongue
-            ':p': 'tongue', ':P': 'tongue', ':-p': 'tongue', ':-P': 'tongue', '=P': 'tongue',
-            // Grin
-            ':-D': 'grin', ':D': 'grin', '=D': 'grin',
-            // Gasp
-            ':o': 'gasp', ':-o': 'gasp', ':O': 'gasp', ':-O': 'gasp',
-            // Wink
-            ';)': 'wink', ';-)': 'wink',
-            // Glasses
-            '8-)': 'glasses', '8-)': 'glasses', 'B)': 'glasses', 'B-)': 'glasses',
-            // Sunglasses
-            '8-|': 'sunglasses', '8|': 'sunglasses', 'B-|': 'sunglasses', 'B|': 'sunglasses',
-            // Grumpy
-            '>:(': 'grumpy', '>:-(': 'grumpy',
-            // Unsure
-            ':/': 'unsure', ':-/': 'unsure', ':-\\': 'unsure', ':\\': 'unsure',
-            // Cry
-            ':\'(': 'cry', ':\'-(': 'cry', ';(': 'cry', ';-(': 'cry',
-            // Devil
-            '3:)': 'devil', '3:-)': 'devil',
-            // Angel
-            'o:)': 'angel', 'O:)': 'angel', 'o:-)': 'angel', 'O:-)': 'angel',
-            // Kiss
-            ':-*': 'kiss', ':*': 'kiss',
-            // Heart
-            '<3': 'heart',
-            // Kiki
-            '^_^': 'kiki',
-            // Squint
-            '-_-': 'squint',
-            // Confused
-            'O.o': 'confused', 'o.O': 'confused',
-            // Upset
-            '>:o': 'upset', '>:O': 'upset', '>:-o': 'upset', '>:-O': 'upset',
-            // Pacman
-            ':v': 'pacman', ':-v': 'pacman',
-            // Curly lips
-            ':3': 'conlonthree', ':-3': 'conlonthree',
-        }, patterns = [], metachars = /[[\]{}()*+?.\\|^$\-,&#\s]/g;
-        for (var i in emoticons) {
-            if (emoticons.hasOwnProperty(i)) {
-                patterns.push('('+i.replace(metachars, "\\$&")+')');
+    $(document).on('keyup', '.tags>.tags-field>.tags-input', function(e) {
+        if (e.keyCode === 13) {
+            var self = $(this),
+                tags = self.parent().next(),
+                content = self.val();
+            if ($.trim(content).length) {
+                //var all = content.split(',');
+                var all = $.map(content.split(','), $.trim);
+                $.each(all, function(index, value) {
+                    if ($.trim(value).length) {
+                        tags.append('<span class="label">' + value + '<span class="label-close"></span></span>');
+                    }
+                });
+                self.val('');
+                return;
             }
         }
-        var text = this.html();
-        text = text.replace(new RegExp(patterns.join('|'),'g'), function (match) {
-            return typeof emoticons[match] != 'undefined' ? '<i class="smiley ' + emoticons[match] + '" title="' + match + '"></i>' : match;
-        });
-        this.html(text);
-        return this;
-    };
-
-    $(".emoticonize").emoticonize();
+    });
 
     $('html').click(function () {
         $('.btn-dropdown:not(:hover)').removeClass('open');

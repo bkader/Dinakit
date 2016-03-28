@@ -1,61 +1,166 @@
 body {
-    font: 400 15px/1.6 "Titillium Web", Tahoma, Arial, sans-serif;
     background: #fefefe;
 }
 
-.container {
-    max-width: 960px;
-}
-
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1052;
-    background-color: #222;
-    height: 52px;
-}
-
-header .menu > li > a:link,
-header .menu > li > a:visited {
-    color: #ddd !important;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 32px;
-}
-
-header .menu > li.active > a,
-header .menu > li:hover > a,
-header .menu > li > a:active,
-header .menu > li > a:focus,
-header .menu > li > a:hover {
-    color: #fff !important;
-    background-color: #111 !important;
-}
 
 .wrapper {
-    position        : relative;
-    padding-top: 47px;
-    z-index         : 0;
-    -webkit-box-flex: 1;
-        -webkit-flex: 1 1 auto;
-            -ms-flex: 1 1 auto;
-                flex: 1 1 auto;
-    min-width       : 0px;
-    min-height      : 1300px;
-    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nav-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    overflow: hidden;
+    min-height: 100%;
+    background-color: #343131;
+    z-index: 200;
 }
 
-section + section {
+@media (max-width: 767px) {
+    .nav-side {
+        display: none;
+    }
+}
+
+.nav-side > .nav-inner {
+    width: 233px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 3em;
+}
+.nav-side > .nav-inner > .nav-header {
+    display: block;
+    width: 220px;
+    padding: .809em;
+    z-index: 200;
+    background-color: #2980b9;
+    text-align: center;
+    padding: .809em;
+    color: #fcfcfc;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+.nav-side > .nav-inner > .nav-header > .header-link {
+    color: #fcfcfc;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 6px;
+}
+.nav-side > .nav-inner > .nav-header > .header-content {
+    overflow-y: auto;
+}
+
+.nav-side > .nav-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    height: 3em;
+    line-height: 3em;
+    z-index: 201;
+    font-size: .75em;
+    color: #b3b3b3;
+    text-align: center;
+    background-clip: red;
+    background-color: #232020;
+    border-right: 4px solid #fcfcfc;
+}
+
+.content-wrap {
+    background-color: #fcfcfc;
+    min-height: 100%;
+}
+@media (min-width: 768px) {
+    .content-wrap {
+        margin-left: 220px;
+    }
+}
+
+.content-wrap > .main-content {
+    padding: 1.618em 3.236em;
+    height: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+
+section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+section + section {
+    margin-top: 100px;
+}
 
+section[id]:empty:after {
+    content: "This section will be added A.S.A.P!";
+}
+.nav-side .menu {}
+.nav-side .menu li + li {
+    border: none;
+}
+.nav-side .menu li.divider {
+    background-color: rgba(0,0,0,.3);
+}
+.nav-side .menu li.header {
+    background-color: rgba(255,255,255,.05);
+    font-size: .75em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.nav-side .menu li > a:link,
+.nav-side .menu li > a:visited {
+    background-color: transparent;
+    color: #b3b3b3;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    font-size: .8em;
+}
+.nav-side .menu li.active > a,
+.nav-side .menu li:hover > a,
+.nav-side .menu li > a:active,
+.nav-side .menu li > a:focus,
+.nav-side .menu li > a:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+.row.row-docs {
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.1);
+}
+.row.row-docs + .row.row-docs {
+    border-top: none;
+}
 .col-docs {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: relative;
+    min-height: 3em;
+}
+.col-docs:before {
+    content: ' ';
+    position: absolute;
+    top: .46875rem;
+    bottom: .46875rem;
+    left: .46875rem;
+    right: .46875rem;
+    background-color: rgba(0,0,0,.1);
+    z-index: 200;
+}
+
+.col-docs > span {
+    position: absolute;
+    top: .46875rem;
+    bottom: .46875rem;
+    left: .46875rem;
+    right: .46875rem;
+    line-height: 2.2em;
     text-align: center;
-    box-shadow: 0 0 1px #666;
+    font-size: .9em;
 }

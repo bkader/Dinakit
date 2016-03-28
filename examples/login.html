@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dinakit: Login Page</title>
+        <meta name="description" content="Dinakit Framework">
+        <meta name="author" content="Kader Bouyakoub">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../dist/css/dinakit.css">
+        <style>
+		body {
+		    font: 400 15px/1.6 "Titillium Web", Tahoma, Arial, sans-serif;
+		    background: #dadada;
+		}
+
+		a:link, a:visited {color: #00b5ad}
+		a:active, a:focus a:hover {color: #009c95}
+
+		.box {
+			border: none;
+		}
+		.box .box-header {
+			background-color: #00b5ad;
+			color: #fff;
+		}
+        </style>
+    </head>
+    <body>
+
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-x-10 col-s-8 col-m-6 col-l-4 col-centered">
+    				<div class="box">
+    					<div class="box-header">
+    						<h4 class="text-light">Login to your account</h4>
+    					</div><!--/.box-header-->
+    					<div class="box-content">
+    						<form action="#" class="form" id="login">
+    							<div class="form-group">
+    								<input type="text" name="username" id="username" class="input-block input-large" placeholder="Username" required="required">
+    							</div><!--/.form-group-->
+    							<div class="form-group">
+    								<input type="password" name="password" id="password" class="input-block input-large" placeholder="Password" required="required">
+    							</div><!--/.form-group-->
+    							<div class="form-group">
+    								<label for="remember">
+    									<input type="checkbox" name="remember" id="remember" class="slider blue"> Remember me.
+    								</label>
+    							</div><!--/.form-group-->
+    							<div class="form-group">
+    								<a href="#" role="button" class="btn btn-link">Lost Password?</a>
+    								<button type="submit" class="btn btn-teal btn-large float-right">Login</button>
+    							</div><!--/.form-group-->
+    						</form>
+    					</div><!--/.box-content-->
+    					<div class="box-footer text-center">
+    						New to us? <a href="#" role="button">Sign Up</a>
+    					</div><!--/.box-footer-->
+    				</div><!--/.box-->
+    			</div><!--/.col-x-10.col-s-8.col-m-6.col-l-4.col-centered-->
+    		</div><!--/.row-->
+    	</div><!--/.container-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../dist/js/dinakit.js"></script>
+		<script>
+		$(document).ready(function() {
+			var c_height = $('.container').height(),
+				w_height = $(window).height();
+			var m_top = (w_height - c_height) / 3;
+			if (m_top > 0) {
+				$('.box').css({
+					marginTop: m_top + 'px',
+				})
+			}
+		});
+		$(document).on('submit', '#login', function(e) {
+			e.preventDefault();
+			return false;
+		});
+		</script>
+    </body>
+</html>
