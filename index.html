@@ -10,7 +10,7 @@
         <meta property="og:url" content="http://dinakit.bkader.com/">
         <meta property="og:title" content="Dinakit Framework by @KaderBouyakoub">
         <meta property="og:image" content="img/dinakit.jpg">
-        <link rel="stylesheet" href="dist/css/dinakit.min.css">
+        <link rel="stylesheet" href="dist/css/dinakit.css">
         <link rel="stylesheet" href="css/docs.css">
         <!--[if lt IE 9]>
         <script src="jhttps://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -91,13 +91,48 @@
                         <p>A grid is used to design layouts and page parts. It is used to align negative space in designs.</p>
                         <p>Using a grid makes content appear to flow more naturally on site pages.</p>
                         <div class="row">
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
-                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs"></div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6 col-l-4 col-docs">
+                                <span class="show-x">col-x-12</span>
+                                <span class="show-s">col-s-12</span>
+                                <span class="show-m">col-m-6</span>
+                                <span class="show-l">col-l-4</span>
+                            </div>
                         </div>
                         <br>
                         <h4>Container</h4>
@@ -297,7 +332,188 @@
                         </table>
                     </section>
 
-                    <section id="form"></section>
+                    <section id="form">
+                        <h2>Forms</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-x-12 col-s-4 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Basic Form</h3>
+                                    </div>
+                                    <div class="box-content">
+                                        <form action="javascript:;">
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-8 col-m-8">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Inline Form</h3>
+                                    </div>
+                                    <div class="box-content">
+                                        <form action="javascript:;" class="form-inline">
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-x-12 col-s-6 col-m-6">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Algined Form</h3>
+                                    </div>
+                                    <div class="box-content">
+                                        <form action="javascript:;" class="form-aligned">
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-6">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Stacked Form</h3>
+                                    </div>
+                                    <div class="box-content">
+                                        <form action="javascript:;" class="form-stacked">
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Label</label>
+                                                <input type="text" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <h4>Inputs with icons</h4>
+
+                        <div class="row">
+                            <div class="col-x-12 col-s-6 col-m-6">
+                                <div class="box">
+                                    <div class="box-content">
+                                        <form action="javascript:;">
+                                            <div class="form-group group-icon">
+                                                <i class="fa fa-user form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group group-icon">
+                                                <i class="fa fa-lock form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-6">
+                                <div class="box">
+                                    <div class="box-content">
+                                        <form action="javascript:;">
+                                            <div class="form-group group-icon icon-right">
+                                                <i class="fa fa-user form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="form-control">
+                                            </div>
+                                            <div class="form-group group-icon icon-right">
+                                                <i class="fa fa-lock form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <h4>Input sizes</h4>
+
+                        <div class="box">
+                            <div class="box-content">
+                                <form action="javascript:;" class="form-al">
+                                    <div class="form-group"><input type="text" class="input-block input-xlarge" placeholder="input-xlarge"></div>
+                                    <div class="form-group"><input type="text" class="input-block input-large" placeholder="input-large"></div>
+                                    <div class="form-group"><input type="text" class="input-block" placeholder="form-control"></div>
+                                    <div class="form-group"><input type="text" class="input-block input-small" placeholder="input-small"></div>
+                                    <div class="form-group"><input type="text" class="input-block input-mini" placeholder="input-mini"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <br>
+
+                        <h4>Input colors</h4>
+
+                        <div class="box">
+                            <div class="box-content">
+                                <form action="javascript:;" class="form-al">
+                                    <div class="form-group form-success"><input type="text" class="input-block" placeholder=".form-group.form-success"></div>
+                                    <div class="form-group"><input type="text" class="input-block success" placeholder="input.success"></div>
+
+                                    <div class="form-group form-error"><input type="text" class="input-block" placeholder=".form-group.form-error"></div>
+                                    <div class="form-group"><input type="text" class="input-block error" placeholder="input.error"></div>
+
+                                    <div class="form-group form-warning"><input type="text" class="input-block" placeholder=".form-group.form-warning"></div>
+                                    <div class="form-group"><input type="text" class="input-block warning" placeholder="input.warning"></div>
+
+                                    <div class="form-group form-info"><input type="text" class="input-block" placeholder=".form-group.form-info"></div>
+                                    <div class="form-group"><input type="text" class="input-block info" placeholder="input.info"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <h4>Checkboxes and Radio Buttons</h4>
+
+                        <div class="box">
+                            <div class="box-content">
+                                <label><input type="checkbox" class="checkbox"> Basic checkbox</label>&nbsp;<br>
+                                <label><input type="checkbox" class="slider"> Styled checkbox</label>&nbsp;
+                                <label><input type="checkbox" class="slider purple"> purple</label>&nbsp;
+                                <label><input type="checkbox" class="slider blue"> blue</label>&nbsp;
+                                <label><input type="checkbox" class="slider green"> green</label>&nbsp;
+                                <label><input type="checkbox" class="slider orange"> orange</label>&nbsp;
+                                <label><input type="checkbox" class="slider red"> red</label>&nbsp;
+                                <label><input type="checkbox" class="slider pink"> pink</label>&nbsp;
+                                <label><input type="checkbox" class="slider black"> black</label>&nbsp;<br>
+                                <label><input type="radio" class="radio"> Basic radio</label>&nbsp;
+                                <label><input type="radio" class="radio purple"> purple</label>&nbsp;
+                                <label><input type="radio" class="radio blue"> blue</label>&nbsp;
+                                <label><input type="radio" class="radio green"> green</label>&nbsp;
+                                <label><input type="radio" class="radio orange"> orange</label>&nbsp;
+                                <label><input type="radio" class="radio red"> red</label>&nbsp;
+                                <label><input type="radio" class="radio pink"> pink</label>&nbsp;
+                                <label><input type="radio" class="radio black"> black</label>&nbsp;
+                            </div>
+                        </div>
+                    </section>
 
                     <section id="button">
                         <h2>Buttons</h2>
@@ -415,7 +631,35 @@
                         </p>
                     </section>
 
-                    <section id="image"></section>
+                    <section id="image">
+                        <h2>Images</h2>
+                        <p>Adding provided images classes changes default images behavior and helpes to handle them better.</p>
+                        <p>Here is how a default image looks like: <br><img src="./img/image.png" alt="placeholder+image"></p>
+                        <p>Adding <code>class="fluid"</code> to the image gives it a maximum width of <code>100%</code></p>
+                        <div class="row">
+                            <div class="col-x-6"><img src="./img/image.png" alt="placeholder+image" class="fluid"></div>
+                            <div class="col-x-6"><img src="./img/image.png" alt="placeholder+image" class="fluid"></div>
+                        </div>
+                        <p>If you want images with rounded corders simply add <code>class="rounded"</code></p>
+                        <div class="row">
+                            <div class="col-x-6"><img src="./img/image.png" alt="placeholder+image" class="fluid rounded"></div>
+                            <div class="col-x-6"><img src="./img/image.png" alt="placeholder+image" class="fluid rounded"></div>
+                        </div>
+                        <p>Images may look like thumbnails if you add <code>class="thumb"</code></p>
+                        <div class="row">
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid thumb"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid thumb"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid thumb"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid thumb"></div>
+                        </div>
+                        <p>Adding <code>class="circle"</code> to the image makes it cicular</p>
+                        <div class="row">
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid circle"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid circle"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid circle"></div>
+                            <div class="col-x-3"><img src="./img/image.png" alt="placeholder+image" class="fluid circle"></div>
+                        </div>
+                    </section>
 
                     <section id="classes"></section>
 
@@ -554,7 +798,16 @@
 
                     <section id="pagination"></section>
 
-                    <section id="labels"></section>
+                    <section id="labels">
+                        <h2>Labels &amp; Badges</h2>
+                        <p>Almost all other frameworks has this feature! you simple create a <code>span</code> element and give it the class <code>class="label"</code> and the result will be: <span class="label">12</span></p>
+                        <p>The same thing for badges, instead of <code>label</code> use <code>badge</code>: <span class="badge">12</span></p>
+                        <p>Both labels and badges may cotain a closing button like so: <span class="label">12<span class="label-close"></span></span>, <span class="badge">12<span class="badge-close"></span></span></p>
+                        <p>You can colour labels and badges from purple: <code>class="label label-purple"</code> up to white.</p>
+                        <p><span class="label">default</span><span class="label label-purple">purple</span><span class="label label-blue">blue</span><span class="label label-green">green</span><span class="label label-orange">orange</span><span class="label label-red">red</span><span class="label label-pink">pink</span><span class="label label-black">black</span><span class="label label-white">white</span></p>
+
+                        <p><span class="badge">default</span><span class="badge badge-purple">purple</span><span class="badge badge-blue">blue</span><span class="badge badge-green">green</span><span class="badge badge-orange">orange</span><span class="badge badge-red">red</span><span class="badge badge-pink">pink</span><span class="badge badge-black">black</span><span class="badge badge-white">white</span></p>
+                    </section>
 
                     <section id="hero"></section>
 
