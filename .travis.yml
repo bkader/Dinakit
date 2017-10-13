@@ -1,0 +1,4 @@
+language: css
+
+matrix:
+    fast_finish: true
