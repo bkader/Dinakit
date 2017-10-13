@@ -53,7 +53,6 @@
                             <li><a href="#gallery" class="scroll">Gallery</a></li>
                             <li><a href="#tooltip" class="scroll">Tooltip</a></li>
                             <li class="header">Javascript</li>
-                            <li><a href="#alerts" class="scroll">Alerts</a></li>
                             <li><a href="#collapse" class="scroll">Collapse</a></li>
                             <li><a href="#modal" class="scroll">Modal</a></li>
                             <li><a href="#tabs" class="scroll">Tabs</a></li>
@@ -143,7 +142,7 @@
                         <p>Rows are used to divided page parts horizontally. Each <code>row</code> may contain as many <code>columns</code> as you want. To use a row, simply use: <code>&lt;div class="row"&gt;...&lt;/div&gt;</code></p>
                         <br>
                         <h4>Columns</h4>
-                        <p><a href="#">Dinakit</a> uses 12 columns grid. <code>&lt;div class="col-[xs|sm|md|lg|xl]-[1-12]"&gt;...&lt;/div&gt;</code></p>
+                        <p><a href="#">Dinakit</a> uses 12 columns grid. <code>&lt;div class="col-[x|s|m|l]-[1-12]"&gt;...&lt;/div&gt;</code></p>
                         <p><code>col-x-..</code> are used for devices which <code>max-width: 767px</code>.</p>
                         <p><code>col-s-..</code> are used for devices which <code>min-width: 768px</code> and <code>max-width: 991px</code>.</p>
                         <p><code>col-m-..</code> are used for devices which <code>min-width: 992px</code> and <code>max-width: 1199px</code>.</p>
@@ -629,6 +628,20 @@
                             <button type="button" class="btn btn-twitter"><i class="fa fa-twitter"></i></button>
                             <button type="button" class="btn btn-github"><i class="fa fa-github"></i></button>
                         </p>
+                        <br>
+                        <h4>Dropdown Buttons</h4>
+                        <p>You can use buttons to display a dropdown menu. All you need to do is to create an element with <code>btn-dropdown</code> class, inside which you put your button and and unordered list.</p>
+                        <div class="btn-dropdown">
+                            <a href="#" class="btn btn-primary toggle-dropdown">Heeeloo <i class="fa fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <p>Here is the source:</p>
+                        <code>&lt;div class="btn-dropdown"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary toggle-dropdown"&gt;Heeeloo &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&lt;/div&gt;</code>
                     </section>
 
                     <section id="image">
@@ -661,7 +674,56 @@
                         </div>
                     </section>
 
-                    <section id="classes"></section>
+                    <section id="classes">
+                        <h2>Useful Classes</h2>
+                        <h4>Ribbons</h4>
+                        <p>Try to add the following to you html code:</p>
+                        <p><code>&lt;a href="#" class="blue fixed bottom left ribbon"&gt;Ribbon Test&lt;/a&gt;</code></p>
+                        <br>
+                        <h4>Tags</h4>
+                        <p>Here are some examples:</p>
+                        <div class="tags">
+                            <label>Add some tags</label>
+                            <div class="tags-field">
+                                <input class="tags-input" type="text">
+                            </div>
+                            <div class="tags-content" data-tags="['one','two']"></div>
+                        </div>
+                        <br>
+                        <h4>Avatars</h4>
+                            <span class="avatar tiny"></span>
+                            <span class="avatar small"></span>
+                            <span class="avatar"></span>
+                            <span class="avatar large"></span>
+                            <span class="avatar xlarge"></span>
+                        </p>
+                        <p>
+                            <span class="avatar circle"></span>
+                            <span class="avatar group"></span>
+                            <span class="avatar page"></span>
+                            <span class="avatar calendar"></span>
+                            <span class="avatar game"></span>
+                            
+                        </p>
+                        <br>
+                        <h4>Loaders</h4>
+                        <div class="loader"></div><br>
+                        <div class="loader loader-thick"></div><br>
+                        <h4>Size Variations</h4>
+                        <div class="loader loader-tiny"></div><br>
+                        <div class="loader loader-small"></div><br>
+                        <div class="loader loader-large"></div><br>
+                        <div class="loader loader-xlarge"></div><br>
+                        <h4>Color Variations</h4>
+                        <div class="row">
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-purple"></div></div>
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-blue"></div></div>
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-green"></div></div>
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-orange"></div></div>
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-red"></div></div>
+                            <div class="col-x-6 col-s-6 col-m-4"><div class="loader loader-pink"></div></div>
+                        </div>
+                    </section>
 
                     <section id="flags">
                         <h2>Flag Icons</h2>
@@ -788,42 +850,548 @@
                         <p><i class="flag flag-dz" data-text="Algeria"></i></p>
                     </section>
 
-                    <section id="browsers"></section>
+                    <section id="browsers">
+                        <h2>Browsers Icons</h2>
+                        <p>Though not important, sometimes you want to display browsers icons to indicate that a website or a project are compatible with this or that browser.</p>
+                        <p>Simply use whether <code>.browser</code> or <code>.brw</code> classes with a <code>&lt;i&gt;&lt;/i&gt;</code> element followed by the browser you want to display: <code>.browser.chrome|.brw.brw-ch</code>, <code>.browser.firefox|.brw.brw-ff</code> ... etc</p>
+                        <table class="table compact">
+                            <tr><td><i class="browser chrome"></i></td><td><code>&lt;i class="browser chrome"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-ch"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser firefox"></i></td><td><code>&lt;i class="browser firefox"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-ff"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser ie"></i></td><td><code>&lt;i class="browser ie"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-ie"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser maxthon"></i></td><td><code>&lt;i class="browser maxthon"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-mx"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser netscape"></i></td><td><code>&lt;i class="browser netscape"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-ns"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser opera"></i></td><td><code>&lt;i class="browser opera"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-op"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser safari"></i></td><td><code>&lt;i class="browser safari"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-sf"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser theworld"></i></td><td><code>&lt;i class="browser theworld"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-tw"&gt;&lt;/i&gt;</code></td></tr>
+                            <tr><td><i class="browser traveler"></i></td><td><code>&lt;i class="browser traveler"&gt;&lt;/i&gt;</code> or <code>&lt;i class="brw brw-tr"&gt;&lt;/i&gt;</code></td></tr>
+                        </table>
+                        <h4>Size variations</h4>
+                        <p>The only variation available is the use of small icons using wheter <code>.browser-small</code> or <code>.brw-small</code> classes.<br>This will give you: <i class="browser chrome brw-small"></i><i class="browser firefox brw-small"></i><i class="browser ie brw-small"></i><i class="browser maxthon brw-small"></i><i class="browser netscape brw-small"></i><i class="browser opera brw-small"></i><i class="browser safari brw-small"></i><i class="browser theworld brw-small"></i><i class="browser traveler brw-small"></i></p>
+                    </section>
 
-                    <section id="smileys"></section>
+                    <section id="smileys">
+                        <h2>Smileys</h2>
+                        <p>Unfortunately, this component has been removed and I don't know if it is useful or not. If you want it back, tell me and I will put it back.</p>
+                    </section>
 
-                    <section id="menu"></section>
+                    <section id="menu">
+                        <h2>Menus</h2>
+                        <p>Menus are like their name means, navigation menu that you can put anywhere on your website without <strong>almost</strong> no limits.</p>
+                        <p>Simply create an unordered list with the class <code>.menu</code> like so <code>&lt;ul class="menu"&gt;&lt;/ul&gt;</code> and you will be ready to create your menu. Here are some examples:</p>
+                        <div class="row">
+                            <div class="col-x-12" style="background-color: #fff">
+                                <ul class="menu">
+                                    <li class="header">li.header <span>test</span></li>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Link 3</a></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Multilevel <i class="fa fa-caret-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Link 1</a></li>
+                                            <li>
+                                                <a href="#">Link 2<i class="fa fa-caret-right"></i></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Link 1<i class="fa fa-caret-right"></i></a>
+                                                         <ul>
+                                                                <li><a href="#">Link 1</a></li>
+                                                                <li>
+                                                                    <a href="#">Link 2<i class="fa fa-caret-right"></i></a>
+                                                                    <ul>
+                                                                        <li><a href="#">Link 1</a></li>
+                                                                        <li><a href="#">Link 2</a></li>
+                                                                        <li><a href="#">Link 3</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="#">Link 3</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li><a href="#">Link 2</a></li>
+                                                    <li><a href="#">Link 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Link 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
 
-                    <section id="breadcrumb"></section>
+                    <section id="breadcrumb">
+                        <h2>Breadcrumbs</h2>
+                        <p>Everyone <em>(or almost)</em> knows what <strong>breacrumbs</strong> are! In case you don't, it's the element that lets you know on what page your are and where you came from. No matter how I explain it, showing it to you is better:</p>
+                        <div class="breadcrumb">
+                            <div class="item"><a href="#">Home</a></div>
+                            <div class="item"><a href="#">Category</a></div>
+                            <div class="item active"><a href="#">Post Title</a></div>
+                        </div>
+                        <p>You understand better this way don't you? Here is how it's done:</p>
+                        <code>&lt;div class="breadcrumb"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="item"&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="item active"&gt;&lt;a href="#"&gt;Post Title&lt;/a&gt;&lt;/div&gt;<br>&lt;/div&gt;</code>
+                    </section>
 
-                    <section id="pagination"></section>
+                    <section id="pagination">
+                        <h2>Pagination and Pager</h2>
+                        <p>What's the difference between these a <strong>pagination</strong> and a <strong>pager</strong>?</p>
+                        <p>In fact, they are almost the same! The only difference is that in <strong>paginations</strong> we display pages numbers and we can display or not items with <strong>previous</strong> and <strong>next</strong> pages.</p>
+                        <br>
+                        <h4>Examples</h4>
+                        <p>Here is an example of a pagination (on the left or top) and a pager (on the right or bottom):</p>
+                        <div class="row">
+                            <div class="col-x-12 col-s-12 col-m-6">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#">Previous</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="disabled"><a href="#">...</a></li>
+                                    <li><a href="#">11</a></li>
+                                    <li><a href="#">12</a></li>
+                                    <li><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-x-12 col-s-12 col-m-6">
+                                <ul class="pager">
+                                    <li><a href="#">Previous</a></li>
+                                    <li><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>On the pagination, we are on <strong>page #1</strong> which means the <strong>previous</strong> button is <code>.disabled</code> and the <strong>#1</strong> button is <code>.active</code>. (Inspect the code for more details)</p>
+                        <br>
+                        <h4>Sizes Variations</h4>
+                        <p>You can change the size of pagination/pager by adding these classes: <code>.[pagination|pager]-mini</code>, <code>.[pagination|pager]-small</code> and <code>.[pagination|pager]-large</code>. Let's use the same pagination above and add those classes to it:</p>
+                        <p>
+                            <ul class="pagination pagination-mini">
+                                <li class="disabled"><a href="#">Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="disabled"><a href="#">...</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            <ul class="pagination pagination-small">
+                                <li class="disabled"><a href="#">Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="disabled"><a href="#">...</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            <ul class="pagination pagination-large">
+                                <li class="disabled"><a href="#">Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="disabled"><a href="#">...</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            And for pagers: <br>
+                            <ul class="pager pager-mini">
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            <ul class="pager pager-small">
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            <ul class="pager pager-large">
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                        </p>
+                        <br>
+                        <h4>Using Links</h4>
+                        <p>You can remove the button aspect from paginations/pagers and use links only by adding <code>.[pagination|pager]-link</code></p>
+                        <p>
+                            <ul class="pagination pagination-link">
+                                <li class="disabled"><a href="#">Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="disabled"><a href="#">...</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                            <br>
+                            <ul class="pager pager-link">
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                        </p>
+                        <br>
+                        <h4>Pager Bonus: Colors</h4>
+                        <p>You can color your pager by adding pager's specific color classes: <code>.pager.pager-[purple|blue|green|orange|red|pink|black|white]</code></p>
+                    </section>
 
                     <section id="labels">
                         <h2>Labels &amp; Badges</h2>
                         <p>Almost all other frameworks has this feature! you simple create a <code>span</code> element and give it the class <code>class="label"</code> and the result will be: <span class="label">12</span></p>
                         <p>The same thing for badges, instead of <code>label</code> use <code>badge</code>: <span class="badge">12</span></p>
-                        <p>Both labels and badges may cotain a closing button like so: <span class="label">12<span class="label-close"></span></span>, <span class="badge">12<span class="badge-close"></span></span></p>
+                        <br>
+                        <h4>Color Variations</h4>
                         <p>You can colour labels and badges from purple: <code>class="label label-purple"</code> up to white.</p>
                         <p><span class="label">default</span><span class="label label-purple">purple</span><span class="label label-blue">blue</span><span class="label label-green">green</span><span class="label label-orange">orange</span><span class="label label-red">red</span><span class="label label-pink">pink</span><span class="label label-black">black</span><span class="label label-white">white</span></p>
-
-                        <p><span class="badge">default</span><span class="badge badge-purple">purple</span><span class="badge badge-blue">blue</span><span class="badge badge-green">green</span><span class="badge badge-orange">orange</span><span class="badge badge-red">red</span><span class="badge badge-pink">pink</span><span class="badge badge-black">black</span><span class="badge badge-white">white</span></p>
+                        <p><span class="badge">d</span><span class="badge badge-purple">p</span><span class="badge badge-blue">b</span><span class="badge badge-green">g</span><span class="badge badge-orange">o</span><span class="badge badge-red">r</span><span class="badge badge-pink">p</span><span class="badge badge-black">b</span><span class="badge badge-white">w</span></p>
+                        <br>
+                        <h4>Bonus: Closable Labels and Badges</h4>
+                        <p>Both labels and badges can be closable if you add a <code>.label-close</code> element to it. Example: <span class="label">12<span class="label-close"></span></span>, <span class="badge">12<span class="badge-close"></span></span></p>
+                        <code>&lt;span class="label"&gt;default &lt;span class="label-close"&gt;&lt;/span&gt;&lt;/span&gt;<br>&lt;span class="badge"&gt;12 &lt;span class="badge-close"&gt;&lt;/span&gt;&lt;/span&gt;</code>
                     </section>
 
-                    <section id="hero"></section>
+                    <section id="hero">
+                        <h2>Hero Unit</h2>
+                        <p>Its' that simple rectangle displayed on homepages of some websites. On Bootstrap, it's called <a href="https://getbootstrap.com/docs/4.0/components/jumbotron/" target="_blank">Jumbotron</a></p>
+                        <div class="hero">
+                            <h2>Welcome to Dinakit Framework</h2>
+                            <p>A simple yet effective HTML5/CSS3 Framework</p>
+                            <p class="text-center"><a href="http://bkader.github.io/Dinakit/" target="_blank" class="btn btn-primary btn-large">Read The Docs</a></p>
+                            <hr>
+                            <p class="text-center"><small>This framework is made with &hearts; by <a target="_blank" href="https://github.com/bkader">Kader Bouyakoub</a></small></p>
+                        </div>
+                    </section>
 
-                    <section id="alert"></section>
+                    <section id="alert">
+                        <h2>Alerts</h2>
+                        <p>Alerts are messages displayed to the user on the website. Some frameworks call them alerts, others called them messages.</p>
+                        <div class="row">
+                            <div class="col-x-12 col-s-6">
+                                <div class="alert">
+                                    <span class="alert-close"></span>
+                                    <p>This is the default alert message.</p>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6">
+                                <div class="alert alert-info">
+                                    <span class="alert-close"></span>
+                                    <p>This is done by adding <code>.alert-[info|blue]</code>.</p>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6">
+                                <div class="alert alert-success">
+                                    <span class="alert-close"></span>
+                                    <p>This is done by adding <code>.alert-[success|green]</code>.</p>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6">
+                                <div class="alert alert-danger">
+                                    <span class="alert-close"></span>
+                                    <p>This is done by adding <code>.alert-[danger|error|red]</code>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                    <section id="progress"></section>
+                    <section id="progress">
+                        <h2>Progress Bars</h2>
+                        <p>Here are some examples (inspect the code to see how it's done):</p>
+                        <progress value="25" max="100"></progress>
+                        <div class="progress"><div class="fill" style="width: 25%"></div></div>
+                        <br>
+                        <h4>Shape Variations</h4>
+                        <p>Rounded progress bar</p>
+                        <progress value="25" max="100" class="progress-rounded"></progress>
+                        <div class="progress progress-rounded"><div class="fill" style="width: 25%"></div></div>
+                        <p>Striped progress bar (Rounded and striped as well)</p>
+                        <progress value="25" max="100" class="progress-striped"></progress>
+                        <div class="progress progress-striped"><div class="fill" style="width: 25%"></div></div>
+                        <progress value="25" max="100" class="progress-rounded progress-striped"></progress>
+                        <div class="progress progress-rounded progress-striped"><div class="fill" style="width: 25%"></div></div>
+                        <br>
+                        <h4>Color Variations</h4>
+                        <p>By adding <code>.progress-[color]</code> from <strong>purple</strong> to <strong>white</strong> to <code>&lt;progress...&gt;</code> element you change the color.</p>
+                        <progress value="25" max="100" class="progress-purple"></progress>
+                        <progress value="30" max="100" class="progress-blue"></progress>
+                        <progress value="35" max="100" class="progress-green"></progress>
+                        <progress value="40" max="100" class="progress-orange"></progress>
+                        <progress value="45" max="100" class="progress-red"></progress>
+                        <progress value="50" max="100" class="progress-pink"></progress>
+                        <progress value="55" max="100" class="progress-black"></progress>
+                        <progress value="60" max="100" class="progress-white"></progress>
+                        <p>As for <code>.progress</code> elements, the color is applied to the <code>.fill</code> child like so: <code>.fill.fill-[color]</code>.</p>
+                        <br>
+                        <h4>Text Value</h4>
+                        <p>In order to display the text inside the progress bar <code>&lt;progress&gt;</code> element should be droped and a <code>&lt;span class="progress"&gt;...&lt;/span&gt;</code> should be used. Examples:</p>
+                        <div class="progress">
+                            <div class="fill" style="width: 35%" data-fill="35"></div>
+                            <div class="text"></div>
+                        </div>
+                        <code>&lt;div class="progress"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="fill" style="width: 35%" data-fill="35"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text"&gt;&lt;/div&gt;<br>&lt;/div&gt;</code>
+                    </section>
 
-                    <section id="media"></section>
+                    <section id="media">
+                        <h2>Media Objects</h2>
+                        <div class="row">
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="media">
+                                    <div class="media-object">
+                                        <img src="./img/image.png" alt="none" class="fluid">
+                                    </div>
+                                    <div class="media-content">
+                                        <h3 class="media-title">This is the title</h3>
+                                        <div class="media-subtitle">This is the subtitle</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam harum. Sint nulla tempora explicabo adipisci porro, fugit expedita cupiditate ipsa esse maiores quaerat quibusdam ab deserunt incidunt nobis deleniti.</p>
+                                        <div class="media-action text-right">
+                                            <a class="btn btn-small btn-red" href="#"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a class="btn btn-small btn-blue" href="#"><i class="fa fa-share"></i></a>
+                                            <a class="btn btn-small" href="#"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="media">
+                                    <div class="media-object">
+                                        <img src="./img/image.png" alt="none" class="fluid">
+                                    </div>
+                                    <div class="media-content">
+                                        <h3 class="media-title">This is the title</h3>
+                                        <div class="media-subtitle">This is the subtitle</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam harum. Sint nulla tempora explicabo adipisci porro, fugit expedita cupiditate ipsa esse maiores quaerat quibusdam ab deserunt incidunt nobis deleniti.</p>
+                                        <div class="media-action text-right">
+                                            <a class="btn btn-small btn-red" href="#"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a class="btn btn-small btn-blue" href="#"><i class="fa fa-share"></i></a>
+                                            <a class="btn btn-small" href="#"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="media">
+                                    <div class="media-object">
+                                        <img src="./img/image.png" alt="none" class="fluid">
+                                    </div>
+                                    <div class="media-content">
+                                        <h3 class="media-title">This is the title</h3>
+                                        <div class="media-subtitle">This is the subtitle</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam harum. Sint nulla tempora explicabo adipisci porro, fugit expedita cupiditate ipsa esse maiores quaerat quibusdam ab deserunt incidunt nobis deleniti.</p>
+                                        <div class="media-action text-right">
+                                            <a class="btn btn-small btn-red" href="#"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a class="btn btn-small btn-blue" href="#"><i class="fa fa-share"></i></a>
+                                            <a class="btn btn-small" href="#"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="media">
+                                    <div class="media-object">
+                                        <img src="./img/image.png" alt="none" class="fluid">
+                                    </div>
+                                    <div class="media-content">
+                                        <h3 class="media-title">This is the title</h3>
+                                        <div class="media-subtitle">This is the subtitle</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam harum. Sint nulla tempora explicabo adipisci porro, fugit expedita cupiditate ipsa esse maiores quaerat quibusdam ab deserunt incidunt nobis deleniti.</p>
+                                        <div class="media-action text-right">
+                                            <a class="btn btn-small btn-red" href="#"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a class="btn btn-small btn-blue" href="#"><i class="fa fa-share"></i></a>
+                                            <a class="btn btn-small" href="#"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="media">
+                                    <div class="media-object">
+                                        <img src="./img/image.png" alt="none" class="fluid">
+                                    </div>
+                                    <div class="media-content">
+                                        <h3 class="media-title">This is the title</h3>
+                                        <div class="media-subtitle">This is the subtitle</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam harum. Sint nulla tempora explicabo adipisci porro, fugit expedita cupiditate ipsa esse maiores quaerat quibusdam ab deserunt incidunt nobis deleniti.</p>
+                                        <div class="media-action text-right">
+                                            <a class="btn btn-small btn-red" href="#"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a class="btn btn-small btn-blue" href="#"><i class="fa fa-share"></i></a>
+                                            <a class="btn btn-small" href="#"><i class="fa fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                    <section id="box"></section>
+                    <section id="box">
+                        <h2>Boxes</h2>
+                        <p>Boxes for Dinakit are panels for Bootstrap. Here are some examples:</p>
+                        <div class="row">
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">This is the box title</h3>
+                                        <small>Small text is added below</small>
+                                        <div class="box-action">
+                                            <div class="btn-dropdown">
+                                                <a class="btn btn-mini toggle-dropdown" href="#"><i class="fa fa-caret-down"></i></a>
+                                                <ul class="menu-right">
+                                                    <li><a href="#">Report</a></li>
+                                                    <li><a href="#">Share</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--/.box-action-->
+                                        <div class="box-tag">.box-tag</div>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aspernatur, totam maxime esse officiis saepe reprehenderit eaque dolore dicta ad repellat quia quae voluptatem, sapiente nobis minus ex, omnis rerum.</p>
+                                    </div><!--/.box-content-->
+                                    <div class="box-footer">This is the box footer.</div><!--/.box-footer-->
+                                </div><!--/.box-->
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Member Login</h3>
+                                        <small>Enter your username and password.</small>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <form action="javascript:;">
+                                            <div class="form-group group-icon">
+                                                <i class="fa fa-user form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="Username">
+                                            </div>
+                                            <div class="form-group group-icon">
+                                                <i class="fa fa-lock form-icon"></i>
+                                                <input type="text" class="input-block" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="btn btn-primary btn-block">Login</span>
+                                            </div>
+                                        </form>
+                                    </div><!--/.box-content-->
+                                    <div class="box-footer text-center">Not yet a member? <a href="#">Register</a></div><!--/.box-footer-->
+                                </div><!--/.box-->
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">This is the box title</h3>
+                                        <small>Small text is added below</small>
+                                        <div class="box-action">
+                                            <div class="btn-dropdown">
+                                                <a class="btn btn-mini toggle-dropdown" href="#"><i class="fa fa-caret-down"></i></a>
+                                                <ul class="menu-right">
+                                                    <li><a href="#">Report</a></li>
+                                                    <li><a href="#">Share</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--/.box-action-->
+                                        <div class="box-tag">.box-tag</div>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aspernatur, totam maxime esse officiis saepe reprehenderit eaque dolore dicta ad repellat quia quae voluptatem, sapiente nobis minus ex, omnis rerum.</p>
+                                    </div><!--/.box-content-->
+                                    <div class="box-footer">This is the box footer.</div><!--/.box-footer-->
+                                </div><!--/.box-->
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Tags Color Variations</h4>
+                        <p>Tags can be in any color available (from purple to white), simply add <code>.tag-[color]</code> to boxes tags.</p>
+                        <div class="row">
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">This is the box title</h3>
+                                        <div class="box-tag tag-purple">.box-tag</div>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div><!--/.box-content-->
+                                </div><!--/.box-->
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">This is the box title</h3>
+                                        <div class="box-tag tag-green">.box-tag</div>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div><!--/.box-content-->
+                                </div><!--/.box-->
+                            </div>
+                            <div class="col-x-12 col-s-6 col-m-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">This is the box title</h3>
+                                        <div class="box-tag tag-red">.box-tag</div>
+                                    </div><!--/.box-header-->
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div><!--/.box-content-->
+                                </div><!--/.box-->
+                            </div>
+                        </div>
+                    </section>
 
-                    <section id="gallery"></section>
+                    <section id="gallery">
+                        <h2>Galleries</h2>
+                        <p>They are what their name means. You can determine the with or items like so: <code>.item.width-[1-12]</code></p>
+                        <div class="gallery">
+                            <div class="item width-3"><img src="./img/image.png" alt="none"></div>
+                            <div class="item width-3"><img src="./img/image.png" alt="none"></div>
+                            <div class="item width-3"><img src="./img/image.png" alt="none"></div>
+                            <div class="item width-3"><img src="./img/image.png" alt="none"></div>
+                        </div>
+                        <br>
+                        <h4>Gallery Captions</h4>
+                        <div class="gallery">
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="top left caption">Top Left</div>
+                            </div>
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="top right purple caption">Top Right Purple</div>
+                            </div>
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="bottom left green caption">Bottom Left Green</div>
+                            </div>
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="bottom right black caption">Bottom Right Black</div>
+                            </div>
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="top red block caption">Top Red Block</div>
+                            </div>
+                            <div class="item width-3">
+                                <img src="./img/image.png" alt="none">
+                                <div class="bottom orange block caption">Bottm Orange Block</div>
+                            </div>
+                        </div>
+                    </section>
 
-                    <section id="tooltip"></section>
-
-                    <section id="alerts"></section>
+                    <section id="tooltip">
+                        <h2>Tooltips</h2>
+                        <p>Adding <code>.tooltip</code> class to an HTML element or <code>data-tooltip="_MSG_"</code> adds a tooltip to it. Example</p>
+                        <p>Here is a <span data-tooltip="Tooltip message!">Tooltip</span></p>
+                        <br>
+                        <h4>Positions</h4>
+                        <p>Classes are: <code>tooltip-top</code>, <code>tooltip-right</code>, <code>tooltip-bottom</code> and <code>tooltip-left</code>.</p>
+                        <p><span class="btn tooltip-left" data-tooltip="Tooltip message!">Left</span> <span class="btn tooltip-right" data-tooltip="Tooltip message!">Right</span> <span class="btn tooltip-top" data-tooltip="Tooltip message!">Top</span> <span class="btn tooltip-bottom" data-tooltip="Tooltip message!">Bottom</span></p>
+                        <br>
+                        <h4>Status (Color) Variations</h4>
+                        <p><span class="btn tooltip-error tooltip-top" data-tooltip="tooltip message!">error</span> <span class="btn tooltip-warning tooltip-top" data-tooltip="tooltip message!">warning</span> <span class="btn tooltip-success tooltip-top" data-tooltip="tooltip message!">success</span> <span class="btn tooltip-info tooltip-top" data-tooltip="tooltip message!">info</span></p>
+                        <br>
+                        <h4>Bonus</h4>
+                        <p>To keep the tooltip always visible, add <code>.tooltip-always</code>: <span class="tooltip-always" data-tooltip="Tooltip message!">Always</span></p>
+                        <p>To add a bouncing animation to the tooltip, simply add the class <code>.tooltip-bounce</code> <span class="tooltip-top tooltip-bounce" data-tooltip="Tooltip message!">Bouncing Tooltip</span></p>
+                    </section>
 
                     <section id="modal"></section>
 

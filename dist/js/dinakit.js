@@ -165,12 +165,28 @@
                 var all = $.map(content.split(','), $.trim);
                 $.each(all, function(index, value) {
                     if ($.trim(value).length) {
-                        tags.append('<span class="label">' + value + '<span class="label-close"></span></span>');
+                        tags.append('<span class="label" data-tag="'+value+'">' + value + '<span class="label-close"></span></span>');
                     }
                 });
                 self.val('');
                 return;
             }
+        }
+    });
+
+    /**
+     * Tags element observer.
+     */
+    $('.tags').bind('DOMSubtreeModified', function() {
+        var data = [];
+        $.each($(this).children('.tags-content').children('.label'), function(i,v) {
+            var tag = $(v).data('tag');
+            if ($.inArray(tag, data) == -1) {
+                data[i] = $(v).data('tag');
+            }
+        });
+        if (data.length) {
+            $(this).children('.tags-content').attr('data-tags', data);
         }
     });
 
