@@ -5710,16 +5710,18 @@ progress[value].white::-webkit-progress-value,
 [23. Tables / .table]
 =================================================================*/
 
-table {
+table,
+.table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 .table {
-    border-collapse: collapse;
-    border-spacing: 0;
     max-width: 100%;
     width: 100%;
 }
+table + table,
+table + .table,
+.table + table,
 .table + .table {
     margin-top: 1em;
 }

@@ -1,4 +1,7 @@
+sudo: false
+dist: trusty
 language: css
-
+git:
+    depth: 2
 matrix:
     fast_finish: true
